@@ -1,0 +1,118 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+.turbo/
+
+# Large media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+*.ico
+*.mp4
+*.mov
+*.avi
+*.mp3
+*.wav
+*.pdf
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# PDF outputs (in benchmark)
+benchmark/*/baseline/*.docx
+benchmark/*/baseline/*.pdf
+
+# Large data
+*.csv
+*.sqlite
+*.db
+
+# Python virtual environments
+venv/
+env/
+ENV/
+
+# Temporary
+*.tmp
+*.temp
+tmp/
+temp/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Backup
+*.bak
+*.backup
+*.orig
+
+# Docker
+docker-compose.override.yml
+
+# Large PDFs in corpus
+benchmark/corpus/*.pdf
+benchmark/inputs/*.pdf
+
+# Generated reports (keep source, ignore generated)
+benchmark/*/baseline/
+benchmark/*.json
+
+# macOS
+._*
