@@ -116,3 +116,4 @@ benchmark/*.json
 
 # macOS
 ._*
+products/
