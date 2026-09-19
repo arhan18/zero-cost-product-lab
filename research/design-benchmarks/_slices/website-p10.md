@@ -1,0 +1,449 @@
+### P10_1. NotebookLM (Gemini Notebook) (https://notebooklm.google.com)
+- name: NotebookLM (Gemini Notebook)
+- url: https://notebooklm.google.com
+- category: AI-native research assistant / source-grounded 'thinking partner' (Google Labs)
+- targetCustomer: Researchers, students, analysts and knowledge workers who must synthesize many documents; heavily promoted to education (Google for Education) and enterprise/Workspace audiences; 'millions of people and organizations' per Google.
+- primaryProblem: Information is scattered across PDFs, Docs, websites, slides and recordings; models that answer generally cannot be trusted for personal research, and organizing many interconnected sources into insight is slow.
+- valueProposition: A source-grounded AI research and thinking partner: upload sources (PDFs, websites, YouTube, audio, Docs, Slides) and get answers grounded only in those sources with inline citations, plus generated Audio Overviews (podcast-style), study guides, briefings, mind maps and, since June 2026, executable reports/charts/spreadsheets via a secure cloud computer.
+- businessModel: Free consumer product monetized indirectly through Google's AI subscriptions (Google AI Pro / AI Ultra) and Workspace AI Expanded Access; no standalone paid SKU on the product surface.
+- pricing: FACT (support.google.com, blog.google, edu.google.com): Free tier for signed-in users — up to ~100 notebooks, ~50 sources/notebook, ~50 chat queries/day, ~3 Audio Overviews/day. Premium caps (e.g., ~500 notebooks, ~300 sources, ~500 queries/day, more Audio/Video Overviews) come via Google AI Pro/AI Ultra and Workspace AI plans; consumer dollar pricing is bundled and UNKNOWN here.
+- freeTier: Fully usable free tier: the entire core loop (grounded Q&A, citations, Audio/Video Overviews, guides) is free within daily limits.
+- mainCta: Sign-in to open the product; notebooklm.google.com is auth-gated (redirects to Google account sign-in) with no marketing CTA for anonymous visitors.
+- heroStructure: UNKNOWN — the primary entry is login-walled and serves no marketing content; public storytelling happens on blog.google launch posts, support docs and edu.google.com product pages.
+- demoStrategy: No on-page demo; the product is the demo once signed in (blank notebook → upload → instant Audio Overview). Google publishes Audio/Video Overview examples and workflow tutorials inside blog posts and support docs.
+- homepageIa: UNKNOWN (auth wall). Public surfaces: blog.google announcements, support center, edu.google.com product page.
+- navigation: UNKNOWN at notebooklm.google.com (sign-in wall); public navigation exists via support center, blog and edu landing page.
+- typography: UNKNOWN.
+- colorStrategy: UNKNOWN.
+- layoutSystem: UNKNOWN.
+- spacing: UNKNOWN.
+- components: UNKNOWN for the product page; the product UI (per official screenshots) comprises notebook list, source cards, grounded chat composer, Audio Overview player and an Artifacts/output panel.
+- cards: UNKNOWN.
+- visualHierarchy: UNKNOWN.
+- motion: UNKNOWN.
+- interactions: UNKNOWN.
+- onboarding: Source-first: sign in → create notebook → upload/import or Discover sources → auto-suggested questions generated from sources; a loose idea can seed source discovery via Google Search (per blog.google, June 2026).
+- pricingPresentation: No self-service pricing; tier differences (notebook/source/query caps, premium features) are explained in edu.google.com and Workspace help material.
+- trustMechanisms: Google brand; grounded answers with inline citations that link to the source passage; data-protection claims (no human review of uploads/queries, not used for training absent feedback); user keeps control of sources.
+- socialProof: 'Millions of people and organizations' (blog.google, June 2026); institutional distribution via Google for Education and Workspace; Audio Overviews went culturally viral.
+- copywriting: Plain, benefit-led, trust-first language around accuracy, citations and groundedness ('understand anything', 'research and thinking partner').
+- mobile: Dedicated Android/iOS apps exist (FACT per Google); mobile marketing UX UNKNOWN.
+- accessibility: UNKNOWN.
+- performance: UNKNOWN.
+- seo: Marketing weight lives on blog.google and support pages; the product entry itself is auth-walled (little on-page SEO capture); exact ranking data UNKNOWN.
+- distinctiveDesign: Category-defining interaction — grounded generation with visible citations plus 'Audio Overviews' (two AI hosts discuss your sources) that became a signature, widely-copied artifact.
+- nonGeneric: The product, not the site, is distinctive: source-grounded Q&A and audio synthesis are different enough that rivals (e.g., Wondercraft's 'Convo Mode — Editable NotebookLM Audio') explicitly imitate them.
+- unnecessaryComplexity: Low on the surface (notebook → upload → chat); deep capabilities (cloud computer, 100+ skills, many output formats) stay behind one simple panel (INFERENCE).
+- unusualSimplicity: Radical entry simplicity: no prompt engineering, no model choice — 'talk to your sources'.
+- productDifferentiation: Verifiable grounding + citations beats general chat models for research; deep Google ecosystem (Docs, Slides, YouTube, Search) integration; education-scale trust.
+- distribution: Free + Google sign-in distribution, education channel, Audio Overview virality, Workspace enterprise channel; zero paid-acquisition marketing.
+- revenueEvidence: FACT: free bundled tier plus premium caps via Google AI/Workspace plans (Google-authored pages). No standalone ARR is published (UNKNOWN).
+- learn: 1) Ground AI output in user-provided sources and cite them inline — that verifiability is the trust mechanism. 2) Ship one viral, demo-able artifact (Audio Overviews) that outlives the landing page. 3) Distribute through an existing platform channel instead of paid acquisition. 4) Keep entry dead simple: sign in → upload → talk.
+- notCopy: Google/NotebookLM/Gemini branding, the Audio Overview host voices/format, Google-look product UI assets, and exact marketing copy; do not clone the product interaction for a different brand.
+- evidenceGrade: FACT
+- sources: https://notebooklm.google.com, https://support.google.com/notebooklm/answer/16164461, https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/, https://blog.google/innovation-and-ai/products/developing-notebooklm/, https://edu.google.com/intl/ALL_in/ai-notebooklm/
+
+### P10_2. Runway (https://runway.com)
+- name: Runway
+- url: https://runway.com
+- category: AI creative suite + applied AI research lab (generative video/image; now positioning as 'Real-World Intelligence': Creative, Dev, Robotics)
+- targetCustomer: Creative professionals (filmmakers, studios, editors, brands) plus developers and teams building AI applications; homepage claims 'Used by 60m+ creatives'.
+- primaryProblem: High-quality video and AI-assisted production normally needs studios, specialists and expensive toolchains; taking a creative idea to a production asset is slow and fragmented across apps.
+- valueProposition: An AI creation and research platform for 'building the last mile of AI': state-of-the-art generative video/images (Gen-4.5), editing workflows (green screen, motion brush, text-to-video/audio) plus Dev and Robotics platforms, on one surface.
+- businessModel: Credit-based SaaS subscription (usage sold as credits) + platform/API licensing for developers and enterprises; research lab as moat.
+- pricing: FACT (runway.com/pricing via search): Standard ~$12/mo billed annually (625 credits/mo), Pro ~$28/mo, Max ~$76/mo; rendering consumes credits (e.g., Gen-4.5 ~60 credits per 5s clip). Exact credit math shifts with model releases; treat current numbers as approx.
+- freeTier: No durable free tier for latest models; new-user starter credits have existed historically; current free tier status UNKNOWN.
+- mainCta: 'Start creating' / sign-up on the hero, with 'Learn more' per platform pillar (INFERENCE from page structure).
+- heroStructure: Text-forward hero ('Building the last mile of AI') framing three platforms — Creative / Dev / Robotics — with a primary CTA, followed by embedded generative output (INFERENCE from markdown fetch).
+- demoStrategy: The output IS the demo: homepage embeds generated-video results and product-apply-panel mockups; a flagship AI-film program and award show prove what creators ship.
+- homepageIa: Single narrative: positioning statement → three platforms (Creative AI / Dev platform / Robotics) → product surfaces → CTA (INFERENCE).
+- navigation: Slender top nav with platform entries, Pricing, options/docs; footer with docs, blog, careers, research (INFERENCE).
+- typography: UNKNOWN (text-only fetch; styles not extractable).
+- colorStrategy: UNKNOWN.
+- layoutSystem: UNKNOWN.
+- spacing: UNKNOWN.
+- components: Platform section blocks, feature lists, embedded film/gallery, pricing/credits table, FAQ, docs links (INFERENCE from markdown).
+- cards: UNKNOWN.
+- visualHierarchy: UNKNOWN.
+- motion: UNKNOWN; homepage embeds actual generated-video loops as its motion signature (INFERENCE).
+- interactions: UNKNOWN.
+- onboarding: Email/social sign-up → guided templates; Dev platform has API console/quickstart; Docs-first for developers (INFERENCE).
+- pricingPresentation: Plan/credit table with monthly↔annual toggle; credits framed as compute units; watermark gating and model usage tied to tiers (INFERENCE).
+- trustMechanisms: 'Used by 60m+ creatives' claim, major studio/enterprise references, AI-film festival, published research and model releases.
+- socialProof: 60m+ creatives, AI-film program, versioned model launches (Gen-3/Gen-4/Gen-4.5) with press coverage, community-created films.
+- copywriting: Bold, mission-driven ('Building the last mile of AI'); craftsman + developer hybrid tone.
+- mobile: UNKNOWN (editing is desktop-first; site responsiveness INFERENCE only).
+- accessibility: UNKNOWN.
+- performance: UNKNOWN.
+- seo: Docs, model pages, research/blog and comparisons carry search weight; strong brand-search capture; exact data UNKNOWN.
+- distinctiveDesign: Media-forward site where generated video is the hero asset — the studio credibility replaces the SaaS template aesthetic.
+- nonGeneric: Self-demonstration at scale (own output as marketing) plus an unusual three-pillar identity (creative + dev + robotics).
+- unnecessaryComplexity: Three broad pillars can dilute a single-message homepage for casual visitors (INFERENCE).
+- unusualSimplicity: Consumer loop is simple (buy credits → generate → export) despite heavy research underneath.
+- productDifferentiation: Research-grade models productized for real workflows (FX tools, platform APIs) vs pure text-to-video toys; robotics/dev pivot broadens the total addressable market.
+- distribution: Creative-community and filmmaker culture, awards/film program, model-release press cycles, enterprise platform deals, creator partnerships.
+- revenueEvidence: FACT: published credit plans. Reported funding (~$308M Series D at ~$3B valuation, early 2025) is secondary press per memory — NOT re-verified this session, so mark UNKNOWN until a primary/Crunchbase fetch. Private ARR UNKNOWN.
+- learn: 1) For a creative AI product, make the output the hero of the marketing site. 2) Sell compute as simple credits, not a feature matrix. 3) Turn customers into proof via launch events (film festival). 4) Reframe as an applied research lab (dev/robotics) to de-risk long bets.
+- notCopy: Runway name/logo/green-black aesthetic, Gen model product line, the AI-film-festival asset, and exact headlines; do not reuse their generated-video assets.
+- evidenceGrade: FACT
+- sources: https://runway.com, https://runway.com/pricing
+
+### P10_3. Midjourney (https://www.midjourney.com)
+- name: Midjourney
+- url: https://www.midjourney.com
+- category: AI image/video generation service from a self-funded 'community-funded research lab'
+- targetCustomer: Creative professionals, designers, artists and hobbyists who want state-of-the-art AI imagery with control; studios via API/enterprise; heavy Discord-native community.
+- primaryProblem: High-quality AI imagery historically required brittle prompt engineering and expensive tools; production teams also need speed, style consistency and private work.
+- valueProposition: Industry-leading aesthetic quality in image/video generation (site: 'V8.2 live') with a research company 'of 60 people', self-funded and community-owned; consumption via apps plus a powerful API for studios.
+- businessModel: Self-funded subscriptions (no VC); pricing is GPU-time based (Fast hours), not per-image credits; API/enterprise licensing.
+- pricing: FACT (docs.midjourney.com plan comparison): Basic $10/mo (3.3h fast GPU time), Standard $30/mo (15h), Pro $60/mo (30h), Mega $120/mo (60h); 20% annual discount; Stealth (private) mode on Pro/Mega; extra GPU hours purchasable. No free tier.
+- freeTier: None — paid plans only (historically limited trials).
+- mainCta: 'Try imagegen V8.2' / sign in — lean generation entry directly on the homepage (exact CTA copy UNKNOWN).
+- heroStructure: Minimal: brand + direct generation entry rather than a persuasion hero; the product surface IS the landing (INFERENCE).
+- demoStrategy: Generate immediately on the homepage; public community galleries and Discord showcase channels act as the perpetual demo and marketing feed.
+- homepageIa: Short single view: identity → generation entry → plan access (INFERENCE).
+- navigation: Minimal top nav (Home, Explore/community, API/Docs, Plans, Sign in); Discord and docs are primary surfaces (INFERENCE).
+- typography: UNKNOWN.
+- colorStrategy: UNKNOWN.
+- layoutSystem: UNKNOWN.
+- spacing: UNKNOWN.
+- components: Sign-in, generation box, plan cards, community gallery entry points (INFERENCE).
+- cards: UNKNOWN.
+- visualHierarchy: UNKNOWN.
+- motion: UNKNOWN.
+- interactions: UNKNOWN.
+- onboarding: Join → authenticate (Discord-first heritage) → prompt in a channel or web UI → iterate; API track for developers.
+- pricingPresentation: Clean plan grid (Basic/Standard/Pro/Mega) built on Fast GPU hours with an annual discount toggle; no seat or credit messaging — time math is the unit.
+- trustMechanisms: 'Community-funded' independence, 60-person research-lab transparency, output quality as brand, no-VC posture.
+- socialProof: Massive community galleries, Discord-community scale, cultural notoriety of the tool's image quality; widely referenced in creative work.
+- copywriting: Minimal and product-first; art/vision-oriented statements rather than feature checklists.
+- mobile: UNKNOWN.
+- accessibility: UNKNOWN.
+- performance: UNKNOWN.
+- seo: Strong brand-search dominance; plans/docs are indexed; deliberate SEO surface otherwise modest (UNKNOWN details).
+- distinctiveDesign: Radical anti-marketing: no growth loft, no demo-video wall — the tool and community are the site.
+- nonGeneric: Negligible landing persuasion and almost no copy is iconoclastic for AI SaaS; the product stands in for the pitch.
+- unnecessaryComplexity: Low on the site; complexity lives in the prompt/parameter system for power users.
+- unusualSimplicity: Entry = type a prompt, get an image; historically no sign-up wall before first result.
+- productDifferentiation: Aesthetic quality, community, and self-funded independence; Discord-native UX; API for studios; privacy/Stealth modes.
+- distribution: Word-of-mouth and community scale, brand pull from output quality, Discord organic, API/enterprise for studios.
+- revenueEvidence: FACT: published GPU-hour plans. Reported revenue (~$200M+ annualized, 2023 press) is secondary hearsay — treat as reported, NOT re-verified this session. Self-funded/no-VC is FACT per homepage.
+- learn: 1) When output quality is unmistakable, the product can BE the landing page — zero marketing copy. 2) Price on GPU-time so pricing mirrors cost and feels simple. 3) A community is distribution for a creative tool. 4) Self-funding + research-lab positioning is a trust differentiator.
+- notCopy: Midjourney name/logo, the Discord-community UX, 'community-funded research lab' framing, and its output/stylistic signatures.
+- evidenceGrade: FACT
+- sources: https://www.midjourney.com, https://docs.midjourney.com
+
+### P10_4. InteriorAI (https://interiorai.com)
+- name: InteriorAI
+- url: https://interiorai.com
+- category: AI interior design + virtual staging web app (solo-founder product)
+- targetCustomer: Real-estate agents, property managers, hosts, interior designers and homeowners who need instant concept designs and staged photos of real rooms.
+- primaryProblem: Professional staging and interior visualization is slow and expensive (real staging typically $200+ per shot, designers bill per project); agents and sellers need photorealistic concepts and comparison shots in seconds.
+- valueProposition: 'The #1 AI Interior Design App' — upload a room photo and generate designed interiors across 50+ styles, virtual staging, wall painting, furniture swaps, lighting changes and original-vs-AI comparisons in seconds; conversational 'fire your interior designer' energy.
+- businessModel: Paid-subscription only (no free tier); tiered by monthly design quota and render quality; built bootstrapped by a single indie developer (Pieter Levels).
+- pricing: FACT (interiorai.com + corroborating reviews): Pro $49/mo (1,000 designs/mo, low-quality renders, up to 4 rooms in parallel); Premium $99/mo (5,000 designs/mo, Hyper Realism medium renders, virtual staging, edit/upscale/wall-paint/lighting); Ultra $199/mo (25,000 designs/mo, ultra/photoreal, 16 parallel rooms, dedicated render server). Yearly ≈ 50%+ cheaper per site claim; third-party snapshots show ~$349/$599/$1,199 per year (annual numbers approximate/conflicting across sources). No free tier (widely noted).
+- freeTier: None (FACT per site and multiple reviews); payment is required before the first render.
+- mainCta: Email magic-link sign-in on the front page to start designing; yearly-plan upsell framed as '6+ months free'.
+- heroStructure: Value-hammer hero ('Fire your interior designer') with before/after concept visuals and a big-brand trust strip (Netflix, Berkeley, Accenture, Mercedes-Benz), then app UI previews (INFERENCE from homepage text).
+- demoStrategy: Before/after galleries and original-vs-AI comparisons; big-brand logos for instant credibility; no free trial, so anchoring to real staging costs does the convincing.
+- homepageIa: Hero → value prop + brand logos → benefits/features (styling modes, virtual staging, realism) → pricing/FAQ → sign-in (INFERENCE).
+- navigation: Slender: top-level Pricing, FAQ, knowledge base; Stripe billing portal (INFERENCE).
+- typography: UNKNOWN.
+- colorStrategy: UNKNOWN.
+- layoutSystem: UNKNOWN.
+- spacing: UNKNOWN.
+- components: Hero visuals, logo trust strip, feature rows, pricing blocks, FAQ accordions, email magic-link widget (INFERENCE).
+- cards: UNKNOWN.
+- visualHierarchy: UNKNOWN.
+- motion: UNKNOWN.
+- interactions: UNKNOWN.
+- onboarding: Zero-friction passwordless email magic-link login; yearly-plan upsell at signup; then upload → style → result.
+- pricingPresentation: Tier grid (Pro/Premium/Ultra) organized by design quota and render quality hierarchy, with a prominent yearly-discount nudge ('6+ months free'); cancel/upgrade through Stripe portal.
+- trustMechanisms: Big-brand 'used by' logos (Netflix, Berkeley, Accenture, Mercedes-Benz), '#1 app' claims, refund message, Stripe billing, solo-founder transparency.
+- socialProof: Brand-logo strip, app-store/web reviews, Pieter Levels' audience and press, industry alternatives lists featuring it.
+- copywriting: Punchy conversion copy ('Fire your interior designer'), agent ROI framing (extra income per year), feature bullets and FAQ-driven objection handling.
+- mobile: Web only — no official iOS/Android app (noted as a limitation in reviews).
+- accessibility: UNKNOWN.
+- performance: UNKNOWN.
+- seo: Strong niche capture on 'AI interior design' / 'virtual staging AI' queries plus a knowledge base; exact rankings UNKNOWN.
+- distinctiveDesign: Conversion-heavy and before/after-obsessed, with a front-loaded logo trust bar and standout brand provocation.
+- nonGeneric: 'Fire your interior designer' and the used-by logos wall are memorable vs typical AI-app design.
+- unnecessaryComplexity: Low on the page; complexity sits in the pricing tiers' feature deltas.
+- unusualSimplicity: Core loop is one upload → style pick → result; email login only.
+- productDifferentiation: Vertical fit for real-estate staging, original-vs-AI comparison workflow, parallel-room generation and VR/walkthrough on Premium, aggressive price anchor vs real staging cost.
+- distribution: SEO, word-of-mouth inside real-estate/host communities, maker-audience (Pieter Levels), logo social proof, content/knowledge base.
+- revenueEvidence: FACT: published prices and paid-only model (interiorai.com). Revenue numbers are not officially published (UNKNOWN); third-party reviews corroborate tiers and the no-free-tier policy.
+- learn: 1) Anchor price to the real-world cost you replace ($49 vs $200+/shot staging) so the math converts itself. 2) A no-free-tier model is viable when value is instantly visible and the buyer is professional. 3) A logo trust bar is cheap credibility. 4) Passwordless email login minimizes signup friction.
+- notCopy: InteriorAI name/logo, Pieter Levels branding, the 'Fire your interior designer' headline, and the used-by-logo strip; respect trademarked brand claims.
+- evidenceGrade: FACT
+- sources: https://interiorai.com, https://interiorai.com/faq
+
+### P10_5. Wondercraft (https://www.wondercraft.ai)
+- name: Wondercraft
+- url: https://www.wondercraft.ai
+- category: AI audio/video studio ('the AI Studio for creators and teams')
+- targetCustomer: Creators, podcasters, marketers and editorial teams producing audio and video from scripts using AI voices/avatars; agencies and media/publishing teams; community claim: 'Join 250,000 other creatives and teams'.
+- primaryProblem: Producing audio (podcasts, voiceover, ads, meditation, multi-language versions) and video normally requires studios, voice talent, editing and iteration; scale and localization are expensive.
+- valueProposition: One AI studio to script, generate (text-to-speech with cloned/character voices, avatars, video), edit and export premium audio/video; API-enabled; 'Convo Mode — Editable NotebookLM Audio' turns podcast generation into a live product event.
+- businessModel: Credit-based freemium SaaS with monthly/annual plans, API usage and enterprise custom contracts; ambassador/affiliate programs for distribution.
+- pricing: FACT (wondercraft.ai/pricing): Free $0 (150 credits, 720p export, limited model access); Creator $25/mo monthly or $21/mo annually (1,000 credits, no watermark, full commercial rights, premium models, API); Pro $45/mo 'most popular' (2,000/4,000 credits tiers, up to 3 users, 4K upscaling, unlimited custom characters, team/advanced tools); Enterprise custom (seats, SLA/DPA, governance, onboarding).
+- freeTier: Free: 150 credits to test, 720p resolution, limited models, watermarked/restricted use.
+- mainCta: 'Start creating' (straight into the studio) — primary hero CTA; 'Book a demo' for Enterprise; banner promotes the Launch Day feature.
+- heroStructure: Value headline with a 'Launch Day' announcement banner (Convo Mode), social-proof line ('Join 250,000 other creatives'), and a direct studio CTA (INFERENCE from markdown).
+- demoStrategy: 'Start creating' lands directly in the studio; a models page lists best-in-class model logos; blog, case studies and examples build proof.
+- homepageIa: Announcement → hero → tools/features surface (voice cloning, podcast generator, meditation, TTS, video, avatars) → models row → case studies → resources (docs/API) → pricing → footer (INFERENCE).
+- navigation: Top: Pricing, Enterprise, Resources, Tools mega-menu; footer grouped Product / AI Tools / Resources / Features / Company; affiliate/ambassador program links.
+- typography: UNKNOWN.
+- colorStrategy: UNKNOWN.
+- layoutSystem: UNKNOWN.
+- spacing: UNKNOWN.
+- components: Announcement banner, hero copy block, tool/feature cards, model-logo rows, pricing table with monthly↔yearly toggle, cookie consent, affiliate entry points (INFERENCE).
+- cards: UNKNOWN.
+- visualHierarchy: UNKNOWN.
+- motion: UNKNOWN.
+- interactions: UNKNOWN.
+- onboarding: Free plan opens directly into the studio; template-driven first projects; Ambassador program for community growth.
+- pricingPresentation: Clean 4-column table (Free/Creator/Pro/Enterprise) with a monthly↔yearly toggle ('2 months off'), credits as the capacity unit, explicit feature deltas, Enterprise 'Let's talk'.
+- trustMechanisms: Scale claim ('250,000 creatives'), case studies library, public API/docs, ambassador + creative-partner programs, brand sponsorships.
+- socialProof: 'Join 250,000 other creatives and teams', case studies, character/voice roster, ambassador community, Launch-Day product events.
+- copywriting: Creator-friendly, launch-event energy ('Launch Day!', 'Convo Mode'), benefit-first naming and clean feature bullets.
+- mobile: UNKNOWN.
+- accessibility: UNKNOWN.
+- performance: UNKNOWN.
+- seo: Extensive SEO surface: blogs, archived tool pages (ai-podcast-generator), feature pages, case studies; strong brand query capture; exact data UNKNOWN.
+- distinctiveDesign: Positions as a full 'AI Studio' (studio-software feel) instead of a text-to-speech utility, and openly benchmarks against a competitor's viral feature in its announcement.
+- nonGeneric: Borrows NotebookLM's audio concept as a launch hook ('Editable NotebookLM Audio') and brands a model-agnostic 'best models' roster.
+- unnecessaryComplexity: Broad tool surface may overwhelm newcomers (INFERENCE).
+- unusualSimplicity: Script → pick voice/avatar → generate and edit in one canvas; credits abstract model complexity.
+- productDifferentiation: End-to-end audio+video studio breadth, API spine, multi-language voice/avatar library, live podcast editing (Convo Mode), model-agnostic provider strategy.
+- distribution: Creator-community marketing, ambassador/affiliate programs, SEO tools-pages, API/developer docs, partner and podcast ecosystems.
+- revenueEvidence: FACT: published free/paid credit plans; '250,000 creatives' is company-stated marketing. Private ARR UNKNOWN.
+- learn: 1) Credit-based freemium with a clear unit (150 → 1,000 → 4,000 credits) makes the upgrade obvious. 2) Announce a parity feature around an adjacent product's viral moment to borrow attention. 3) Own a tools/features SEO surface with many topic pages. 4) Ambassador/affiliate programs distribute a creative tool at low CAC.
+- notCopy: Wondercraft branding, 'Convo Mode' naming, voice/avatar library assets, exact pricing copy, and its studio UI.
+- evidenceGrade: FACT
+- sources: https://www.wondercraft.ai, https://www.wondercraft.ai/pricing
+
+### P10_6. Granola (https://www.granola.ai)
+- name: Granola
+- url: https://www.granola.ai
+- category: AI meeting notes / mindful 'AI notepad' for Mac & Windows
+- targetCustomer: Knowledge workers, founders, sales and go-to-market teams in back-to-back meetings who need trustworthy notes without a bot joining; enterprises via a business tier.
+- primaryProblem: Meeting-note apps use bots that join calls, annoy participants and yield generic recaps; memory as fallback is unreliable; existing AI notes ignore the user's own style and tools.
+- valueProposition: 'The AI notepad for back-to-back meetings' — an always-local desktop notepad that listens to your microphone (no bot joins), drafts notes in your personal style, surfaces Actions, and builds workspace memory across your tools (Slack, Salesforce, etc.), with Zapier automations.
+- businessModel: Freemium B2B SaaS; per-seat subscriptions; no ads.
+- pricing: FACT per official pricing snippet (granola.ai/pricing): Basic $0; Business $14/user/month; Enterprise $35/user/month. Billing-cycle specifics beyond the snippet UNKNOWN — treat current price details as partially verified.
+- freeTier: Basic free tier: personal notebook with the core listening/drafting loop.
+- mainCta: Download for Mac/Windows ('Get it free') plus 'Request access'/demo for enterprise (INFERENCE).
+- heroStructure: Problem-first headline ('The AI notepad for back-to-back meetings') with an app screenshot of a meeting + notes; privacy reassurance ('no meeting bot') prominent (INFERENCE).
+- demoStrategy: Desktop app screenshot of real notes UI; 'no bot' reassurance; founder/PM testimonials; launch-waitlist story as proof.
+- homepageIa: Hero → why (vs bots) → how it works (listens, drafts in your style, actions) → integrations → pricing/FAQ → footer (INFERENCE).
+- navigation: Minimal: product, pricing, changelog, support, login (INFERENCE).
+- typography: UNKNOWN.
+- colorStrategy: UNKNOWN.
+- layoutSystem: UNKNOWN.
+- spacing: UNKNOWN.
+- components: Screenshot frames, press quotes, integration logos, pricing table, FAQ (INFERENCE).
+- cards: UNKNOWN.
+- visualHierarchy: UNKNOWN.
+- motion: UNKNOWN.
+- interactions: UNKNOWN.
+- onboarding: Download native app (Mac/Windows) → local notebook → passive listening with no explicit recording; business tier adds web access and sharing.
+- pricingPresentation: Compact freemium table (Basic/Business/Enterprise) with per-seat pricing and feature deltas, linked from the homepage (INFERENCE).
+- trustMechanisms: 'No bot' positioning, local-first processing messaging, press and founder testimonials, venture-backed profile.
+- socialProof: Press coverage, founder/product-lead testimonials, pre-launch waitlist virality (45k+ reported), 'happy customer' copy.
+- copywriting: Direct, low-key, slightly witty; positions against intrusive bots; plain language about memory and actions.
+- mobile: Desktop-first (Mac/Windows); mobile companion UNKNOWN.
+- accessibility: UNKNOWN.
+- performance: UNKNOWN.
+- seo: B2B SEO via integrations, category/'vs' terms and changelog; exact data UNKNOWN.
+- distinctiveDesign: Quiet, professional software-app aesthetic; the calm 'notepad' framing contrasts the 'AI meeting recorder' category.
+- nonGeneric: Persona-style output (many note styles) plus tool-aware memory are rare among note apps.
+- unnecessaryComplexity: Low — product scope is disciplined.
+- unusualSimplicity: Zero-recording UX: it just listens; notes arrive naturally in your own style.
+- productDifferentiation: Botless capture, personal-style drafting, and cross-tool memory/actions with automations.
+- distribution: B2B word of mouth, press, lauch virality (waitlist), integration partnerships, enterprise sales motion.
+- revenueEvidence: FACT: published free/business price points (official pricing page via search snippet). Private/reported ARR UNKNOWN in this slice.
+- learn: 1) Reframe a crowded category by inverting the top objection ('no meeting bot'). 2) Personalize output to the user's own writing style as a durable moat. 3) Desktop-native, local-first can be a trust feature, not a limitation. 4) Freemium with a clear business/enterprise path captures B2B virality.
+- notCopy: Granola brand assets, the 'AI notepad' visual design, exact pricing/copy, and its note-style UI.
+- evidenceGrade: FACT
+- sources: https://www.granola.ai, https://www.granola.ai/pricing
+
+### P10_7. Ideogram (https://ideogram.ai)
+- name: Ideogram
+- url: https://ideogram.ai
+- category: AI image generation app + models with best-in-class text rendering
+- targetCustomer: Designers, marketers, content creators and indie builders who need AI images with legible text (posters, logos, typography) and consistent characters; developers via API.
+- primaryProblem: Image models historically mangle text; users need reliable text-in-image rendering, controllable styles and character consistency for real design work — which generic generators fail at.
+- valueProposition: 'Ideogram 4.0' — leading text-rendering AI image model with text layers, character consistency, style presets and purpose-built design tools (posters, mockups, storyboards, stickers, logos), plus an API/platform for developers.
+- businessModel: Freemium SaaS with credit-based generation and paid plans; API/platform usage for developers; model licensing.
+- pricing: FACT (ideogram.ai/pricing via search): Free tier (limited/slow generation); Plus $15/mo (~1,000 credits/mo); Pro $42/mo (~3,500 credits/mo, more fast generation, private); Team $20/user/mo (shared pool); Enterprise custom (API volume). Exact credit allocations vary by plan and are partially verified.
+- freeTier: Free plan with limited credits and/or slow-only generation (FACT per pricing page snippet).
+- mainCta: Direct generation entry ('Create') with the product immediately available; brand emphasis on the current model (INFERENCE).
+- heroStructure: Product-first: current model (Ideogram 4.0), sample gallery, straight-to-generation CTA (INFERENCE).
+- demoStrategy: Public gallery of generated images as infinite demo; before/after text-rendering comparisons; API docs; the feed doubles as the showcase.
+- homepageIa: Model/version banner → generator + gallery → features (text rendering, character consistency, styles) → pricing → community → footer (INFERENCE).
+- navigation: Gallery, Models, Pricing, API/docs, Login (INFERENCE).
+- typography: UNKNOWN.
+- colorStrategy: UNKNOWN.
+- layoutSystem: UNKNOWN.
+- spacing: UNKNOWN.
+- components: Generation/search interface, design-tool canvases, gallery grid, pricing table, API reference (INFERENCE).
+- cards: UNKNOWN.
+- visualHierarchy: UNKNOWN.
+- motion: UNKNOWN.
+- interactions: UNKNOWN.
+- onboarding: Free sign-in → immediate generation; prompt box first; design tools (Magic Fill, character consistency) surfaced within the canvas.
+- pricingPresentation: Standard credit-tier table (Free/Plus/Pro/Team/Enterprise) with monthly credit pools and fast-vs-slow generation semantics (INFERENCE).
+- trustMechanisms: Model quality and public benchmark/leaderboard claims, gallery scale, API SDKs, founding team background (ex-Google Brain/DeepMind/Meta).
+- socialProof: Huge public gallery, X/Discord community, adoption across design communities, press coverage.
+- copywriting: Concise, model-capability-first ('state-of-the-art text rendering', 'character consistency'); creator/developer hybrid tone.
+- mobile: UNKNOWN.
+- accessibility: UNKNOWN.
+- performance: UNKNOWN.
+- seo: Docs/API and gallery surface; strong brand capture; exact ranking UNKNOWN.
+- distinctiveDesign: Gallery-as-homepage with the generator front and center; positions explicitly as a model company.
+- nonGeneric: Leads with the one measurable differentiator (text legibility) that generic rivals cannot match.
+- unnecessaryComplexity: Low on the consumer surface; API/enterprise tracked separately.
+- unusualSimplicity: Type a prompt → legible, design-ready typography out of the box.
+- productDifferentiation: Text-in-image quality edge, character consistency, design-focused tooling, and an API track for builders.
+- distribution: Consumer virality via shareable prompts, developer/API channel, community, SEO/docs.
+- revenueEvidence: FACT: published free/paid credit prices. Private ARR UNKNOWN; funding news is secondary and NOT re-verified this session.
+- learn: 1) Pick one measurable differentiator (legible text) and make every homepage signal scream it. 2) Provide free credits so users see quality before paying. 3) A public gallery is the cheapest infinite demo. 4) Run consumer + API pricing in parallel to capture creators and builders.
+- notCopy: Ideogram branding, gallery content, model names ('Ideogram 4.0'), and exact plan text.
+- evidenceGrade: FACT
+- sources: https://ideogram.ai, https://ideogram.ai/pricing
+
+### P10_8. ProfilePicture.AI (https://www.profilepicture.ai)
+- name: ProfilePicture.AI
+- url: https://www.profilepicture.ai
+- category: Consumer AI avatar/profile-picture maker (free funnel into HeadshotPro)
+- targetCustomer: Consumers and creators who want polished profile/avatar images fast from a few selfies; funnel feeds HeadshotPro's professional customers (job seekers, founders, salespeople, teams).
+- primaryProblem: Profile and headshot photos are usually phone-shot and amateur; professional photography is expensive and slow; users want dozens of usable options from selfies.
+- valueProposition: Free, browser-based profile picture maker: upload selfies and get styled, usable profile/avatar images with background removal done in-browser, no account, no watermark; the professional outcome is served by the sibling product HeadshotPro.
+- businessModel: Freemium pivot — the core generator is free (lead generation), monetized through sibling product HeadshotPro (one-time $29–$59 image packages plus team/API plans) under the same Postcrafts umbrella.
+- pricing: FACT (current site): free core tool (background removal in-browser, HD exports, no account). Historical paid one-time packages (~$29–$59) now sit behind HeadshotPro (third-party accounts); exact current HeadshotPro price table UNKNOWN here.
+- freeTier: The entire core tool is free (FACT from our homepage fetch).
+- mainCta: Editor CTA to create immediately, with funnel links toward HeadshotPro / 'Free headshot generator' (INFERENCE from site text).
+- heroStructure: Utility-first hero: browser editor and photo input front and center ('Free profile picture maker'), minimal sales copy (INFERENCE).
+- demoStrategy: Try-it-now: the tool runs in the browser (client-side background removal), so the demo IS the product; before/after examples.
+- homepageIa: Utility hero → editor → background-removal notes → HeadshotPro funnel links → footer (INFERENCE).
+- navigation: Minimal; links to sibling product (HeadshotPro) and privacy (INFERENCE).
+- typography: UNKNOWN.
+- colorStrategy: UNKNOWN.
+- layoutSystem: UNKNOWN.
+- spacing: UNKNOWN.
+- components: Browser editor, upload area, background-removal/HD-export controls (INFERENCE).
+- cards: UNKNOWN.
+- visualHierarchy: UNKNOWN.
+- motion: UNKNOWN.
+- interactions: UNKNOWN.
+- onboarding: Zero-friction: open the site → upload → use the tools; no login or account required (FACT from homepage copy).
+- pricingPresentation: Absent for the free tool; funnel pages present HeadshotPro's one-time package pricing (per third-party notes).
+- trustMechanisms: Free-tool transparency (no account, no watermark, in-browser privacy), indie-maker founding story, HeadshotPro's scale + refund policy.
+- socialProof: Historical: reported six-figure launch-week sales and HeadshotPro 'hundreds of thousands of customers' claims (founder/secondary reported); current free tool relies on word-of-mouth mentions.
+- copywriting: Short, plain-spoken utility copy with privacy reassurance ('in seconds, no account').
+- mobile: UNKNOWN.
+- accessibility: UNKNOWN.
+- performance: In-browser/client-side processing implies no upload latency for background removal (FACT-ish per site claim; not benchmarked).
+- seo: Targets high-volume low-difficulty queries ('profile picture maker', 'background remover'); sibling HeadshotPro runs programmatic local-SEO pages, historically a key channel.
+- distinctiveDesign: Tool-as-homepage: a free utility serving as the door to a paid commercial product.
+- nonGeneric: The free-utility-to-paid-product funnel is structurally unusual vs paywalled rivals.
+- unnecessaryComplexity: Very low on the free surface.
+- unusualSimplicity: No account, no signup, no payment — the fastest possible try loop in the category.
+- productDifferentiation: Zero-friction free offer in a category that usually paywalls, paired with the paid commercial headshot flow.
+- distribution: Organic SEO per query, sibling-brand (HeadshotPro) funnel and affiliate program, historical virality from the original 2023 launch.
+- revenueEvidence: FACT for the model (free tool + paid sibling). Revenue claims (six-figure first week; HeadshotPro ~$300k/mo peak, ~$3.6M ARR reported 2024-26) are founder/content-reported — treat as reported, not audited.
+- learn: 1) A free, no-account tool can be a distribution machine feeding a paid product. 2) Ride a technology wave by shipping the minimum fast (original launched in ~30 hours when Stable Diffusion dropped). 3) Charge one-time for output artifacts (packages), not ongoing seats. 4) Install boring acquisition (SEO/queries, refunds, clear price) so traffic still converts when hype cools.
+- notCopy: ProfilePicture.AI / HeadshotPro / PFP.AI brand assets, the HeadshotPro funnel pages and pricing, and Danny Postma's personal story/branding.
+- evidenceGrade: FACT
+- sources: https://www.profilepicture.ai, https://first-mrr.com/study/headshot-pro, https://dev.to/promptway/he-built-an-ai-headshot-empire-solo-the-product-was-boring-on-purpose-50i0
+
+### P10_9. Genspark (https://www.genspark.ai)
+- name: Genspark
+- url: https://www.genspark.ai
+- category: AI workspace / agentic 'Super Agent' platform (search→agent pivot)
+- targetCustomer: Knowledge workers and creators who want one assistant/workspace for many tasks, plus developers wanting agent automation; global consumer market (8 locale sites).
+- primaryProblem: AI tools are fragmented across apps and models; traditional search can't complete tasks; users want an agent that does multi-step work end-to-end (find → create → automate).
+- valueProposition: 'Your all-in-one AI workspace' — the Genspark Super Agent orchestrates 9+ LLMs and 80+ tools to finish multi-step tasks (Figma→code, docs, presentations, live dashboards, websites, spreadsheets); product family adds Claw, Speakly, GenClipboard and GenTerminal.
+- businessModel: Freemium subscription with credit-based usage; consumer subscription plus business/education tiers.
+- pricing: FACT per membership/help pages (search snippets): Free tier; Plus from 10,000 credits/mo; Pro from 125,000 credits/mo. Exact dollar amounts NOT captured this session (UNKNOWN here). Company reported ~$36M ARR within ~45 days of the Super Agent launch (secondary-reported).
+- freeTier: Free tier with limited credits/motions to try the workspace (FACT per membership listing).
+- mainCta: Try/open the workspace; the product is immediately usable from the homepage (INFERENCE).
+- heroStructure: Workspace product UI as hero ('Genspark AI Workspace 6.0' + 'Your all-in-one AI workspace') with a promo image and direct tool grid (INFERENCE from markdown).
+- demoStrategy: The homepage surfaces a grid of 150+ promptable tools as living demos vs static marketing; blog, comparisons and press pages add credibility; app-store CTAs.
+- homepageIa: Product brand banner → categorized tool hub (Writing, Design/Visuals, AI Models, Audio/Video, Business/Productivity, ~150 listings) → product family (Claw, Speakly, GenClipboard, GenTerminal) → locale sites (8) → company/footer.
+- navigation: Massive utility navigation: Home, Skills, Second Brain, Tools hub (categorized 150+ tools), Products, Global sites (8 locales), Company (Blog, Comparisons, Press, Business, Help Center, Brand, Privacy, Terms), app-store downloads.
+- typography: UNKNOWN.
+- colorStrategy: UNKNOWN (markdown shows violet-gradient accent asset on dark backgrounds — INFERENCE only).
+- layoutSystem: UNKNOWN.
+- spacing: UNKNOWN.
+- components: Tool-list mega-menus, product cards, app-store badges, promo image, 20-language locale switcher (INFERENCE).
+- cards: UNKNOWN.
+- visualHierarchy: UNKNOWN.
+- motion: UNKNOWN.
+- interactions: UNKNOWN.
+- onboarding: Free sign-up → guided workspace tour with credit allocation; mobile apps (iOS/Android) for on-the-go use.
+- pricingPresentation: Membership table (Free/Plus/Pro) with credit allowances and per-tier upgrade CTAs (INFERENCE).
+- trustMechanisms: Scale claims ($36M ARR in 45 days), press page, comparisons page, help center, business/enterprise offers, brand page, global presence.
+- socialProof: Press and comparisons pages, the viral $36M-ARR story, community links (X, LinkedIn, Discord, Instagram, TikTok, YouTube), business/enterprise program.
+- copywriting: Broad-workspace, tool-driven tone; heavy localization (20+ languages on the site); benefit snippets above tools.
+- mobile: Native iOS/Android apps (FACT per store badges on site); mobile UX UNKNOWN.
+- accessibility: UNKNOWN.
+- performance: UNKNOWN.
+- seo: Extremely deep programmatic SEO: 150+ individually-indexable tool pages (ai-pdf-generator, ai-profile-picture-maker, figma-to-code, etc.), comparisons, and 8 locale sites — a query-covering SEO machine.
+- distinctiveDesign: A directory-scale tool hub acting as one agent workspace — breadth as identity.
+- nonGeneric: Ships a sprawling tool taxonomy plus side products (Clipboard/Terminal/Voice) that few single brands attempt.
+- unnecessaryComplexity: Huge nav and tool sprawl can overwhelm newcomers; 150+ tool pages risk diluting focus (INFERENCE).
+- unusualSimplicity: Natural-language task entry ('ask in plain English → live dashboard') collapses many tools into one prompt.
+- productDifferentiation: Orchestration depth (multi-LLM + 80 tools), full workspace breadth (docs, design, code, data, video), a family of agent surfaces, and multilingual global reach.
+- distribution: Content/SEO machine, native mobile apps, press/viral ARR story, social channels, business/enterprise sales, owned local-language sites.
+- revenueEvidence: FACT: published membership tiers (credit-based). Reported ~$36M ARR in ~45 days post-pivot is company/secondary-reported — treat as reported, not audited. Private audited revenue UNKNOWN.
+- learn: 1) Package many single-purpose AI tools under one workspace so every query becomes an owned SEO page and use case. 2) Pivot fast when the market moves (search → agents) and publicize the ARR spike for earned media. 3) Credit-based freemium aligns cost with heavy agent usage. 4) Localize the surface, not just the copy, for global growth.
+- notCopy: Genspark branding/logo, the tool-page template system, 'Super Agent'/'Workspace 6.0' naming, and the tool-taxonomy copy.
+- evidenceGrade: FACT
+- sources: https://www.genspark.ai
+
+### P10_10. Lyra (https://lyra.so)
+- name: Lyra
+- url: https://lyra.so
+- category: AI-native meeting platform ('competitive edge and takes action for you')
+- targetCustomer: Revenue/go-to-market teams (founders, sales, customer success, execs) in back-to-back customer meetings who need prep, automated follow-up and searchable team memory.
+- primaryProblem: Meetings are where deals and decisions happen, but prep is manual, follow-ups get missed, and institutional knowledge disappears; generic notetaker bots only transcribe and produce mediocre output.
+- valueProposition: An AI-native meeting platform with invisible AI: 4K browser meetings, per-participant transcription, deep prep research on every participant, automated follow-up actions across your tools (CRM, email), and a searchable workspace memory with citations.
+- businessModel: B2B SaaS per seat + platform fee; demo/sales-led motion; SOC2 Type II compliance for enterprise credibility.
+- pricing: Per earlier official pricing snippet: Core Platform ~$45/user/month + ~$100/month Agent Platform fee. Exact current pricebook UNKNOWN (pricing linked from homepage, not displayed on the fetched page).
+- freeTier: None advertised on the homepage; entry is demo-gated ('Request access'/'Book a demo') (INFERENCE).
+- mainCta: 'Request access' / 'Book a demo' (primary) with a 'Watch introduction video' secondary CTA.
+- heroStructure: Headline + video CTA + app screenshot, followed by six numbered feature blocks (01/06 … 06/06) each with its own product screenshot — strong numbered-feature storytelling (FACT from markdown).
+- demoStrategy: Watch-intro video plus six screenshotted feature demonstrations; changelog link for velocity; trust/security page; no self-serve trial on the homepage.
+- homepageIa: Hero → 'Powerful things you can do in Lyra' (01 nodes: actions terminal, prep, 4K invisible AI, artifacts, scheduling, memory) → 'Supercharge your GTM with Lyra' CTA → company/trust footer.
+- navigation: Sparse: Pricing, Changelog, Log in + utility (Support, Terms, Privacy, Security) + social (LinkedIn, X).
+- typography: UNKNOWN (modern SaaS sans — INFERENCE).
+- colorStrategy: UNKNOWN.
+- layoutSystem: Numbered 01–06 feature blocks paired with screenshots; symmetric stacked narrative (INFERENCE).
+- spacing: UNKNOWN.
+- components: Numbered feature rows, screenshots, primary/secondary CTA buttons, video modal, changelog/docs links (INFERENCE).
+- cards: UNKNOWN.
+- visualHierarchy: The numbered 01–06 feature narrative imposes strong ordering (INFERENCE).
+- motion: UNKNOWN.
+- interactions: UNKNOWN.
+- onboarding: Demo/request-access gate → sales-led onboarding for teams; product works natively inside Google Calendar and Cal.com schedulers.
+- pricingPresentation: Linked from the homepage; per-seat + agent fee, demo-first (per official pricing snippet).
+- trustMechanisms: SOC2 Type II badge (FACT, footer), trust subdomain (trust.lyra.so), security link, changelog recency, curated 'request access' entry.
+- socialProof: Sales-led references and intro video rather than mass-market logos; SOC2 for enterprise credibility.
+- copywriting: Outcome-first and revenue-angled ('competitive edge', 'final meeting', 'takes action for you'); short punchy feature titles.
+- mobile: UNKNOWN.
+- accessibility: UNKNOWN.
+- performance: UNKNOWN.
+- seo: Mature docs + changelog + trust domain; brand-search primary; exact data UNKNOWN.
+- distinctiveDesign: Defines meetings as an agentic action surface rather than a notes surface; explicit 'make every meeting the final meeting' concept.
+- nonGeneric: 'Invisible AI + 4K + per-participant transcription' and 'actions from a single terminal' are distinctive claims in a noisy category.
+- unnecessaryComplexity: Demo-gating limits instant evaluation for curious buyers (INFERENCE).
+- unusualSimplicity: A single terminal for all follow-up actions; no separate bot/notetaker workflow.
+- productDifferentiation: Meeting-native agent that executes follow-ups plus memory with citations — beyond transcription into action.
+- distribution: Sales-led (demo requests), LinkedIn/X presence, changelog-driven visibility among GTM tools, calendar/scheduling integrations.
+- revenueEvidence: Published price points (per-seat + agent fee) via official pricing snippet; private ARR UNKNOWN. Pricing is NOT on the fetched homepage — treat as partially verified.
+- learn: 1) In a commoditized category (meeting notes), differentiate on ACTION (the agent executes follow-ups) not capture. 2) Use numbered, visual feature storytelling for clarity. 3) SOC2 + a trust page make a demo-driven product enterprise-credible. 4) Sales-led gating is fine when the buyer is a revenue team.
+- notCopy: Lyra branding/logo, 'final meeting' phrasing, its app-UI screenshots, and the trust-page design.
+- evidenceGrade: INFERENCE
+- sources: https://lyra.so, https://lyra.so/pricing, https://trust.lyra.so

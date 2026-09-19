@@ -1,0 +1,19 @@
+Model used: nemotron-3-ultra-free
+Documents selected: 7 (all locally available unique PDFs)
+Categories represented: Coaching/Question Bank (B) — 4 docs; University/B.Tech Math (F) — 1 doc; Scanned PDFs (G) — 1 doc; Mixed-Layout (I) — 2 docs (overlap with B). Missing: School Math (A), Textbooks/Notes (C), Physics (D), Chemistry (E), Born-digital textbooks (H).
+Documents successfully validated: 6 (Maths-SQP timed out at 120s). Scanned PDF had no extractable text.
+Compound-equation sample size: 102 equality candidates manually inspected, 67 legitimate mathematical equations, 43 compound equations.
+Compound equations detected/missed: 10 detected, 32 missed (23% detection rate). Range: 0% (MSCERT) to 75% (ICSE).
+Representative misses: y = mx + c (4 docs), z = 4x + 5y (2 docs), y = 2x (2 docs), z = 3x + 2y, z = x + y, y = 4x - 5, y = x + 7, y = x² + 5, y = x² e⁻ˣ, y = sin x, y = f(x), tan⁻¹(sin x + cos x), 2x + 3y - z = 3, x + 2y - 5z + 9 = 0, differential equations, matrix equations, inequalities.
+False-positive preservation: All 12+ protections active and effective (REJECTED: a = b, x = 25, if a = b then c, a = b - 2, 10 - 20 = 30, Figure 1-2, cm², p. 5, 5), (A), 123, a)).
+Other-detector coverage: Operator pattern catches standalone expressions but is SUPPRESSED inside rejected equality RHS; gate scores 0.0-0.25 for compound equations.
+MFR calls and budget behavior: Hard budget max_math_regions=2 strictly enforced; P8-A splits consume ZERO MFR calls (30, 28, 19, 15, 6, 0 across docs); budget skips tracked correctly; fail-open preserves source content.
+P8-A zero-MFR confirmation: CONFIRMED across all 6 documents (30, 28, 19, 15, 6, 0 P8-A splits with 0 MFR calls each).
+Product impact: Structural loss only (InlineMath → Paragraph); no semantic corruption; all content preserved as plain Unicode.
+Decision: NEED MORE VALIDATION — corpus still biased toward Indian K-12 exam format; key categories untested (Physics/chemistry prose, middle school, worksheets, non-English, scanned handwritten, teacher notes). P8-B remains CLOSED.
+Exact report paths:
+- benchmark/corpus/validation/BATCH-1-REGISTRY.md
+- benchmark/corpus/validation/BATCH-1-RESULTS.md
+- benchmark/corpus/validation/BATCH-1-COMPOUND-EQUATIONS.md
+- benchmark/corpus/validation/BATCH-1-FINAL.md
+Git status: Only new untracked files in benchmark/corpus/ and benchmark/corpus/validation/. converter.py shows pre-existing modification. No credentials touched. No commits, no push, no deploy.

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — Dodo Shield</title>
+<meta name="theme-color" content="#FAF7F0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141210'/%3E%3Cpath d='M16 6l8 5v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9v-6z' fill='none' stroke='%23FBD38D' stroke-width='2.4'/%3E%3C/svg%3E">
+<style>
+:root{--paper:#FAF7F0;--ink:#141210;--muted:#6B6259;--line:#E7DFD3;--amber:#B45309;--card:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:40px 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:16px}
+.mono{font-family:ui-monospace,SFMono-Regular,monospace;font-size:.86em}
+.small{font-size:13px;color:var(--muted)}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:11px 24px;border-radius:999px;border:0;font-weight:700;cursor:pointer;font-size:15px}
+input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:9px;font:inherit;background:#FFFDF8}
+h1{font-size:30px;margin:0 0 6px}
+.big{font-size:40px;font-weight:800}
+.bar{height:10px;background:#EFE8D9;border-radius:999px;overflow:hidden;margin:10px 0}
+.bar i{display:block;height:100%;background:var(--ink)}
+a{color:var(--amber)}
+</style>
+</head>
+<body><div class="wrap">
+<h1>Shield dashboard</h1>
+<p class="small" id="who">Checking session…</p>
+<div class="card" id="login">
+<h3 style="margin-top:0">Sign in with email</h3>
+<label>Work email <input id="l_email" type="email" autocomplete="email"></label>
+<p><button class="btn" id="l_go">Email me a sign-in link</button> <span class="small" id="l_msg" role="status"></span></p>
+</div>
+<div class="card" id="dash" hidden>
+<p><strong id="d_email"></strong> · <span id="d_plan"></span></p>
+<p class="big"><span id="d_used">0</span><span class="small"> / <span id="d_limit">100</span> protected payments (30-day rolling)</span></p>
+<div class="bar"><i id="d_bar" style="width:0%"></i></div>
+<p><strong>Your webhook URL</strong> — paste in Dodo Dashboard → Developer → Webhooks:</p>
+<p class="mono" id="d_hook" style="background:#F5F0E6;padding:10px 14px;border-radius:9px;overflow-wrap:anywhere"></p>
+<p class="small">Events to tick: payment.succeeded, payment.failed, dispute.opened/won/lost, refund.succeeded. Over quota? Checks pause until renewal — upgrade anytime.</p>
+</div>
+<p class="small"><a href="/">← dodo-shield</a></p>
+</div>
+<script>
+const API="https://dodo-shield-api.aqeelbrh65.workers.dev";
+const $=id=>document.getElementById(id);
+$("l_go").onclick=async()=>{const m=$("l_msg");m.textContent="…";try{const r=await fetch(API+"/auth/request",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({email:$("l_email").value.trim()})});m.textContent=(await r.json()).ok?"✓ Check your inbox — link expires in 24h.":"Couldn't send — check the address."}catch{m.textContent="Network hiccup — try again."}};
+(async()=>{try{const r=await fetch(API+"/me",{credentials:"include"});if(!r.ok){$("who").textContent="You're signed out.";return}const j=await r.json();$("who").textContent="Signed in.";$("login").hidden=true;$("dash").hidden=false;$("d_email").textContent=j.email;$("d_plan").textContent=j.plan+" · "+j.status;$("d_used").textContent=j.used;$("d_limit").textContent=j.limit;$("d_bar").style.width=Math.min(100,Math.round(j.used/j.limit*100))+"%";$("d_hook").textContent=j.hook_url}catch{$("who").textContent="Couldn't reach the API."}})();
+</script>
+</body>
+</html>

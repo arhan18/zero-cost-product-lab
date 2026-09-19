@@ -1,0 +1,223 @@
+# Founders F06 — Distribution, Pricing & Product-Philosophy Focus (Slice 6)
+
+5 founders: Tyler Tringas, Ben Tossell, Justin Duke, Derrick Reimer, Zeno Rocha.
+Confidence key: FACT (primary evidence), INFERENCE (strong secondary), HYPOTHESIS (weak), UNKNOWN (no evidence).
+
+---
+
+### F06_1. Tyler Tringas
+
+- **name**: Tyler Tringas
+- **majorProducts**: Storemapper (Google-Maps store locator SaaS for small business sites / Shopify); Micro-SaaS ebook and site; Calm Company Fund / Earnest Capital (investor fund backing bootstrappers)
+- **productCategory**: Niche e-commerce SaaS (store locator); bootstrapped micro-SaaS; later ascent to investor fund
+- **teamSize**: Solo for early years and through the $100K ARR mark; later a small remote team (part-time support + contractors, ~3 at midpoint; secondary sources put the final team around 5)
+- **background**: Middle-class Florida upbringing; Economics major; energy/cleantech consultant; taught himself to code (~2011, Ruby on Rails) to escape trading hours for money; digital nomad Buenos Aires; prior failed venture-backed cleantech startup SolarList (~2014) left ~$50K credit-card debt
+- **originWhy**: While freelancing for Shopify merchants he wanted recurring revenue; three separate clients asked for a store locator in a two-week window and every existing option was 'incredibly old and very bad.' Built the MVP on a 30-hour flight SFO->Buenos Aires in 2012.
+- **problemDiscovery**: Repeated identical requests (3 in 2 weeks) + confirmed willingness to pay (a client already budgeting $2-3K for a custom build); insight that every site needs a locator yet the Shopify App Store had none.
+- **validation**: 5 paying customers within 24-36 hours at $5/mo (no free plan ever); >10%/month organic growth at peak; 40%+ free-trial conversion, sub-1% churn; $100K ARR by Feb 2015 (+271% YoY); ~$40K MRR at the 2017 sale.
+- **mvpApproach**: Purposefully minimal JIT build — a 'very very stripped down, barely workable' locator shipped on the flight; no email receipts or password reset at first; ship only when a customer asks.
+- **timeToFirstVersion**: ~1 working flight (30 hours) in 2012; sold October 2017 (~5 years in).
+- **stack**: Ruby on Rails, Heroku, PostgreSQL, Stripe; Intercom; public Baremetrics dashboard; distributed via Shopify App Store (first/only store locator there).
+- **aiUsage**: UNKNOWN - pre-generative-AI business (2012-2017); no documented AI usage.
+- **designApproach**: Radical transparency: public live-metric dashboard, 'built by one person' positioning with his face/name in the footer; deliberately simple UX; 'not a startup, a healthy growing internet small business.'
+- **launchStrategy**: Quiet, non-splashy launch: emailed his own freelance clients; only store locator in the Shopify App Store; helpful forum posts with a signature; Upwork/Odesk gig interception. Zero paid advertising ever.
+- **distributionChannels**: Shopify App Store listing; Shopify forums; Upwork/Odesk interception; 'powered by' links + organic search; HN (transparency posts repeatedly front-paged); blog + Micro-SaaS ebook.
+- **audienceBuilding**: Radical-transparency blog (one post ~50K uniques in days), public Baremetrics dashboard, and the Micro-SaaS ebook turned readers into customers — then into fund LPs/portfolio for Earnest Capital.
+- **xStrategy**: Modest personal X/@tylertringas; primary narrative distribution was blog + HN, not a systematic X loop. Underdocumented.
+- **redditStrategy**: UNKNOWN - no documented, significant Reddit strategy.
+- **phHnStrategy**: HN was the flagship channel (transparent revenue posts repeatedly front-paged, one sat atop HN 24+ hours). Product Hunt not a documented lever.
+- **pricing**: Started at $5/mo (matching the rough first version); after ~100 customers and $1K MRR raised prices substantially ($9/$19/$39, later toward $99/yr annual + Premium tiers); no free plan (support burden); annual prepay bought runway.
+- **monetization**: Recurring subscriptions (monthly/annual) only; high-margin SaaS; premium tiers (analytics/heatmaps) raised ARPU; retention over acquisition.
+- **revenueEvidence**: $0 -> $100K ARR in ~3 years (Feb 2015, +271% YoY); ebook intro says >$250K/yr later; ~$40K MRR at exit (his own spoken estimate). Secondary BuiltToSell says $50K MRR/team of 5 at exit — conflicting snapshot; sale amount undisclosed ('life-changing').
+- **userGrowthEvidence**: 5 paying customers day one; ~100 customers by $1K MRR; 40%+ trial conversion, <1% churn; >10%/month organic growth; ~50K uniques in days from one HN post.
+- **successFactor**: Latched onto a fast-growing platform (Shopify) where he was the only store locator; retention over acquisition; JIT features; radical transparency built trust + an audience; raised prices with leverage.
+- **biggestMistake**: (1) The earlier SolarList venture failure (stress + ~$50K debt) and its 'growth hacking' detour (a targets deal that fell apart); (2) A/B price testing — later called 'a big waste of time' for micro-SaaS; (3) spending on one experiment when he had ~$500 in the bank.
+- **stoppedDoing**: Stopped freelancing once revenue proved; stopped VC/fundraising; stopped growth tactics that didn't pay (Ads waste, refer-a-friend flops); stepped away to sell and start Earnest Capital.
+- **keptSimple**: One-person minimal operation; no free plan; JIT features; fixed tiers; managed hosting (Heroku); a single simple value prop.
+- **productPhilosophy**: Micro-SaaS thesis: a profitable, small, location-independent recurring-revenue business one person or a tiny team can run sanely. 'Money is a tool to get back your time.'
+- **engineeringPhilosophy**: Learn to code by doing; pick tech with the most active community (Rails); build minimal and ship rough; rely on managed platforms; ship features JIT to protect scarce time.
+- **lesson**: Distribution is the scarce resource, not the product idea: pick a fast-growing platform your customers already live on (Shopify), be visibly helpful where they gather, and let compounding retention + raiseable pricing do the rest while you keep scope minimal. (Transferable principle, not a copy directive.)
+- **evidenceGrade**: FACT
+- **Sources**:
+  - u1: https://www.tylertringas.com/storemapper
+  - u2: https://www.tylertringas.com/selling-my-bootstrapped-saas-business/
+  - u3: https://medium.com/@tylertringas/storemapper-bootstrapped-to-50-000-year-in-2-years-with-live-metrics-e8b74209ef9b
+  - u4: https://saasclub.io/207/
+  - u5: https://www.builttosell.com/radio/episode-160/
+  - u6: https://storemapper.baremetrics.io/
+  - u7: https://tylertringas.com/micro-saas-ebook
+
+### F06_2. Ben Tossell
+
+- **name**: Ben Tossell
+- **majorProducts**: Ben's Bites (daily AI newsletter, Substack + beehiiv mirror); Ben's Bites Pro (paid tier); Ben's Bites News (AI news aggregator); Ben's Bites Fund / Rolling Fund; Grizzly Ads (his brother's ad-booking platform); custom 'Ben's Bites ChatGPT'; previously Makerpad (no-code education, acquired by Zapier 2021)
+- **productCategory**: Subscription media (newsletter) + community + AI venture fund; prior: no-code education (Makerpad)
+- **teamSize**: Solo at launch; now a small tight team of ~4-6 (Ben, Shanice/COO, Keshav/content, Adam/design-bro, contractor-editor).
+- **background**: London, UK. '5 prints on the wall' zero-code founder — still doesn't ship code; joined tech via Product Hunt community (worked there 2015-2017); built 50+ no-code products that made $0; founded Makerpad (2018), sold to Zapier 2021 (undisclosed 'millions', ~85% ownership, cash + equity); then Zapier's AI team; now 'excited founder turned investor'; father to twins.
+- **originWhy**: Six weeks before ChatGPT (October 2022) he was on Zapier's AI team and realized he didn't know enough about AI; started the newsletter to force himself to learn everything about AI and share it publicly ('started this whole thing because he didn't know enough about AI and wanted to learn').
+- **problemDiscovery**: Personal knowledge gap + timing whitespace: AI was exploding and chaotic, and 'when I launched this newsletter, there was nothing else like it'; needed a daily routine he could maintain alongside a day job — which set the format.
+- **validation**: 0 -> 10K subscribers in ~6 weeks; referral program within 7 days; sponsors early; >100K in ~13 months (X thread Nov/Dec 2023); ~110K by Dec 2024.
+- **mvpApproach**: First two posts long-form; by day 3 hated the 'Milk Road for AI' format and pivoted to a daily curated digest (top AI news + launches + tools) producible alongside a job; iterates format constantly off click data; moves fast and breaks things on purpose.
+- **timeToFirstVersion**: First daily email October 2022; 100th digest ~Feb 2024; 500-digest mark on the 2nd birthday (Oct 2024).
+- **stack**: Substack (later beehiiv for refer/mirror); Discord for community; Grizzly Ads custom sponsorship booking; custom ChatGPT over the newsletter archive; heavy AI tooling for production/distribution.
+- **aiUsage**: AI is the subject AND the toolchain: AI workflows (e.g. Claude + MCP) for founder analysis and content; custom ChatGPT over the archive; Keshav as AI-native content lead; preaches non-developers can build with AI; 'still can't code' but ships with AI agents.
+- **designApproach**: Playful, direct, transparent; scrappy > polished ('finger food' design); Adam handles visuals; treats the newsletter like a product with public growth metrics; speed over permanence.
+- **launchStrategy**: Reply-guy on X (learned from Ryan Hoover's early Product Hunt days); some paid X/other ads from ~Feb 2023; referral program rewards; leveraged existing audience/brand (Makerpad, PH, Zapier) from day one.
+- **distributionChannels**: X/Twitter (reply-guy, ads, thread-cards), referral program, newsletter-to-sponsor flywheel, Discord (3,700+ members), Ben's Bites News aggregator, webinars/workshops/hackathons, direct 'work with us' sponsorship page.
+- **audienceBuilding**: Daily cadence; public sponsor results (unclassified slots get 300+ clicks); transparent click/open metrics; Discord community; referral reward = bundled free deliverable (AI Project Tracker); paid Pro/community tiers.
+- **xStrategy**: Reply-guy as core early engine (a Sundar Pichai-adjacent reply got 25.7K views — a few hundred subscribers); posts own metrics and lessons to X; sells sponsorships via X threads.
+- **redditStrategy**: UNKNOWN - no documented, significant Reddit strategy.
+- **phHnStrategy**: Product Hunt — no documented systematic strategy for Ben's Bites (though PH community lead 2015-17 was his stage); HN — UNKNOWN/not documented.
+- **pricing**: Free newsletter; Pro started Nov 2023 ~$100 (sold ~200 early), later ~$150/yr, current ~$80/yr; catalog promo $150 instead of $250; sponsorships: main $2,000, tools $1,200, unclassified $200 (Dec 2024); ~9-15 sponsor slots/mo (down from 18-25 in the 2023 AI summer).
+- **monetization**: Sponsorships, paid Pro/community, investment Fund (GP carry via Rolling Fund), affiliates/integrations, workshops/courses. Makerpad precedent: $0 -> ~$30K/mo profit in ~2 months, $350K raise, ~8-figure Zapier exit (undisclosed).
+- **revenueEvidence**: No public P&L for Ben's Bites. Growth in Reverse (secondary) estimated ~$20-26K/mo sponsor revenue by late 2024 plus Pro potential (~$330K/yr at 2% conversion — estimate, unconfirmed). Makerpad figures self-reported. Treat dollar figures as INFERENCE except his own price/rate cards and the 'millions' sale claim.
+- **userGrowthEvidence**: 0 -> 10K in 6 weeks; >100K by Nov/Dec 2023; ~110K in 13 months; >148K Substack and ~170K claimed (2026); 12K+ launches/stories covered, 4M+ clicks; Discord 3,700+ (early 2024).
+- **successFactor**: First-mover daily AI newsletter; relentless speed/experimentation; big pre-existing brand (Makerpad/PH/Zapier); reply-guy engine; owns the sponsorship stack (Grizzly Ads); transparent metrics; 'small but mighty team.'
+- **biggestMistake**: (1) Believed he'd found the perfect format ('Milk Road for AI') and burned out by day 3 — forced pivot; (2) hypergrowth brought low-quality subscribers — had to clean the list (Growth in Reverse); (3) 50+ no-code products with $0 revenue = 'founder confidence = -10'; (4) Makerpad hiring/agency friction led to building Grizzly in-house.
+- **stoppedDoing**: Stopped long-form-only format after day 3; stopped relying solely on organic ('organic growth is king' — called silly); stopped chasing the Milk Road model; stepped back from Makerpad after Zapier (vested 2 of 4 years); shifted from pure free content to paid Pro + software-ish products.
+- **keptSimple**: One daily deliverable one founder-with-a-job can sustain; referral reward = free bundled list not discounts; direct sponsor booking (no agencies/invoices); small team; public single-metric updates.
+- **productPhilosophy**: Learn-by-doing and share in public; the newsletter as 'an accidental company'; deliver genuine daily value and money shows up; democratize AI the way he did no-code.
+- **engineeringPhilosophy**: He can't code; builds with no-code + AI agents; preaches you don't need to learn to code to start a company; learning the stack 'backwards' via AI tools; ships ugly and iterates from data.
+- **lesson**: A genuinely useful daily cadence delivered where your audience already scrolls (X reply-guy), amplified by transparent metrics and a zero-effort referral reward, compounds faster than a perfect launch — repeated small distribution beats one big splash. (Transferable principle, not a copy directive.)
+- **evidenceGrade**: FACT
+- **Sources**:
+  - u1: https://bensbites.com/about
+  - u2: https://bensbites.co
+  - u3: https://www.bensbites.com/p/bb-digest-two-years-of-ben-s-bites
+  - u4: https://growthinreverse.com/bens-bites
+  - u5: https://www.linkedin.com/in/ben-tossell-70453537
+  - u6: http://catalog.bensbites.com/about
+  - u7: https://news.bensbites.co/
+  - u8: https://grizzlyads.com/
+
+### F06_3. Justin Duke
+
+- **name**: Justin Duke
+- **majorProducts**: Buttondown (newsletter email SaaS); Applied Cartography (essays newsletter); Weeknotes (public journaling newsletter); Third South Capital (holding company buying small software companies); several books/essays
+- **productCategory**: Email infrastructure / newsletter SaaS for independent creators; developer-friendly, opinionated
+- **teamSize**: Solo founder for years (side project 2016-2023), then 2 part-time freelancers (2023); ~6 people by late 2024. Fully remote since 2017.
+- **background**: English-major turned software engineer; Stripe engineer when he started; blogged publicly 15+ years (jmduke.com); Seattle -> Richmond, VA; co-founder of Third South Capital; known for transparent weeknotes and self-analysis essays.
+- **originWhy**: 'The worst thing an engineer can say to themselves is "I bet I can build a better version of this in a weekend"... and that's exactly how I started Buttondown.' Sick of TinyLetter; wanted a drop-in <form> tag tool without heavy platforms (Mailchimp/ConvertKit) or platform-owning blogs (Medium/Substack).
+- **problemDiscovery**: Own itch confirmed as a shared pattern (everyone wants 'literally just a [form] dropdown in a one-off page'); incumbents super-heavy or platform-owning; formatting and deliverability friction; studied competitor workflows before coding.
+- **validation**: HN + PH front page at launch: ~30K uniques, ~500 registered users, ~10 paying customers — enough to validate messaging/positioning; ~$1,000+/mo MRR growth before the 2023 interview; ~5%/month growth for 5 years.
+- **mvpApproach**: Nights-and-weekends while at Stripe; studied competitors; small, surgical, 'do less' scope; deliberately boring tech; minimal UI; 'one weekend turned into a month, turned into a career.'
+- **timeToFirstVersion**: Started building Dec 2016; launched 2017; side project until full-time 2023.
+- **stack**: Django (Python), Heroku, PostgreSQL, Vue, Postmark, Stripe, Help Scout, Fathom analytics, system fonts; later a deliberate monorepo.
+- **aiUsage**: Publicly skeptical of AI slop (LLM content, cold email, empty SEO calories) and values the human signal (2024 interview); no documented significant AI feature in the send flow; his stance is a human-first product position, not an AI feature.
+- **designApproach**: Minimalist, human, opinionated; crafted voice/copy; constrained initial UI on purpose; 'the last email platform you'll switch to'; performance and focused defaults over feature surface.
+- **launchStrategy**: Straightforward: posted to HN and Product Hunt (front page on both) — ~30K uniques / ~500 users / ~10 paying; his takeaway was the opposite of hype: launch mattered less than ongoing marketing and a durable acquisition loop.
+- **distributionChannels**: Inherently viral 'powered by Buttondown' footer in every email/archive (customers acquire customers); developer-marketing blog posts (monorepo = most-upvoted post; buttondown.com story = top-5 most-read) repeatedly front-paging HN; X/Twitter; Google Ads experiment (2023).
+- **audienceBuilding**: Public Weeknotes (transparency journal); Applied Cartography essays; 15 years of personal blogging; playful-but-careful company blog; 'show and tell' developer marketing repeated across channels.
+- **xStrategy**: Active personal + product X/Twitter; 'developer marketing is show and tell' — share what you ship, repeatedly; no documented systematic X acquisition loop.
+- **redditStrategy**: Listed only as a tool in a tool-stack write-up; no documented, significant Reddit acquisition strategy.
+- **phHnStrategy**: HN is the core earned-channel for dev-marketing posts; Product Hunt front page at launch; treats HN as an earned-audience venue for builder stories.
+- **pricing**: Started with dual pricing (usage AND feature-based) — customers emailed asking price; scrapped for conventional simple SaaS. Current: free first 100 subscribers; add-ons $9/$29/$79/mo; only active subscribers billed (no per-contact fees for unsubscribed); 50% nonprofit discount; 'cheaper than competition... because most places overcharge.'
+- **monetization**: Subscriptions only (free tier + paid tiers/add-ons); profitable; self-funded with $0 funding; supports salary + team; no VC pressure.
+- **revenueEvidence**: Founder-verified: ~$15K/mo MRR growing >$1,000/mo in 2023; ~5% MoM for 5 years; 2025 recap: revenue +61%, active authors +45%, unique subs emailed +72%. Secondary (GetLatka estimates): $26.4K (2020) -> $60K (2021) -> $90K (2022) -> $120K (2023) -> $392K ARR (2024) — INFERENCE. Startup Founders Stories indexes ~$75K MRR current (estimate).
+- **userGrowthEvidence**: ~500 registered / ~10 paying at launch; 'tens of thousands of customers' (his words); 2025 recap: +45% active authors, +72% unique subscribers emailed; GetLatka estimates 250-2,000+ customers (2024).
+- **successFactor**: Opinionated scratch-your-own-itch product with real retention; 'powered by' footer turns customers into salespeople; support/agility culture ('talk to a customer Monday, ship Tuesday'); boring tech = tiny costs; transparent weeknotes earn trust; profitable with no investors.
+- **biggestMistake**: (1) Dual usage+feature pricing at launch was confusing — fixed; (2) 'I probably could have put more time into launches'; (3) monorepo split was a mistake — reverted; (4) overrating launch itself.
+- **stoppedDoing**: Stopped dual pricing; stopped the split-repo setup (reverted to monorepo); stopped gating SPF/DKIM behind premium (made deliverability free); stopped perfectionist launch expectations.
+- **keptSimple**: Boring tech stack; minimal UI; flat conventional pricing; free first-100 tier; small team; support-by-agility; monorepo simplicity; 'do less, be surgical.'
+- **productPhilosophy**: 'There's a lot of room in the world for incremental improvements to things if you're sufficiently opinionated'; build software you'd want even as sole user; email as utility; profitability and no exogenous pressure.
+- **engineeringPhilosophy**: Choose boring technology; think hard about irreversible decisions (name, external API contracts) but treat reversible ones as two-day calls; monorepo; bug-bash months; 'if customers email you because they don't understand pricing, that's a bad sign.'
+- **lesson**: An opinionated product built for yourself creates retention, but your cheapest durable growth engine is embedded visibility — a 'powered by' footer turns every customer into a salesperson, while transparent weeknotes earn the trust that converts. (Transferable principle, not a copy directive.)
+- **evidenceGrade**: FACT
+- **Sources**:
+  - u1: https://www.starterstory.com/stories/buttondown
+  - u2: https://manuelmoreale.com/interview/justin-duke
+  - u3: https://medium.com/@markstenberg/justin-duke-built-buttondown-for-himself-but-you-can-use-it-too-2495c51a7954
+  - u4: https://buttondown.com/pricing
+  - u5: https://buttondown.com/blog/developer-marketing-is-show-and-tell
+  - u6: https://www.getlatka.com/companies/buttondown
+  - u7: https://weeknotes.buttondown.email/
+
+### F06_4. Derrick Reimer
+
+- **name**: Derrick Reimer
+- **majorProducts**: SavvyCal (scheduling SaaS); The Art of Product podcast (200+ episodes) + writing on Startups for the Rest of Us; previously Drip (co-founded with Rob Walling, acquired by Leadpages 2016), Codetree (sold), StaticKit (sold), Level (failed Slack alternative)
+- **productCategory**: Scheduling SaaS; bootstrapped + TinySeed-backed; founder with two exits + one documented failure
+- **teamSize**: Solo year one (built v1 alone doing everything); then head-of-marketing, then contractor; today a small scrappy team of ~4.
+- **background**: Full-stack developer (Mississippi-born, lived in Minnesota); co-founded Drip 2012 with Rob Walling, sold to Leadpages 2016; built/sold Codetree and StaticKit; attempted Level (Slack alternative) for a year and walked away; a decade of audience-building via podcasts/essays guided his next idea search.
+- **originWhy**: After Level failed, ~a year (2019) of methodically hunting the next bootstrapped opportunity ('Finding My Next Bootstrapped Business Idea', '10 Questions for Teasing Out Market Opportunities'); recognized scheduling friction — recipients find scheduling links annoying; wanted something 'for both sender and recipient to love' (scheduling as etiquette).
+- **problemDiscovery**: ~10 interviews of target-market people about scheduling pain; hypotheses run past a seasoned mentor; sized wedge ('who needs it most,' 'who can we reach initially,' 'scope of v1'); core insight: scheduling is etiquette — senders don't want to be rude, recipients don't want a one-way slot.
+- **validation**: Built in public to an existing founder audience; launched to #2 Product of the Month on Product Hunt (Jan 2021) and won one of PH's first Maker Grants; ~$1K MRR then hired part-time marketer (Corey); ~$20K MRR by his AMA in late 2021. No paid acquisition documented.
+- **mvpApproach**: Hypotheses + ~10 interviews + mentor input before code; then ship early/often. Signature: 'Ship Small, Ship Fast' — decomposed a multi-month feature (Workflows) into 92 scoped slices, shipped daily to production behind feature flags, adjusting scope as he went.
+- **timeToFirstVersion**: Company started early 2020; launched publicly January 2021 (PH #2 Product of the Month). ~1 year founding-to-launch.
+- **stack**: Elixir/Phoenix backend (Ecto confirmed by his own public PR notes referencing Ecto.Changeset + Laravel adapter alignment); TypeScript/JavaScript frontend. Hosting/infra not fully documented (partial).
+- **aiUsage**: UNKNOWN - no documented AI feature or AI-first positioning surfaced for SavvyCal's core product as of 2026; not a differentiator on its public pricing/positioning.
+- **designApproach**: Recipient-first UX as the differentiator: overlay/availability UX, 'time defense', reduced sender friction; clean typography, calm interface; 'the thoughtful way to find a time to meet'; sustainable organic growth over fancy tactics.
+- **launchStrategy**: Built anticipation pre-launch (X/Twitter + email + podcast to existing audience); launched Jan 2021 on PH -> #2 Product of the Month + Maker Grant; 'ship early, ship often'; free tier to kick tires; referral + word of mouth afterward.
+- **distributionChannels**: X/Twitter build-in-public to founders; two podcasts; Product Hunt launch + referral; organic search/word of mouth; mission-led content. No paid acquisition documented.
+- **audienceBuilding**: A decade of prior audience (Drip-era content, two podcasts, essays, X, ~2,000+ newsletter subscribers); TinySeed batch itself as a founder distribution channel; 'an audience with which to test ideas.'
+- **xStrategy**: Build in public on X as primary early marketing (his own PH AMA + Maker Grant story); weekly progress posts; leveraged existing founder following; no paid X ads.
+- **redditStrategy**: UNKNOWN - no documented, significant Reddit strategy.
+- **phHnStrategy**: Product Hunt = primary launch channel (Jan 2021 #2 Product of the Month, Maker Grant; later told his $20K MRR milestone via a PH AMA); iterative PH launches for integrations (Time Zone API, Chrome extension, Workflows, Stripe, iCloud). HN not a documented core channel.
+- **pricing**: Two simple flat plans: Basic $10/user/mo, Premium $17/user/mo (annual = save 2 months); free trial with NO credit card; 'only upgrade when you're ready to activate'; cheaper-value positioning vs Calendly-class tools.
+- **monetization**: Recurring subscriptions; bootstrapped with small TinySeed investment + angel backing; profitable (per multiple case studies).
+- **revenueEvidence**: Self-reported: ~$1K MRR then hired marketing; ~$20K MRR crossed ~late 2021 (PH AMA — FACT). Startup Founders Stories indexes $10K MRR year-one and $20K MRR (secondary). ~$1M ARR by 2024-25 is ESTIMATED (GetLatka; We Are Founders 'over $1M ARR') — grade INFERENCE.
+- **userGrowthEvidence**: #2 Product of the Month (Jan 2021); 'thousands of happy customers' (pricing page copy); team of 4; ~$20K MRR by ~late 2021. Exact customer counts not publicly disclosed (UNKNOWN).
+- **successFactor**: Differentiated recipient-first positioning in a Calendly-owned category; genuine niche wedge (etiquette) rather than feature clone; 10 years of audience/podcast equity; small TinySeed buffer to hire marketing at the right moment; 'ship small, ship fast' loop; pattern recognition from two exits + one failure.
+- **biggestMistake**: Documented in 'I'm Walking Away From the Product I Spent a Year Building': spending a full year on Level (Slack alternative) without product-market fit. Second: wearing all hats solo for too long — remedied by hiring marketing after $1K MRR.
+- **stoppedDoing**: Stopped Level after ~a year without traction; stopped doing all marketing solo post-$1K MRR; stopped building for months without shipping/marketing; steered to small incremental shipping over big multi-month releases.
+- **keptSimple**: Small team (3-4); two flat pricing plans; free trial without credit card; daily incremental shipping behind flags; no enterprise sales; organic growth focus; honest public numbers.
+- **productPhilosophy**: Make scheduling something both parties love — product innovation on etiquette, not just UI polish; 'cut the friction and awkwardness out of scheduling'; sustainable organic growth builds a lasting company.
+- **engineeringPhilosophy**: 'Ship Small, Ship Fast': decompose big features into daily production-shippable slices behind feature flags; validate/invalidate assumptions early; maintain a fast customer loop; boring reliability; spend marketing incrementally at the right revenue milestone.
+- **lesson**: In a market owned by a giant, win by changing the emotional experience of the OTHER party (the recipient), and buy growth with pre-existing audience plus a small capital buffer the moment revenue crosses a threshold — not by building more features. (Transferable principle, not a copy directive.)
+- **evidenceGrade**: FACT
+- **Sources**:
+  - u1: https://www.derrickreimer.com
+  - u2: https://www.derrickreimer.com/ship-small/
+  - u3: https://www.derrickreimer.com/essays/10-questions-for-teasing-out-market-opportunities/
+  - u4: https://www.derrickreimer.com/essays/finding-my-next-bootstrapped-business-idea/
+  - u5: https://www.derrickreimer.com/essays/im-walking-away-from-the-product-i-spent-a-year-building/
+  - u6: https://savvycal.com/pricing
+  - u7: https://www.producthunt.com/@derrickreimer
+  - u8: https://tinyseed.com/latest/2019-batch-announcement-mightycal
+  - u9: https://www.getlatka.com/companies/savvycal.com
+  - u10: https://www.linkedin.com/in/derrickreimer
+
+### F06_5. Zeno Rocha
+
+- **name**: Zeno Rocha
+- **majorProducts**: Resend (email API / developer-first communication platform — 'Stripe of Email'); React Email (open-source component library); new.email (natural-language email builder, sunset); Resend handbook; biannual launch weeks; prior senior DX roles (WorkOS, Liferay Cloud CPO)
+- **productCategory**: Developer infrastructure — transactional + marketing email SaaS; developer-first DX with an open-source wedge (React Email)
+- **teamSize**: 2 founders (Zeno Rocha + Bu Kinoshita); ~10 people by Nov 2024; 28 by Dec 2025; ~45 per YC's 2026 page.
+- **background**: Brazilian; started as front-end software engineer 2009 (Flash era); Globo, Petrobras, Liferay (Recife); principal developer advocate, later CPO Liferay Cloud, then VP DX / 1st eng hire at WorkOS; 110+ conference talks and 12+ years of open source; top-20 most active GitHub users at 22; now SF.
+- **originWhy**: 6+ years of professional pain (deliverability, observability) at two companies: emails landing in spam, opaque analytics, marketer-built tools; August 2022 side project to build the 'Stripe of Email' — exceptional DX, observability, reliability for serverless-era developers.
+- **problemDiscovery**: Personal recurring pain across two employers; observation that every incumbent was founded ~2009-10 and acquired ('nobody is building an exceptional developer experience, nobody is trying to innovate'); serverless era opened the wedge for developer-first email infra.
+- **validation**: Shared a working MVP with a friend who ran it in production and paid a $10 payment link 'to validate if the product was really good' — giving confidence for YC; 6,469-person waitlist in ~7 weeks; the Jan 2023 announcement tweet drew 1M+ views; Paul Graham reportedly called Resend 'the Stripe for Email.'
+- **mvpApproach**: Side-project prototype with Bu; one friend in production at launch; waitlist-gated access before public launch (Jan-Jun 2023); React Email launched first as the open-source wedge; 'launch weeks' (7 features in 7 days) became the shipping ritual.
+- **timeToFirstVersion**: Aug 2022 idea + first lines; Sep 2022 working MVP + first customer; incorporated Jan 2023; public launch Jun 2023 (~10 months first-commit-to-launch; ~6 months idea-to-paying-customer).
+- **stack**: Modern TypeScript/React; React Email (React -> HTML); SDKs for Node, Python, Ruby, Elixir, Go, Java, Rust, .NET; CLI + MCP server; Vercel/Zapier integrations; multi-region sending. Exact infra internals partially documented.
+- **aiUsage**: Strategic and heavily productized: new.email built emails via natural language (Feb 2025; sunset Jul 2026); 'Email Skills' (Jan 2026) take Resend into Claude Code, Cursor, Gemini; MCP server with OAuth; Claude Code + Codex plugins; CLI 'built for humans and AI agents'; natural-language scheduling; 'invisible AI features' thesis — agents increasingly need to SEND email, making agents a first-class channel.
+- **designApproach**: 'Exceptional developer experience' as brand; ultra-clean docs/handbook; taste culture (Savour design podcast + rebrand Jul 2025); launch weeks as design culture; dark-mode-forward; human About pages.
+- **launchStrategy**: Multi-part funnel: (1) React Email OSS launch builds the developer audience; (2) YC Launch with 6,469-waitlist + invite link and PG's 'Stripe for Email' quote; (3) public launch tweet at 1M+ views; (4) biannual launch weeks (7 features in 7 days; 6th by Apr 2026) for recurring momentum + press; (5) Handbook publication (Jun 2024, 'opening our strategy to the world'). TechCrunch coverage.
+- **distributionChannels**: Open source (React Email: ~14K stars Apr 2024 -> ~17K Dec 2025; 300K -> 1.4M weekly npm downloads); GitHub/Discord community; conferences (110+ talks; Resend at 9 conferences 2025); waitlist exclusivity; YC network; Vercel/Zapier integrations; word-of-mouth via obsessive support (98.6% same-day closure; 72K tickets); deliverability education content; launch weeks; YouTube.
+- **audienceBuilding**: Zeno's pre-existing 12-year open-source/conference audience; React Email userbase as top-of-funnel; large Discord community; Savour newsletter; Handbook/blog; build-in-public narrative.
+- **xStrategy**: Big public X moments (launch tweet 1M+ views; active @zenorocha/@resend); 'follow us on X' CTAs in product; X as launch + announcement broadcast; not a systematic reply-loop like Ben Tossell's.
+- **redditStrategy**: UNKNOWN - no documented, significant Reddit strategy.
+- **phHnStrategy**: Product Hunt — Zeno's earlier OSS projects hit #1 and #4 (Taskr, Secret); Resend leaned on YC Launch + HN + open source rather than a PH campaign. HN = strong resonance for react.email and the YC launch. OSS + YC were the PH/HN-equivalent levers.
+- **pricing**: Developer-first generous free tier: 3,000 emails/mo (100/day — increased 30x from 100/mo in Jun 2023); Pro $20/mo (50K emails + $0.90/1K overage); Scale from $90/mo (100K+); pay-as-you-go added 2025; Enterprise custom. Clear usage-based volume pricing.
+- **monetization**: Usage-based subscriptions (volume tiers) + pay-as-you-go + Enterprise; PLG/self-serve primary; open source + SEO as funnel, not monetization; revenue grew 5x in 2025 (self-reported) but absolute revenue undisclosed.
+- **revenueEvidence**: 1,000 paying customers by Dec 2023 (year one); '200,000+ developers signed up' at Series A (Dec 2024); 'millions of emails per day'; 1M users Dec 2025, 3M users Jun 2026, 'revenue 5x in 2025' (self-reported). No absolute dollar revenue disclosed anywhere — grade dollar-scale claims UNKNOWN/INFERENCE.
+- **userGrowthEvidence**: Waitlist 6,469 (~7 wks); 10K devs + 7M emails by Jul 2023 ($3M seed); 100K users Apr 2024; 200K+ Dec 2024; ~250K -> 1M in 2025; 3M Jun 2026; React Email ~8K stars Jul 2023 -> ~17K Dec 2025, 300K -> 1.4M weekly npm downloads; support 98.6% same-day, 72K tickets.
+- **successFactor**: Category pivot ('email is a DX problem') — developer-first wedge in an acquired-commodity market; React Email as respected free artifact that funnels developers; generous free tier + frictionless signup as sales engine; obsessive support as retention/word-of-mouth; launch-week cadence; founder's pre-existing developer equity; early explicit bet on AI agents sending email.
+- **biggestMistake**: No loud self-identified 'biggest mistake' essay in gathered sources. Documented pivot: new.email (launched Feb 2025) was sunset Jul 2026 after ~17 months — a strategic experiment that did not stick (INFERENCE). Earlier pattern: PH-#1/#4 OSS projects (Taskr, Secret) beloved but never businesses.
+- **stoppedDoing**: Stopped the waitlist-only model at public launch (Jun 2023); stopped treating email as transactional-only — added broadcasts (Forward, Jan 2024) and repositioned to all-in-one email platform; stopped assuming email is human-to-human only — agents now a first-class channel.
+- **keptSimple**: One obsession (email infrastructure); simple SDK ergonomics; clean free + 2-3 paid tiers; waitlist as forced simplification; launch weeks as a contained shipping ritual; support-first culture.
+- **productPhilosophy**: 'Resend exists to make human communication easier'; developer experience IS the product; email needs a renovation, not iteration; support is not a cost center; build in public; community-first; agents are a first-class email channel.
+- **engineeringPhilosophy**: DX-first engineering (every-language SDKs, ergonomic API, deliverability SLAs); open source by default; reliability/observability as product features; automated anti-abuse (Robocop); agents as first-class API consumers (MCP/CLI/plugins); fast weekly ships via launch weeks.
+- **lesson**: Entering a crowded 'solved' market works when you reframe it for a neglected buyer (developers) and give them a free, respected open-source artifact — React Email becomes your distribution, the generous free tier becomes your salesperson, and obsessive support becomes your retention. (Transferable principle, not a copy directive.)
+- **evidenceGrade**: FACT
+- **Sources**:
+  - u1: https://zenorocha.com/im-starting-my-own-company
+  - u2: https://zenorocha.com/resend-raises-18m-series-a
+  - u3: https://resend.com/handbook/company/how-we-got-here
+  - u4: https://resend.com/blog/new-free-tier
+  - u5: https://resend.com/blog/400-000-users-and-beyond
+  - u6: https://resend.com/blog/1-million-users
+  - u7: https://resend.com/blog/3-million-users-and-counting
+  - u8: https://www.ycombinator.com/companies/resend
+  - u9: https://resend.com/pricing
+  - u10: https://github.com/resend/react-email

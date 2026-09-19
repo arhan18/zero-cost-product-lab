@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a1210">
+<title>Renewal Radar — Know before it renews</title>
+<meta name="description" content="A lightweight renewal tracker for small teams. Renewal dates, cancel-by deadlines, owners, costs. Free, private, no signup.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◷</text></svg>">
+<style>
+:root{
+  --ink:#e9f2ec; --paper:#060e0f; --card:#0c181a; --accent:#14b8a6; --accent-ink:#eef5ef;
+  --muted:#93a8a0; --line:#1e3234; --wash:#122425; --radius:12px;
+  --canvas:#060e0f; --canvas-ink:#e9f2ec; --canvas-muted:#93a8a0; --lume:#5eead4;
+  --beam:#14b8a6; --beam-hi:#5eead4; --beam-edge:#0f766e; --placeholder:#a09a89;
+  --amber:#d9930d; --amber-bg:#fdf3df; --red:#b3261e; --red-bg:#fdecea;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--canvas-ink);font-family:var(--sans);line-height:1.55}
+main{max-width:700px;margin:0 auto;padding:28px 18px 72px;position:relative;z-index:1}
+body.bg-grid::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(94,234,212,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(94,234,212,.07) 1px,transparent 1px);background-size:28px 28px;-webkit-mask-image:linear-gradient(#000 0%,transparent 60%);mask-image:linear-gradient(#000 0%,transparent 60%)}
+body.bg-grid::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(600px 220px at 50% -80px,rgba(20,184,166,.16),transparent 70%);-webkit-mask-image:linear-gradient(#000 0%,transparent 50%);mask-image:linear-gradient(#000 0%,transparent 50%)}
+.eyebrow{font-family:var(--mono);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--lume);font-weight:700;margin:0 0 8px}
+h1{font-family:var(--serif);font-weight:400;font-size:2.05rem;line-height:1.14;margin:0 0 8px;letter-spacing:-.015em}
+h1 em{font-style:italic;color:#fff}
+.sub{color:var(--canvas-muted);margin:0 0 4px;max-width:36em}
+h1{text-wrap:balance}
+/* next-action vault */
+#vault{position:relative;background:linear-gradient(180deg,#0b2b2e 0%,#082225 55%,#061a1c 100%);color:var(--accent-ink);border-radius:14px;padding:24px 22px;margin:26px 0;border:1px solid rgba(94,234,212,.35);box-shadow:0 24px 70px -24px rgba(20,184,166,.5);overflow:hidden}
+#vault::before{content:"";position:absolute;inset:0;background:radial-gradient(480px 180px at 50% -60px,rgba(94,234,212,.22),transparent 70%);pointer-events:none}
+.v-kicker{font-family:var(--mono);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;opacity:.85;margin:0 0 2px}
+.v-flex{display:flex;gap:18px;align-items:center}
+#scope{flex:0 0 auto;width:168px;height:168px;border-radius:50%;cursor:crosshair}
+.v-text{min-width:0}
+.v-big{font-family:var(--serif);font-size:1.7rem;line-height:1.15;margin:.15em 0 .3em}
+@media (max-width:520px){.v-flex{flex-direction:column;align-items:flex-start}#scope{width:140px;height:140px}}
+.card.flash{outline:2px solid var(--lume);outline-offset:2px}
+.v-big strong{font-variant-numeric:tabular-nums}
+.v-rows{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:10px;font-variant-numeric:tabular-nums}
+.v-rows div{font-size:.95rem}
+.v-rows span{opacity:.85;margin-right:6px}
+/* toolbar */
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 6px}
+.toolbar input[type=search]{flex:2 1 180px;padding:10px 13px;font-size:1rem;border:1px solid #2a4447;border-radius:9px;background:#0d1b1e;color:var(--canvas-ink)}
+.toolbar select{flex:1 1 140px;padding:10px;font-size:.95rem;border:1px solid #2a4447;border-radius:9px;background:#0d1b1e;color:var(--canvas-ink)}
+button{cursor:pointer;font-size:1rem;border-radius:9px;touch-action:manipulation;min-height:44px}
+button.calculate{border:1px solid var(--beam-edge);background:linear-gradient(135deg,#2dd4bf 0%,#0f766e 70%);color:#fff;padding:13px 16px;margin-top:14px;width:100%;font-weight:700;font-size:1.06rem;box-shadow:0 8px 32px -8px rgba(20,184,166,.55),inset 0 1px 0 rgba(255,255,255,.22)}
+button.calculate:hover{background:linear-gradient(135deg,#5eead4 0%,#0f766e 75%)}
+button.calculate:active{transform:scale(.985)}
+button.calculate:focus-visible{outline:3px solid var(--lume);outline-offset:2px}
+.ghost{background:transparent;color:var(--canvas-ink);border:1px solid rgba(242,239,226,.4);padding:9px 14px;font-size:.92rem;font-weight:600}
+.ghost:hover{background:rgba(242,239,226,.12)}
+.ghost:focus-visible{outline:2px solid var(--lume);outline-offset:2px}
+/* groups + cards */
+section.group{margin:22px 0}
+.group-h{font-family:var(--mono);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lume);margin:0 0 8px}
+.card{background:linear-gradient(180deg,#0d1b1e,#0a1517);color:var(--ink);border:1px solid #22393c;border-radius:var(--radius);padding:12px 16px;margin:10px 0;box-shadow:0 14px 40px -18px rgba(0,0,0,.55)}
+.card-top{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.card-vendor{font-weight:700;font-size:1.05rem}
+.card-cost{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.95rem}
+.card-meta{font-size:.9rem;color:var(--muted);margin:4px 0 0;font-variant-numeric:tabular-nums}
+.card-meta b{color:var(--ink)}
+.pill{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:2px 10px;white-space:nowrap}
+.pill.act{background:var(--amber-bg);color:#7a5200;border:1px solid var(--amber)}
+.pill.over{background:var(--red-bg);color:var(--red);border:1px solid var(--red)}
+.pill.later{background:#eef5ef;color:var(--accent);border:1px solid var(--accent)}
+.pill.unsure{background:transparent;color:var(--muted);border:1px dashed var(--muted)}
+.card-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.card-actions button{flex:1 1 100px;background:rgba(94,234,212,.06);color:var(--ink);border:1px solid #2a4447;padding:7px 10px;font-size:.88rem;font-weight:600;min-height:40px}
+.card-actions button:hover{background:rgba(94,234,212,.14)}
+ .card-actions button:focus-visible{outline:2px solid var(--lume);outline-offset:2px}
+.empty{background:#0a1517;color:var(--canvas-ink);border:1px dashed #2a4447;border-radius:var(--radius);padding:26px 22px;margin:22px 0;text-align:center}
+.empty h2{font-family:var(--serif);font-weight:400;margin:0 0 6px}
+ .empty p{color:var(--canvas-muted);margin:0 0 14px}
+.empty button{background:transparent;color:var(--canvas-ink);border:1px solid #2a4447;padding:9px 16px;font-weight:600}
+.sample-note{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;color:var(--canvas-muted);text-transform:uppercase}
+/* dialog form */
+dialog{border:1px solid #2a4447;border-radius:14px;padding:22px;max-width:480px;width:calc(100% - 36px);background:#0d1b1e;color:var(--canvas-ink)}
+dialog::backdrop{background:rgba(10,18,16,.6)}
+dialog h2{font-family:var(--serif);font-weight:400;margin:0 0 4px}
+dialog label{display:block;font-weight:600;margin:12px 0 4px;font-size:.95rem}
+dialog input,dialog select,dialog textarea{width:100%;padding:10px 12px;font-size:1rem;border:1px solid #2a4447;border-radius:9px;background:#060e0f;color:var(--canvas-ink);font-family:var(--sans);color-scheme:dark}
+dialog input:focus-visible,dialog select:focus-visible,dialog textarea:focus-visible{outline:2px solid var(--lume);outline-offset:1px}
+.row2{display:flex;gap:10px}
+.row2>div{flex:1}
+.check{display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:.92rem}
+.check input{width:auto;margin-top:5px}
+.dlg-actions{display:flex;gap:8px;margin-top:16px}
+.dlg-actions button{flex:1}
+.btn-primary{background:var(--accent);color:#fff;border:1px solid var(--accent);font-weight:700;padding:11px}
+.btn-secondary{background:transparent;color:var(--canvas-ink);border:1px solid #2a4447;padding:11px;font-weight:600}
+footer{color:var(--canvas-muted);font-size:.85rem;margin-top:36px}
+@media (min-width:760px){h1{font-size:2.6rem}main{padding-top:40px}#vault{padding:30px 28px}.v-big{font-size:2.4rem}}
+@media (prefers-reduced-motion:no-preference){main>header,main>.eyebrow,main>h1,main>.sub{animation:enter .5s ease-out backwards}}
+@keyframes enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body class="bg-grid">
+<main>
+<p class="eyebrow">Renewal radar for small teams</p>
+<h1>Know before it <em>renews</em>.</h1>
+<p class="sub">Every subscription, its real cancel-by deadline, owner, and cost — in one calm list. Your data stays in this browser. Free, no signup.</p>
+
+<section id="vault" aria-live="polite" aria-label="Next renewal action">
+<p class="v-kicker">Live scope</p>
+<div class="v-flex">
+<canvas id="scope" width="336" height="336" aria-label="Radar scope of renewal deadlines. Each blip is a renewal; closer to center means sooner." role="img"></canvas>
+<div class="v-text">
+<p class="v-kicker">Next action</p>
+<div class="v-big" id="v-big">—</div>
+</div>
+</div>
+<div class="v-rows">
+<div><span>Annual burn</span><strong id="v-burn">—</strong></div>
+<div><span>Tracked</span><strong id="v-count">—</strong></div>
+<div><span>Act now</span><strong id="v-act">—</strong></div>
+</div>
+</section>
+
+<div class="toolbar" role="search">
+<input type="search" id="q" placeholder="Search vendor or owner…" aria-label="Search renewals">
+<select id="f" aria-label="Filter by status">
+<option value="">All statuses</option>
+<option value="act">Act now</option>
+<option value="upcoming">Upcoming</option>
+<option value="later">Later</option>
+<option value="overdue">Overdue</option>
+<option value="unsure">Unsure</option>
+<option value="archived">Archived</option>
+</select>
+</div>
+
+<button type="button" class="calculate" id="btn-add">+ Add a renewal</button>
+
+<div id="sample-bar" hidden>
+<p class="sample-note">Sample data shown — <button type="button" class="ghost" id="btn-clear-samples" style="min-height:32px;padding:2px 10px;font-size:.8rem">clear samples</button> <button type="button" class="ghost" id="btn-hide-bar" style="min-height:32px;padding:2px 10px;font-size:.8rem">dismiss</button></p>
+</div>
+
+<div id="list" aria-live="polite"></div>
+
+<div class="toolbar">
+<button type="button" class="ghost" id="btn-csv">Export CSV</button>
+<button type="button" class="ghost" id="btn-ics">Export calendar (.ics)</button>
+<button type="button" class="ghost" id="btn-samples">Load sample data</button>
+</div>
+
+<footer>Local-first: renewals live only in this browser (localStorage). Exports are files you own — CSV for sheets, ICS for your calendar. No accounts, no tracking, nothing uploaded.</footer>
+</main>
+
+<dialog id="dlg" aria-labelledby="dlg-h">
+<h2 id="dlg-h">Add a renewal</h2>
+<form id="form" method="dialog">
+<input type="hidden" id="f-id">
+<label for="f-vendor">Vendor / product *</label>
+<input id="f-vendor" required maxlength="80" placeholder="e.g. Figma" autocomplete="off">
+<div class="row2">
+<div><label for="f-renewal">Renewal date</label><input id="f-renewal" type="date"></div>
+<div><label for="f-notice">Notice needed (days)</label><input id="f-notice" type="number" min="0" max="365" placeholder="30"></div>
+</div>
+<div class="row2">
+<div><label for="f-cost">Cost</label><input id="f-cost" type="number" min="0" step="0.01" placeholder="e.g. 150"></div>
+<div><label for="f-cadence">Billing cadence</label><select id="f-cadence"><option value="annual">annual</option><option value="monthly">monthly</option><option value="quarterly">quarterly</option><option value="one-time">one-time</option></select></div>
+</div>
+<label for="f-owner">Owner</label>
+<input id="f-owner" maxlength="60" placeholder="e.g. Priya" autocomplete="off">
+<label for="f-notes">Notes</label>
+<textarea id="f-notes" rows="2" maxlength="300" placeholder="e.g. 60-day notice in MSA §8; talk to rep about seats"></textarea>
+<div class="row2">
+<div><label for="f-status">Status</label><select id="f-status"><option value="active">active</option><option value="trial">trial</option><option value="cancelled">cancelled</option><option value="archived">archived</option></select></div>
+<div style="align-self:end"><label class="check"><input type="checkbox" id="f-unsure"> I'm unsure about these dates</label></div>
+</div>
+<p class="card-meta" id="f-hint"></p>
+<div class="dlg-actions">
+<button type="submit" class="btn-primary" id="btn-save">Save renewal</button>
+<button type="button" class="btn-secondary" id="btn-cancel">Cancel</button>
+</div>
+</form>
+</dialog>
+
+<script>
+"use strict";
+var KEY='rt_renewals_v1';
+function uid(){ return 'r'+Date.now().toString(36)+Math.floor(Math.random()*1e4).toString(36); }
+function load(){ try{ var v=JSON.parse(localStorage.getItem(KEY)||'[]'); return Array.isArray(v)?v:[]; }catch(_){ return []; } }
+function save(a){ try{ localStorage.setItem(KEY,JSON.stringify(a)); }catch(_){} }
+function dstr(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+function today(){ var n=new Date(); return new Date(n.getFullYear(),n.getMonth(),n.getDate()); }
+function parseDate(s){ if(!s) return null; var p=s.split('-'); if(p.length!==3) return null;
+  var d=new Date(+p[0],+p[1]-1,+p[2]); return isNaN(d)?null:d; }
+function fmtDate(d){ return d?d.toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'}):'—'; }
+function daysUntil(d){ if(!d) return null; return Math.round((d-today())/86400000); }
+function annualize(cost,cad){ cost=+cost||0;
+  if(cad==='monthly') return cost*12; if(cad==='quarterly') return cost*4;
+  if(cad==='one-time') return cost; return cost; }
+function money(n){ return '$'+n.toFixed(n<100&&n%1!==0?2:0).replace(/\B(?=(\d{3})+(?!\d))/g,','); }
+function cancelBy(r){ var rd=parseDate(r.renewal); if(!rd) return null;
+  var n=(r.notice===''||r.notice==null)?30:+r.notice; var d=new Date(rd); d.setDate(d.getDate()-n); return d; }
+function isUnsure(r){ return !!r.unsure || !r.renewal; }
+function urgency(r){
+  if(r.status==='archived'||r.status==='cancelled') return 'archived';
+  if(isUnsure(r)) return 'unsure';
+  var rd=parseDate(r.renewal), dr=daysUntil(rd), cb=cancelBy(r), dc=daysUntil(cb);
+  if(dr<0) return 'overdue';
+  if(dc!==null&&dc<=14) return 'act';
+  if(dr!==null&&dr<=60) return 'upcoming';
+  return 'later';
+}
+var GROUPS=[['act','Act now — cancellation window open or near'],['overdue','Overdue'],['upcoming','Upcoming (60 days)'],['later','Later'],['unsure','Unsure dates']];
+var PILL={act:['act','ACT'],overdue:['over','OVERDUE'],upcoming:['later','UPCOMING'],later:['later','LATER'],unsure:['unsure','UNSURE']};
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+function render(){
+  var all=load(), q=document.getElementById('q').value.toLowerCase(), f=document.getElementById('f').value;
+  var live=all.filter(function(r){return r.status!=='archived'&&r.status!=='cancelled';});
+  // vault
+  var dated=live.filter(function(r){return parseDate(r.renewal);}).sort(function(a,b){return parseDate(a.renewal)-parseDate(b.renewal);});
+  var big=document.getElementById('v-big');
+  if(!live.length){ big.textContent='Nothing tracked yet.'; }
+  else if(!dated.length){ big.textContent='Add renewal dates to arm the radar.'; }
+  else { var nx=dated[0], dr=daysUntil(parseDate(nx.renewal)), cb=cancelBy(nx);
+    big.innerHTML=esc(nx.vendor)+' renews <strong>'+(dr<0?Math.abs(dr)+' days ago':dr===0?'today':'in '+dr+' days')+'</strong> — cancel by '+esc(fmtDate(cb))+'.'; }
+  var burn=live.reduce(function(s,r){return s+annualize(r.cost,r.cadence);},0);
+  document.getElementById('v-burn').textContent=money(burn)+' / yr';
+  document.getElementById('v-count').textContent=live.length+'';
+  document.getElementById('v-act').textContent=live.filter(function(r){var u=urgency(r);return u==='act'||u==='overdue';}).length+'';
+  // list
+  var box=document.getElementById('list'); box.innerHTML='';
+  var shown=0;
+  GROUPS.forEach(function(g){
+    var items=all.filter(function(r){return urgency(r)===g[0];}).filter(function(r){
+      if(f&&urgency(r)!==f&&!(f==='archived')) return false;
+      if(q&&(r.vendor+' '+(r.owner||'')).toLowerCase().indexOf(q)<0) return false; return true; });
+    if(f==='archived'){ items=all.filter(function(r){return r.status==='archived'||r.status==='cancelled';}).filter(function(r){
+      if(q&&(r.vendor+' '+(r.owner||'')).toLowerCase().indexOf(q)<0) return false; return true; }); }
+    if(!items.length) return; shown+=items.length;
+    var sec=document.createElement('section'); sec.className='group';
+    sec.innerHTML='<p class="group-h">'+esc(g[1])+' · '+items.length+'</p>';
+    items.sort(function(a,b){var da=parseDate(a.renewal),db=parseDate(b.renewal);
+      if(!da&&!db) return 0; if(!da) return 1; if(!db) return -1; return da-db;});
+    items.forEach(function(r){ sec.appendChild(card(r)); });
+    box.appendChild(sec);
+  });
+  if(f===''&&!all.filter(function(r){return r.status!=='archived'&&r.status!=='cancelled';}).length&&!q){
+    var em=document.createElement('div'); em.className='empty';
+    em.innerHTML='<h2>A quiet radar is a calm ops week.</h2><p>Add your first renewal above — vendor, date, owner, cost. Or load sample data below to explore.</p>';
+    box.appendChild(em);
+  } else if(!shown&&all.length){
+    var nm=document.createElement('div'); nm.className='empty';
+    nm.innerHTML='<h2>No matches.</h2><p>Try a different search or filter.</p>'; box.appendChild(nm);
+  }
+  var hasSamples=all.some(function(r){return r.sample;});
+  document.getElementById('sample-bar').hidden=!hasSamples;
+}
+function card(r){
+  var u=urgency(r), p=PILL[u]||PILL.later, cb=cancelBy(r), rd=parseDate(r.renewal), dr=daysUntil(rd);
+  var el=document.createElement('article'); el.className='card'; el.id='card-'+r.id;
+  var when=r.renewal?('Renews <b>'+esc(fmtDate(rd))+'</b> ('+(dr<0?Math.abs(dr)+'d overdue':dr===0?'today':'in '+dr+'d')+')'):'No renewal date';
+  var cby=cb?(' · cancel by <b>'+esc(fmtDate(cb))+'</b>'):'';
+  var cost=(+r.cost>0)?money(+r.cost)+' / '+esc(r.cadence||'annual'):'no cost set';
+  el.innerHTML='<div class="card-top"><span class="card-vendor">'+esc(r.vendor)+'</span>'+
+    '<span class="pill '+p[0]+'">'+p[1]+'</span></div>'+
+    '<p class="card-meta">'+when+cby+'</p>'+
+    '<p class="card-meta">'+esc(cost)+(r.owner?' · owner <b>'+esc(r.owner)+'</b>':'')+
+    (r.status&&r.status!=='active'?' · '+esc(r.status):'')+(r.sample?' · sample':'')+'</p>'+
+    (r.notes?'<p class="card-meta">'+esc(r.notes)+'</p>':'');
+  var acts=document.createElement('div'); acts.className='card-actions';
+  [['Edit',function(){openForm(r);}],[(r.status==='archived'||r.status==='cancelled')?'Restore':'Archive',function(){toggleArchive(r.id);}],['Delete',function(){del(r.id);}]]
+  .forEach(function(b){var btn=document.createElement('button');btn.type='button';btn.textContent=b[0];
+    btn.setAttribute('aria-label',b[0]+' '+r.vendor);btn.addEventListener('click',b[1]);acts.appendChild(btn);});
+  el.appendChild(acts); return el;
+}
+function toggleArchive(id){ var a=load(),r=a.filter(function(x){return x.id===id;})[0]; if(!r) return;
+  r.status=(r.status==='archived')?'active':'archived'; save(a); render(); }
+function del(id){ var r=load().filter(function(x){return x.id===id;})[0]; if(!r) return;
+  if(!window.confirm('Delete "'+r.vendor+'"? This cannot be undone.')) return;
+  save(load().filter(function(x){return x.id!==id;})); render(); }
+var dlg=document.getElementById('dlg');
+function openForm(r){
+  document.getElementById('dlg-h').textContent=r?'Edit renewal':'Add a renewal';
+  document.getElementById('f-id').value=r?r.id:'';
+  document.getElementById('f-vendor').value=r?r.vendor:'';
+  document.getElementById('f-renewal').value=r?(r.renewal||''):'';
+  document.getElementById('f-notice').value=r?(r.notice===''||r.notice==null?'':r.notice):'';
+  document.getElementById('f-cost').value=r?(r.cost||''):'';
+  document.getElementById('f-cadence').value=r?(r.cadence||'annual'):'annual';
+  document.getElementById('f-owner').value=r?(r.owner||''):'';
+  document.getElementById('f-notes').value=r?(r.notes||''):'';
+  document.getElementById('f-status').value=r?(r.status||'active'):'active';
+  document.getElementById('f-unsure').checked=r?!!r.unsureManual:false;
+  document.getElementById('f-hint').textContent='Cancel-by date is computed: renewal minus notice days (30 assumed when blank, flagged unsure).';
+  if(typeof dlg.showModal==='function') dlg.showModal();
+}
+document.getElementById('btn-add').addEventListener('click',function(){openForm(null);});
+document.getElementById('btn-cancel').addEventListener('click',function(){dlg.close();});
+document.getElementById('form').addEventListener('submit',function(ev){
+  var vendor=document.getElementById('f-vendor').value.trim();
+  if(!vendor){ ev.preventDefault(); return; } // native required handles UI; dialog method=dialog would bypass — double-guard
+  var a=load(), id=document.getElementById('f-id').value;
+  var rec={id:id||uid(),
+    vendor:vendor,
+    renewal:document.getElementById('f-renewal').value||'',
+    notice:document.getElementById('f-notice').value===''? '':+document.getElementById('f-notice').value,
+    cost:document.getElementById('f-cost').value===''?0:+document.getElementById('f-cost').value,
+    cadence:document.getElementById('f-cadence').value,
+    owner:document.getElementById('f-owner').value.trim(),
+    notes:document.getElementById('f-notes').value.trim(),
+    status:document.getElementById('f-status').value,
+    unsureManual:document.getElementById('f-unsure').checked,
+    unsure:false, sample:false};
+  rec.unsure=rec.unsureManual||!rec.renewal;
+  if(id){ var i=a.findIndex(function(x){return x.id===id;}); if(i>-1){rec.sample=!!a[i].sample;a[i]=rec;} }
+  else a.push(rec);
+  save(a); render();
+});
+document.getElementById('q').addEventListener('input',render);
+document.getElementById('f').addEventListener('change',render);
+function icsDate(d){ return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0'); }
+function icsEsc(s){ return String(s).replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n'); }
+function download(name,text,type){ var b=new Blob([text],{type:type}); var a=document.createElement('a');
+  a.href=URL.createObjectURL(b); a.download=name; document.body.appendChild(a); a.click();
+  setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500); }
+document.getElementById('btn-csv').addEventListener('click',function(){
+  var rows=[['vendor','renewal_date','cancel_by','notice_days','cost','cadence','owner','status','notes']];
+  load().forEach(function(r){var cb=cancelBy(r);
+    rows.push([r.vendor,r.renewal||'',cb?dstr(cb):'',r.notice===''?'30(default)':r.notice,r.cost,r.cadence,r.owner||'',r.status,(r.notes||'').replace(/\n/g,' ')]);});
+  download('renewals.csv',rows.map(function(x){return x.map(function(c){return '"'+String(c).replace(/"/g,'""')+'"';}).join(',');}).join('\n'),'text/csv');
+});
+document.getElementById('btn-ics').addEventListener('click',function(){
+  var lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//renewal-radar//local//EN'];
+  load().filter(function(r){return r.status!=='archived'&&r.status!=='cancelled'&&parseDate(r.renewal);}).forEach(function(r){
+    var rd=parseDate(r.renewal), cb=cancelBy(r);
+    lines.push('BEGIN:VEVENT','UID:'+r.id+'-cancel@local','DTSTAMP:'+icsDate(today())+'T000000',
+      'DTSTART;VALUE=DATE:'+icsDate(cb),'SUMMARY:'+icsEsc('Act: '+r.vendor+' cancel-by ' +fmtDate(cb)),
+      'DESCRIPTION:'+icsEsc(r.vendor+' renews '+fmtDate(rd)+(r.owner?' · owner '+r.owner:'')),'BEGIN:VALARM','TRIGGER:-P7D','ACTION:DISPLAY','END:VALARM','END:VEVENT');
+    lines.push('BEGIN:VEVENT','UID:'+r.id+'-renew@local','DTSTAMP:'+icsDate(today())+'T000000',
+      'DTSTART;VALUE=DATE:'+icsDate(rd),'SUMMARY:'+icsEsc(r.vendor+' renews'),'END:VEVENT');
+  });
+  lines.push('END:VCALENDAR');
+  download('renewals.ics',lines.join('\r\n'),'text/calendar');
+});
+function samples(){
+  function off(n){var d=today();d.setDate(d.getDate()+n);return dstr(d);}
+  return [
+    {id:uid(),vendor:'Figma',renewal:off(9),notice:30,cost:180,cadence:'annual',owner:'Priya',notes:'Design seats; 30-day notice in MSA.',status:'active',unsureManual:false,unsure:false,sample:true},
+    {id:uid(),vendor:'Datadog',renewal:off(-6),notice:60,cost:450,cadence:'monthly',owner:'Sam',notes:'Overrun from last quarter.',status:'active',unsureManual:false,unsure:false,sample:true},
+    {id:uid(),vendor:'Notion',renewal:off(45),notice:30,cost:120,cadence:'annual',owner:'',notes:'',status:'active',unsureManual:false,unsure:false,sample:true},
+    {id:uid(),vendor:'Old CI tool',renewal:'',notice:'',cost:0,cadence:'annual',owner:'',notes:'Do we still use this?',status:'active',unsureManual:true,unsure:true,sample:true}
+  ];
+}
+document.getElementById('btn-samples').addEventListener('click',function(){
+  var a=load(); if(a.some(function(r){return r.sample;})){render();return;}
+  save(a.concat(samples())); render();
+});
+document.getElementById('btn-clear-samples').addEventListener('click',function(){
+  save(load().filter(function(r){return !r.sample;})); render();});
+document.getElementById('btn-hide-bar').addEventListener('click',function(){
+  document.getElementById('sample-bar').hidden=true;});
+/* ---- radar scope: renewals as blips, radius = days out (max ring 90d) ---- */
+var scope=document.getElementById('scope'), sctx=scope.getContext('2d'), sweep=0, blips=[],
+    RM=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function hash(s){var h=0;for(var i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))|0;}return Math.abs(h);}
+function scopeBlips(){
+  var all=load().filter(function(r){return r.status!=='archived'&&r.status!=='cancelled'&&parseDate(r.renewal);});
+  blips=all.map(function(r){
+    var dr=Math.max(0,daysUntil(parseDate(r.renewal))), u=urgency(r),
+        col=u==='overdue'?'#f87171':u==='act'?'#fbbf24':u==='upcoming'?'#5eead4':'#3b5b5e',
+        ang=(hash(r.id)%628)/100;
+    return {id:r.id,vendor:r.vendor,ang:ang,frac:Math.min(dr,90)/90,col:col,urg:u,pulse:u==='act'||u==='overdue'};
+  });
+}
+function drawScope(){
+  var W=scope.width,H=scope.height,cx=W/2,cy=H/2,R=W/2-8;
+  sctx.clearRect(0,0,W,H);
+  sctx.strokeStyle='rgba(94,234,212,.18)';sctx.lineWidth=1;
+  [0.33,0.66,1].forEach(function(f){sctx.beginPath();sctx.arc(cx,cy,R*f,0,7);sctx.stroke();});
+  sctx.beginPath();sctx.moveTo(cx-R,cy);sctx.lineTo(cx+R,cy);sctx.moveTo(cx,cy-R);sctx.lineTo(cx,cy+R);sctx.stroke();
+  if(!RM){
+    sctx.save();sctx.translate(cx,cy);sctx.rotate(sweep);
+    var grad=sctx.createLinearGradient(0,0,R,0);
+    grad.addColorStop(0,'rgba(94,234,212,0)');grad.addColorStop(1,'rgba(94,234,212,.5)');
+    sctx.strokeStyle=grad;sctx.lineWidth=2;sctx.beginPath();sctx.moveTo(0,0);sctx.lineTo(R,0);sctx.stroke();sctx.restore(); }
+  var t=Date.now()/1000;
+  blips.forEach(function(b){
+    var rr=6+(R-14)*b.frac, x=cx+Math.cos(b.ang)*rr, y=cy+Math.sin(b.ang)*rr;
+    var glow=1, dA=((sweep-b.ang)%6.283+6.283)%6.283;
+    if(!RM&&dA<1.2) glow=1+(1.2-dA)*1.6;
+    var pr=b.pulse&&!RM?1+0.25*Math.sin(t*4):1;
+    sctx.save();sctx.globalAlpha=Math.min(glow,2)/2;sctx.fillStyle=b.col;
+    sctx.shadowColor=b.col;sctx.shadowBlur=8*pr;
+    sctx.beginPath();sctx.arc(x,y,(b.urg==='act'||b.urg==='overdue'?4.5:3.5)*pr,0,7);sctx.fill();sctx.restore();
+    b.px=x;b.py=y;
+  });
+}
+function scopeLoop(){ if(RM) return; sweep+=0.012; if(sweep>6.283)sweep-=6.283; drawScope(); requestAnimationFrame(scopeLoop); }
+function sizeScope(){ var r=scope.getBoundingClientRect(), dpr=window.devicePixelRatio||1;
+  var s=Math.max(120,Math.min(200,r.width||168)); scope.width=s*dpr; scope.height=s*dpr;
+  sctx.setTransform(dpr,0,0,dpr,0,0); scope.style.width=''; drawScope(); }
+scope.addEventListener('click',function(ev){
+  var r=scope.getBoundingClientRect(), dpr=window.devicePixelRatio||1,
+      mx=(ev.clientX-r.left)*(scope.width/r.width)/dpr, my=(ev.clientY-r.top)*(scope.height/r.height)/dpr, best=null,bd=14;
+  blips.forEach(function(b){var dx=(b.px/dpr)-mx,dy=(b.py/dpr)-my,dd=Math.sqrt(dx*dx+dy*dy);if(dd<bd){bd=dd;best=b;}});
+  if(best){var el=document.getElementById('card-'+best.id);
+    if(el){el.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});
+      el.classList.add('flash');setTimeout(function(){el.classList.remove('flash');},1600);}}
+});
+window.addEventListener('resize',function(){sizeScope();});
+var _render=render;
+render=function(){ _render(); scopeBlips(); sizeScope(); };
+render(); scopeLoop();
+</script>
+</body>
+</html>

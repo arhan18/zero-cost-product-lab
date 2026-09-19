@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scenica — Build websites that move</title>
+<meta name="description" content="Scenica is an AI cinematic website builder. Preset → brief → keyframe → motion → site → publish. Editable, responsive, yours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-pill">
+    <a class="brand" href="#top" aria-label="Scenica home">
+      <span class="brand-serif">Scenica</span><span class="rec" aria-hidden="true"></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#pipeline">Workflow</a>
+      <a href="#presets">Presets</a>
+      <a href="#showcase">Showcase</a>
+      <a href="pricing.html">Pricing</a>
+    </nav>
+    <div class="header-actions">
+      <span class="credits mono" aria-label="Credits status">1.2K CR</span>
+      <a class="ghost-btn" href="#own">Sign in</a>
+      <a class="cta-btn" href="#pipeline">Start building</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#pipeline">Workflow</a>
+    <a href="#presets">Presets</a>
+    <a href="#showcase">Showcase</a>
+    <a href="pricing.html">Pricing</a>
+    <a class="cta-btn" href="#pipeline">Start building</a>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top" aria-labelledby="heroTitle">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="grade"></div>
+    <div class="grain"></div>
+    <div class="ridge"></div>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow mono">AI CINEMATIC BUILDER — V1</p>
+      <h1 id="heroTitle" class="display">Build<br>websites<br><em>that move.</em></h1>
+      <p class="lead">From a simple idea to a cinematic, scroll-driven website. Preset → brief → keyframe → motion → site → publish. Editable, responsive, yours.</p>
+      <form class="prompt-bar" id="promptForm" autocomplete="off">
+        <label class="sr" for="promptInput">Describe the website you want to build</label>
+        <span class="prompt-caret" aria-hidden="true">▍</span>
+        <input id="promptInput" type="text" maxlength="140" placeholder="Describe the website you want to build…" aria-describedby="promptHint">
+        <button class="cta-btn" type="submit">Generate <span aria-hidden="true">→</span></button>
+      </form>
+      <div class="prompt-row">
+        <button class="mini-chip prompt-ex" data-ex="A cinematic architecture studio with warm evening light">try: architecture studio</button>
+        <button class="mini-chip prompt-ex" data-ex="A luxury candle shop with soft tactile light">try: candle shop</button>
+        <span class="mono" id="promptHint">FREE TRIAL · 120 CREDITS · NO CARD TO START</span>
+      </div>
+      <div class="funnel" id="funnel" hidden>
+        <p class="mono funnel-kicker" id="funnelKicker">YOUR IDEA IS READY</p>
+        <blockquote class="funnel-idea" id="funnelIdea"></blockquote>
+        <div class="funnel-body" id="funnelBody"></div>
+      </div>
+      <div class="hero-ctas secondary">
+        <a class="watch-btn" href="#pipeline"><span class="play" aria-hidden="true">▷</span> Watch one website get built</a>
+      </div>
+      <p class="trust mono">SLICE-0 RENDERER · LCP 1.8S · 0 CONSOLE ERRORS · NO FAKE CLAIMS</p>
+    </div>
+    <div class="hero-visual" id="heroVisual">
+      <div class="browser-frame signal-browser">
+        <div class="browser-bar"><span></span><span></span><span></span><span class="mono url">scenica.site/live/signal-01</span><span class="mono live-dot">● LIVE</span></div>
+        <div class="signal-scene" id="signalScene" aria-label="Interactive cinematic scene: move your cursor to shift light and depth. Press Tab to reach hotspots.">
+          <canvas id="signalCanvas" aria-hidden="true"></canvas>
+          <div class="layer layer-sky" data-depth="0.02" aria-hidden="true"><span class="dist-light l1"></span><span class="dist-light l2"></span><span class="dist-light l3"></span></div>
+          <div class="layer layer-arch" data-depth="0.05" aria-hidden="true"><span class="arch a1"></span><span class="arch a2"></span><span class="arch a3"></span></div>
+          <div class="signal-orb" id="signalOrb" data-depth="0.09" aria-hidden="true"><span></span></div>
+          <div class="layer layer-fg" data-depth="0.12" aria-hidden="true"><span class="pane p1"></span><span class="pane p2"></span></div>
+          <div class="mini-site" id="miniSite">
+            <p class="mono mini-nav">ATELIER NORR · WORKS · ABOUT</p>
+            <p class="serif mini-title">Beyond<br>Boundaries</p>
+            <p class="mono mini-meta">SCROLL · EXPLORE · CREATE</p>
+            <div class="mini-row">
+              <a class="mini-cta" href="#pipeline" data-hot="cta">Enter the site <span aria-hidden="true">→</span></a>
+              <button class="mini-chip" data-hot="light" aria-label="Shift the signal light">◐ light</button>
+              <button class="mini-chip" data-hot="depth" aria-label="Shift scene depth">◑ depth</button>
+            </div>
+            <p class="mono mini-tip" id="miniTip" role="status">MOVE CURSOR — LIGHT FOLLOWS · SCROLL — CAMERA DRIFTS</p>
+          </div>
+        </div>
+        <div class="browser-foot mono"><span id="signalReadout">CAM 0.0 · LIGHT 0.5 · DUST 60</span><span class="scrub-hint">HOVER HOTSPOTS · SCROLL TO CONTINUE ↓</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="ticker mono" aria-hidden="true"><span>01 PRESET · 02 BRIEF · 03 KEYFRAME · 04 MOTION · 05 BUILD · 06 DEPLOY · 01 PRESET · 02 BRIEF · 03 KEYFRAME · 04 MOTION · 05 BUILD · 06 DEPLOY ·&nbsp;</span></div>
+  <div class="world-bridge" aria-hidden="true"><div class="bridge-glow"></div><div class="bridge-ridge"></div><p class="mono bridge-label">THE WORLD CONTINUES — SCROLL TO DIRECT ↓</p></div>
+</section>
+
+<!-- PIPELINE -->
+<section class="pipeline" id="pipeline" aria-labelledby="pipeTitle">
+  <div class="wrap">
+    <p class="eyebrow mono">FROM IDEA TO IMPACT</p>
+    <div class="sec-head">
+      <div><h2 id="pipeTitle" class="h1">Watch one website<br>get built.</h2>
+      <p class="sub">Keep scrolling — the scene pins and scrubs with you. One site evolves: Preset → Brief → Keyframe → Motion → Build → Deploy. Buttons jump ahead, the scrub dials in anywhere.</p></div>
+      <p class="mono counter" aria-live="off" id="pipeCounter">01 / 06</p>
+    </div>
+  </div>
+  <div class="evo-pinspace" id="evoPinspace">
+    <div class="evo-scene" id="evoScene">
+      <div class="wrap">
+        <div class="evolve-controls">
+          <div class="stage-btns" role="tablist" aria-label="Build stages">
+            <button role="tab" aria-selected="true" data-stage="0" aria-controls="evolveStage">01 Preset</button>
+            <button role="tab" aria-selected="false" data-stage="1" aria-controls="evolveStage">02 Brief</button>
+            <button role="tab" aria-selected="false" data-stage="2" aria-controls="evolveStage">03 Keyframe</button>
+            <button role="tab" aria-selected="false" data-stage="3" aria-controls="evolveStage">04 Motion</button>
+            <button role="tab" aria-selected="false" data-stage="4" aria-controls="evolveStage">05 Build</button>
+            <button role="tab" aria-selected="false" data-stage="5" aria-controls="evolveStage">06 Deploy</button>
+          </div>
+          <div class="scrub-row">
+            <button id="pipePlay" class="mini-chip" aria-label="Play the build">▶ play</button>
+            <input type="range" id="pipeScrub" min="0" max="100" step="1" value="0" aria-label="Scrub build stages">
+            <span class="mono" id="pipeHint">SCROLL DRIVES THE BUILD · MOCKED · DETERMINISTIC</span>
+          </div>
+        </div>
+        <div class="evolve-layout">
+          <ol class="stages evolve-list">
+            <li class="stage is-active" data-stage="0"><span class="mono num">01</span><h3 class="serif">Pick a preset</h3><p>Nocturne selected — bare wireframe, type locked, no color yet. Same site from here on.</p></li>
+            <li class="stage" data-stage="1"><span class="mono num">02</span><h3 class="serif">Describe</h3><p>Structured brief, typed live over the waiting frame. The preview holds.</p></li>
+            <li class="stage" data-stage="2"><span class="mono num">03</span><h3 class="serif">Generate</h3><p>One keyframe locks palette, composition, type. The wireframe becomes the site.</p></li>
+            <li class="stage" data-stage="3"><span class="mono num">04</span><h3 class="serif">Animate</h3><p>Cheapest medium that earns it — CSS drift and light sweep on the same hero. Motion is a toggle, not a filter.</p></li>
+            <li class="stage" data-stage="4"><span class="mono num">05</span><h3 class="serif">Build</h3><p>Sections assemble — the nav becomes real, works / studio / visit arrive. Scroll inside.</p></li>
+            <li class="stage" data-stage="5"><span class="mono num">06</span><h3 class="serif">Deploy</h3><p>Live URL, ZIP you own, rollback ready. Choose a plan to ship.</p></li>
+          </ol>
+          <div class="evolve-visual">
+            <div class="browser-frame evolve-frame">
+              <div class="browser-bar"><span></span><span></span><span></span><span class="mono url" id="evolveUrl">atelier-norr.scenica.site — STAGE 01</span><span class="mono live-dot" id="evLiveBadge" hidden>● LIVE</span></div>
+              <div class="evolve-stage" id="evolveStage" role="tabpanel" aria-labelledby="pipeTitle" aria-live="off"></div>
+              <div class="browser-foot mono"><span id="evolveMeta">SYSTEM: NOCTURNE · TOKENS LOCKED</span></div>
+            </div>
+            <p class="mono evo-hint">SCROLL CONTROLS THE BUILD — HOVER THE PREVIEW, IT RESPONDS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESETS -->
+<section class="presets" id="presets" aria-labelledby="presetTitle">
+  <div class="wrap">
+    <p class="eyebrow mono dark">TRY A WORLD — NOT A THUMBNAIL</p>
+    <div class="sec-head"><div><h2 id="presetTitle" class="h1 dark">One site. Eight directions.</h2><p class="sub dark">Select a preset — the shared live preview re-themes: type, color, light, spacing, motion.</p></div><span class="mono dark" id="worldName">ACTIVE: NOCTURNE</span></div>
+    <div class="world-layout">
+      <div class="world-btns" role="tablist" aria-label="Preset worlds">
+        <button role="tab" aria-selected="false" data-world="monograph" aria-controls="worldPreview">Monograph<span>EDITORIAL</span></button>
+        <button role="tab" aria-selected="false" data-world="velvet" aria-controls="worldPreview">Velvet<span>LUXE</span></button>
+        <button role="tab" aria-selected="false" data-world="concrete" aria-controls="worldPreview">Concrete<span>BRUTALIST</span></button>
+        <button role="tab" aria-selected="false" data-world="signal" aria-controls="worldPreview">Signal<span>EXPRESSIVE</span></button>
+        <button role="tab" aria-selected="false" data-world="vitrine" aria-controls="worldPreview">Vitrine<span>MINIMAL</span></button>
+        <button role="tab" aria-selected="false" data-world="atelier" aria-controls="worldPreview">Atelier<span>REFINED</span></button>
+        <button role="tab" aria-selected="false" data-world="blueprint" aria-controls="worldPreview">Blueprint<span>TECHNICAL</span></button>
+        <button role="tab" aria-selected="true" data-world="nocturne" aria-controls="worldPreview">Nocturne<span>CINEMATIC</span></button>
+      </div>
+      <div class="world-preview" id="worldPreview" role="tabpanel" aria-labelledby="presetTitle"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="showcase" id="showcase" aria-labelledby="showTitle">
+  <div class="wrap">
+    <p class="eyebrow mono">EXPLORE WHAT SCENICA BUILDS</p>
+    <div class="sec-head"><div><h2 id="showTitle" class="h1">Miniature live websites.</h2><p class="sub">Each preview is a working miniature — switch the nav, hover, click the CTA, scroll inside. Three worlds, one engine.</p></div><span class="mono" id="showHint">SWITCH NAV · CLICK CTA · SCROLL INSIDE</span></div>
+    <div class="show-grid">
+      <article class="browser-frame show-frame" data-world="velvet" data-site="velvet">
+        <div class="browser-bar"><span></span><span></span><span></span><span class="mono url">maison-lueur.scenica.site</span></div>
+        <div class="show-site" id="showVelvet"></div>
+        <div class="browser-foot mono">WORLD: VELVET · SLOW · TACTILE</div>
+      </article>
+      <article class="browser-frame show-frame" data-world="blueprint" data-site="blueprint">
+        <div class="browser-bar"><span></span><span></span><span></span><span class="mono url">studio-grid.scenica.site</span></div>
+        <div class="show-site" id="showBlueprint"></div>
+        <div class="browser-foot mono">WORLD: BLUEPRINT · PRECISE · GRID</div>
+      </article>
+      <article class="browser-frame show-frame" data-world="vitrine" data-site="vitrine">
+        <div class="browser-bar"><span></span><span></span><span></span><span class="mono url">objet-01.scenica.site</span></div>
+        <div class="show-site" id="showVitrine"></div>
+        <div class="browser-foot mono">WORLD: VITRINE · MINIMAL · STILL</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CINEMATIC MEDIA -->
+<section class="media" id="media" aria-labelledby="mediaTitle">
+  <div class="wrap media-grid">
+    <div>
+      <p class="eyebrow mono">CINEMATIC MEDIA → INTERACTIVE SITE</p>
+      <h2 id="mediaTitle" class="h1">Scrub the film.<br>The site appears.</h2>
+      <p class="sub">A scroll-driven frame sequence — the same technique Scenica ships. Drag the slider or scroll: frames advance, content emerges over the footage.</p>
+      <div class="media-controls">
+        <input type="range" id="mediaScrub" min="0" max="100" value="12" aria-label="Scrub cinematic frames">
+        <span class="mono" id="mediaFrame">FRAME 014 / 120 · AVIF · 61KB</span>
+      </div>
+      <p class="mono media-note">PROCEDURAL DEMO FRAMES · PRODUCTION USES GENERATED AVIF SEQUENCES</p>
+    </div>
+    <div class="browser-frame media-frame">
+      <div class="browser-bar"><span></span><span></span><span></span><span class="mono url">sequence-demo.scenica.site</span></div>
+      <div class="media-stage"><canvas id="mediaCanvas" aria-hidden="true"></canvas>
+        <div class="media-copy"><p class="mono">SCROLL-SCRUBBED · 120F</p><p class="serif media-title">Dusk over<br>concrete.</p><a class="mini-cta" href="pricing.html">Build one like this →</a></div>
+      </div>
+      <div class="browser-foot mono">TIER A DESKTOP · TIER C POSTER ON MOBILE</div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE AFTER -->
+<section class="beforeafter" aria-labelledby="baTitle">
+  <div class="wrap ba-grid">
+    <div>
+      <p class="eyebrow mono">FROM A SIMPLE PROMPT</p>
+      <h2 id="baTitle" class="h1">From idea<br>to a living website.</h2>
+      <p class="sub">A rough idea on the left. A cinematic website on the right. All in minutes.</p>
+      <blockquote class="brief-card mono">“A portfolio for a photographer with a cinematic, moody style…”</blockquote>
+    </div>
+    <div class="ba-frames">
+      <div class="ba-before mono">BEFORE<br><span class="wire" aria-hidden="true"></span></div>
+      <div class="ba-arrow" aria-hidden="true">→</div>
+      <div class="ba-after"><span class="mono ba-tag">SCENICA · LIVE</span><span class="serif ba-serif">Stories<br>in Motion</span><span class="mono ba-meta">LCP 2.1S · 96KB JS</span></div>
+    </div>
+    <ul class="ba-stats">
+      <li><span class="serif">10×</span><span class="mono">FASTER</span></li>
+      <li><span class="serif">100%</span><span class="mono">YOURS TO KEEP</span></li>
+      <li><span class="serif">No limits</span><span class="mono">CREATIVE FREEDOM</span></li>
+    </ul>
+  </div>
+  <p class="wrap mono ba-caption">BRIEF 42 WORDS → KEYFRAME 1 → SEQUENCE 84 FRAMES → SITE 1.9MB</p>
+</section>
+
+<!-- LIVE EXAMPLE -->
+<section class="example" id="example" aria-labelledby="exTitle">
+  <div class="wrap ex-grid">
+    <div>
+      <p class="eyebrow mono">THE BUILDER</p>
+      <h2 id="exTitle" class="h1">A creative studio<br>in your browser.</h2>
+      <p class="sub">Prompt. Preview. Refine. Publish.</p>
+      <div class="builder-mock" role="img" aria-label="Builder mock with preview, scene controls and filmstrip">
+        <div class="b-top mono"><span>SCENICA ●</span><span>PREVIEW</span><span class="b-pub">PUBLISH</span></div>
+        <div class="b-mid"><div class="b-side mono">NEW PROJECT<br>PRESETS<br>GENERATE<br>SCENES<br>EDIT<br>EXPORT</div>
+        <div class="b-prev"><span class="serif">A higher<br>perspective</span></div>
+        <div class="b-scene mono">SCENE 01<br>CAMERA ⌄<br>ANIMATION ⌄<br>SCROLL ⌄<br>STYLE ⌄<br>PERFORMANCE ⌄</div></div>
+        <div class="b-strip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow mono">YOUR WEBSITE. YOURS TO KEEP.</p>
+      <h2 class="h1">Publish anywhere.<br>Own everything.</h2>
+      <ul class="own-mini">
+        <li><span aria-hidden="true">⊕</span><b>Custom domain</b><span class="mono">NO LOCK-IN</span></li>
+        <li><span aria-hidden="true">⬇</span><b>Download ZIP</b><span class="mono">HTML · CSS · JS</span></li>
+        <li><span aria-hidden="true">⌂</span><b>Clean code</b><span class="mono">TOKEN CSS</span></li>
+      </ul>
+      <div class="cards-fan" aria-hidden="true"><span></span><span></span><span></span></div>
+      <a class="cta-btn large" href="#own">Start building <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPORT -->
+<section class="own" id="own" aria-labelledby="ownTitle">
+  <div class="wrap own-grid">
+    <div><p class="eyebrow mono dark">PORTABLE BY DESIGN</p>
+      <h2 id="ownTitle" class="h1 dark">Export proof,<br>not promises.</h2>
+      <pre class="manifest mono dark">export.zip
+├─ index.html
+├─ tokens.css
+├─ frames/ (84 AVIF)
+└─ meta.json</pre>
+      <p class="mono dark">PUBLISH → DOMAIN → ROLLBACK · HOSTING IS CONVENIENCE, NOT LOCK-IN</p>
+      <div class="own-ctas"><a class="cta-btn" href="#top">Download sample export</a><span class="mono dark price">CREATOR $29 · STUDIO $59 · CAPPED</span></div>
+    </div>
+    <div class="status-card dark"><span class="mono">STATUS: LIVE</span><span class="url mono">nocturne-04.scenica.site</span><span class="mono ok">● LCP 2.1S · PASS</span></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <span class="brand-serif">Scenica</span>
+    <span class="mono">BUILD A MORE EXPRESSIVE WEB</span>
+    <nav aria-label="Footer"><a href="#pipeline">Product</a><a href="#presets">Templates</a><a href="pricing.html">Pricing</a><a href="#example">Resources</a></nav>
+    <span class="mono status">ROUND-1 FOUNDATION · STATIC · NO TRACKING</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

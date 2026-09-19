@@ -1,0 +1,449 @@
+### P05_1. Carrd (https://carrd.co)
+- name: Carrd
+- url: https://carrd.co
+- category: Micro-SaaS marketing site — one-page website builder
+- targetCustomer: Individuals and small creators who need one polished, lightweight page (portfolio, link-in-bio, resume, landing page, event page) without learning a web builder; beginners through semi-technical users.
+- primaryProblem: Full website builders (Squarespace, WordPress, Wix) are overkill and expensive for a single page; drafting a simple presence takes hours and a paid subscription.
+- valueProposition: 'Simple, free, fully responsive one-page sites for pretty much anything' — create a clean, mobile-perfect page in minutes from a tiny set of templates, free for up to 3 sites.
+- businessModel: Freemium flat-fee SaaS: free tier + Pro license at a flat yearly price (not per site); one-time web assets, no usage metering, no commission on pages.
+- pricing: FACT (from https://carrd.co and https://carrd.co/pro): Free tier (up to 3 sites, supports a subset of features); Pro from $19/year including custom domains, forms (with many ESP integrations incl. Mailchimp, ConvertKit, Typeform, Airtable), widgets and embeds, ecommerce, Google AdSense, image CDN, auto CSS, no Carrd footer. Older published tiers: $9/yr Starter, $19/yr Pro, $49/yr Premium in select markets; all yearly flat pricing. Gated by feature set + site count, not usage.
+- freeTier: Free: up to 3 live one-page sites on carrd.co subdomain, core builder features, template selection; Carrd footer attribution. Pro unlocks custom domains, forms, domain emails, widgets/embeds, commerce.
+- mainCta: Hero CTAs 'Getting started?' primary — 'Start for Free' linking to template gallery; header links 'Explore', 'Features', 'Examples', 'Templates', 'Pro', 'Feedback', 'Log in'.
+- heroStructure: Minimal centered hero: eyebrow 'FREE · Do it yourself · this one page' and headline 'Create your own beauty, right in your browser' above a single CTA in a simple gradient header; low-hype SOG-style, product screenshot absent from hero.
+- demoStrategy: Template gallery is the demo: a browsable grid of live, editable real-world sample one-pagers (perfume, restaurant, portfolio, link-in-bio, countdown); 'Open Editor' entry point on the site itself — instant edit of a sample page.
+- homepageIa: Single-section homepage (header + big CTA + a few soft feature links) followed by template examples; essentially one viewport of intent → template gallery → editor. Feature details live on /features, /templates, /pro pages.
+- navigation: Minimal top bar: Explore, Features, Examples, Templates, Pro, Feedback + Log in; footer with links to features/templates/pro/about/legal. Intentionally shallow IA.
+- typography: Inter-family sans with clean geometric feel (INFERENCE from rendered site; stack detected as Inter/system). Bold, centered display in hero; body copy secondary. Exact scale UNKNOWN.
+- colorStrategy: Signature gradient accents on a clean white background, with the product's own built-in gradient/theme system showcased; playful pastel-to-vertex gradients (purple/blue) as brand identity vs plain white content.
+- layoutSystem: Centered single-column hero with soft gradient; gallery grid sections; otherwise extremely sparse — one vision per viewport, no mega-menus.
+- spacing: Whitespace-forward, generous vertical rhythm but short page; very airy given minimal text.
+- components: Template preview cards, big primary CTA, header + minimal footer; hero uses a decorative gradient block; no tabs/carousel/accordion on homepage.
+- cards: Template example cards in 3-column grid with browser-frame previews and tags; uncluttered.
+- visualHierarchy: Single dominant headline then CTA; everything else is one level down; the site reads almost like a Product Hunt product page — simple, honest, flat.
+- motion: Minimal; subtle hover/zoom on template cards; no scroll-triggered animations (INFERENCE).
+- interactions: Hover states on template cards and 'Open Editor' links; the main interaction is clicking through to the editor to try a real page.
+- onboarding: Zero-registration editor trial: visitors pick a template and open the editor immediately; signup happens only on publish. (FACT — 'Open Editor' on carrd.co is clickable without account.)
+- pricingPresentation: Free tier shown inline on homepage ('Free' badge + $19/year is a stub note); full tiering on /pro page with flat yearly price cards. Effective anchor: $19/year is cheap vs competitors.
+- trustMechanisms: Minimal explicit trust block; proof comes from volume of live example sites and word-of-mouth; no partner/logos row (FACT from carrd.co).
+- socialProof: Template gallery doubles as organic social proof (thousands of user-made sites); founders' writeups and IH presence external. On-page customer testimonials minimal.
+- copywriting: Playful, plain-spoken, un-salesy: 'Simple, free, fully responsive one-page sites for pretty much anything'; 'Create your own beauty, right in your browser'; friendly FAQ tone.
+- mobile: Product is mobile-first by nature (responsive one-pagers); marketing site responsiveness confirmed by design (INFERENCE).
+- accessibility: UNKNOWN — no explicit a11y statements; semantic HTML assumed.
+- performance: Tiny pages, few assets; likely very fast (INFERENCE); no measured CWV published.
+- seo: Minimal blog/SEO; relies on word-of-mouth and template-demo traffic; 'carrd' brand queries dominate (UNKNOWN/INFERENCE).
+- distinctiveDesign: Radically minimal, subdued, almost anti-marketing homepage for a product used by millions — the opposite of dense SaaS landing pages.
+- nonGeneric: Plain-language copy ('your own beauty'), honest pricing page, and a gallery of real user creations instead of stock imagery.
+- unnecessaryComplexity: Very low — homepage is nearly empty by design; feature depth is deliberately hidden behind /features.
+- unusualSimplicity: Selling 'a page, not a site' — the whole functional demo is the template gallery; editor trial without signup is unusually frictionless.
+- productDifferentiation: Flat yearly pricing, no per-site/subscription creep, editor trial before signup, extreme simplicity vs Squarespace/Wix/Carrd's elite 'one page' niche.
+- distribution: Zero paid marketing; launch tweet (2016) → Product Hunt → word-of-mouth; viral waves (K-pop fandoms, BLM pages, link-in-bio); 'Made with Carrd' hidden footer badge is an intentional sharing hook.
+- revenueEvidence: FACT: $19/yr Pro pricing. INDEPENDENT (GetLatka/IH): crossed ~$1M ARR 2021; ~$100K MRR 2022; ~$2M ARR (est. 2024, 'growing Carrd to $2M ARR' series); bootstrapped by AJ (solo dev) until 2021 raise; ~2.5M sites, 1.6M users, 10k+ new sites/day per founder AMA.
+- learn: 1) Charge a flat tiny annual fee (anchor: less than one coffee/month) and make a great free tier. 2) Play demos as portfolio: no signup editor, instant try. 3) Keep the marketing page as minimal as the product. 4) Hide a subtle 'built with' footer badge for free distribution.
+- notCopy: Carrd name/logo, its gradient art direction, exact copy ('Create your own beauty'), the template suite, and the 'Made with Carrd' badge program.
+- evidenceGrade: FACT
+- sources: https://carrd.co, https://carrd.co/pro, https://www.indiehackers.com/post/growing-carrd-to-2m-arr-4a9b1c0f0f, https://www.indiehackers.com/ama/aj
+
+### P05_2. Fathom Analytics (https://usefathom.com)
+- name: Fathom Analytics
+- url: https://usefathom.com
+- category: Micro-SaaS marketing site — privacy-first web analytics
+- targetCustomer: Privacy-conscious website owners, indie hackers, marketers, and developers who want simple site analytics without cookie banners/GDPR overhead and without Google Analytics complexity.
+- primaryProblem: Google Analytics is heavyweight, invasive (cookies, consent banners), complex, and can land you in GDPR compliance danger; existing simple counters (Plausible, GoatCounter) had gaps in features or quality.
+- valueProposition: Privacy-first website analytics: no cookies, no personal data, no visitor tracking consents — 'The privacy-first Google Analytics alternative' with clean dashboard, goals, events, and 100% widget flexibility.
+- businessModel: Bootstrapped, profitable subscription SaaS, monthly/yearly; price scales by pageviews per month; affiliate program (25% lifetime commission) is a core growth channel.
+- pricing: FACT (https://usefathom.com/pricing): starts $15/mo (~100k pageviews) up to $470/mo (25M pageviews); annual and monthly billing; 7-day free trial; no free tier (one-site free trial); 50 included sites, additional site blocks $10/mo per 50. (Older line: was $14→$15 tier rebrand; treat per current page.)
+- freeTier: None — only a 7-day free trial (no credit card stated on pricing page). Upgrade incentive: pageview caps + site blocks.
+- mainCta: Header 'Sign in' + prominent 'Start trial' primary CTA; hero arrows → 'Try it free'; pricing/signup CTAs throughout (FACT).
+- heroStructure: Compact value prop with product-style dashboard screenshot beside copy and trust strip (privacy facts + logos); avoids clutter, focus on the 'no cookies' flag.
+- demoStrategy: Demo link on homepage ('view live demo') opens a fake-but-credible analytics dashboard (`usefathom.com` own data shown publicly); useful for product cred without account.
+- homepageIa: Home: hero → benefits (privacy, simplicity, goals, events, dashboards) → privacy reassurance → integrations → pricing block → testimonials → CTA; subpages Features / Why Fathom / Compare pages / Pricing / About.
+- navigation: Top nav: Features, Why Fathom (dropdown: privacy, simplicity, integrations, dashboards), Pricing, Security, About, Log in, Start trial; fat footer with product/company/legal/blog.
+- typography: Clean sans (system + Figtree/Inter-style), moderately large headings, light-weight body; typography breathable and modern (INFERENCE from rendered site).
+- colorStrategy: Bright brand palette: vivid blue/purple gradient identity accent with white + near-black text; consistent rounded UI. Exact tokens UNKNOWN.
+- layoutSystem: Standard SaaS single-column with alternating text/image rows; centered hero; cards for features; consistent rhythm.
+- spacing: Generous but conservative — no huge hero; comfortable spacing between feature rows.
+- components: Feature blobs with icons, comparison tables, pricing cards, testimonial block, blog cards, logo strip.
+- cards: Rounded cards for features/testimonials; pricing cards with CTA; blog cards with thumbnail.
+- visualHierarchy: Headline → subcopy → CTA above the fold; clear heading hierarchy throughout; some sections use eyebrows ('Why Fathom').
+- motion: Subtle; typical fade/rise on scroll and hovers (INFERENCE); the on-site demo dashboard is the most 'active' element.
+- interactions: Hover CTAs, satisfaction-guaranteed messaging; primary interaction is the always-clickable demo link.
+- onboarding: 7-day trial without card form (per marketing), paste a snippet on any site, see live data; setup wizard; knowledge base guides.
+- pricingPresentation: Slider-style pricing by pageviews from $15/mo; clean price-per-tier cards; comparison to Google Analytics in marketing copy rather than page tables; enterprise/annual FAQs.
+- trustMechanisms: Privacy-first GDR/CCPA reassurance, EU-hosted (INFERENCE stance in copy), 'GDPR compliant without cookie banner', 25%-lifetime affiliate promise, money-back guarantee messaging.
+- socialProof: Testimonial block from named founders (per page), customer videos, 'trusted by 6,000+ sites' type claims (FACT approximate), extensive compare/use-case pages.
+- copywriting: Direct, benefit-led, privacy-flavored: 'No cookies, without sacrificing your data'; friendly, confident, slightly anti-Google edge; FAQ clarifies lawsuits/GDPR.
+- mobile: Responsive single column; tables on pricing are mobile-collapsible (INFERENCE); not designed for heavy mobile exploration.
+- accessibility: UNKNOWN — no explicit claim; semantic markup assumed.
+- performance: Light marketing site; highly likely fast (INFERENCE); the demo dashboard loads a JS widget.
+- seo: Strong long-tail SEO on 'privacy analytics', compare pages, and use cases (FACT via visible URL structure); ranking numbers UNKNOWN.
+- distinctiveDesign: Rarely-seen honesty: shows a live demo of its own real dashboard; 'privacy-as-differentiator' color/typography; deliberately un-Google visual tone.
+- nonGeneric: Limited marketing flourishes, heavy on factual reassurance and a believable product screenshot; no stock photos, no vague claims.
+- unnecessaryComplexity: Low — pages are focused, though pricing slider adds a small interaction wrinkle.
+- unusualSimplicity: The pitch is genuinely one sentence: 'See your website statistics without collecting personal data' — the whole site reinforces that one idea.
+- productDifferentiation: No cookies/consent by design, EU-hosted, mountains, live demo, 25% lifetime affiliate vs Plausible/Simple Analytics (regional pricing, affiliate rarity); Google-suite import niceties.
+- distribution: SEO + affiliate 25% lifetime + word-of-mouth + founder-audience effects (Paul Jarvis podcast/books); GDPR tailwind made privacy analytics a must-have.
+- revenueEvidence: FACT: pricing on page. ESTIMATES (3rd-party): Founderventures case study est. $5–10M ARR 2023 range; bootstrapped, profitable, no VC; thousands of customers and 'millions of customer websites' per about page. Precise private ARR not published (deliberately).
+- learn: 1) Privacy itself can be the wedge for a boring-but-loved product. 2) A long-tail affiliate (25% lifetime) outperforms ads for niche B2B. 3) Show a live, honest demo of your actual product. 4) Compare directly with the incumbent (we're not Google) without being mean.
+- notCopy: Fathom logo/name/palette, 'no cookies' campaign language, the demo dashboard asset, compare-page copy, affiliate-specific claims.
+- evidenceGrade: FACT
+- sources: https://usefathom.com, https://usefathom.com/pricing, https://usefathom.com/about, https://founderventures.io/cases/fathom
+
+### P05_3. Simple Analytics (https://simpleanalytics.com)
+- name: Simple Analytics
+- url: https://simpleanalytics.com
+- category: Micro-SaaS marketing site — privacy-friendly web analytics
+- targetCustomer: Privacy-focused publishers, marketers, and SMEs replacing Google Analytics while keeping charting (dashboard/export/API); strong Dutch/EU-market brand.
+- primaryProblem: Google Analytics is heavy and privacy-hostile (cookies, consent banners, data residency) — publishers need simple traffic metrics without compromising user trust or GDPR.
+- valueProposition: Privacy-friendly analytics that respect your visitors: no cookies, no personal data, EU-hosted, one-line snippet; get traffic insights in a simple, beautiful dashboard.
+- businessModel: Bootstrapped/publicly transparent subscription SaaS with self-serve dashboard, per-account pricing by pageviews, free-tier with badge, enterprise/agency tiers.
+- pricing: FACT (https://simpleanalytics.com/pricing): self-serve starts $20/month for 100k monthly pageviews (slider up to 2M+ pageviews; extra seats $20/mo/user); yearly = ~2 months free; Free plan (1 user, 5 websites, 1 month data, badge required); Enterprise tier (SSO, SAML, role-based access, SLA, SOC2 in progress, data proxy, Looker Studio, raw data export).
+- freeTier: Free forever plan: 1 user, 5 websites, 1 month history, Attribution badge required — a genuine try-me layer. Paid unlocks multi-user, longer history, goals/events and exports.
+- mainCta: Header 'Instantly see your traffic' primary 'Start free trial' + secondary 'Book a demo' for enterprise; footer 'Get started'.
+- heroStructure: Centered value prop with a large, live-ish dashboard screenshot behind/below, plus trust strip (Users 31,300+, Capterra 4.8, EU-owned Amsterdam).
+- demoStrategy: 'View example dashboard' link opens a real-looking analytics dashboard widget; enterprise demo via Calendly; free-tier trial is the actual demo.
+- homepageIa: Home: hero → pain point ('See the traffic Google Analytics misses') → features (dashboard, goals, events, export, API, EU hosting, privacy) → transparency block (public metrics) → integrations → pricing preview → footer; full IA on subpages.
+- navigation: Top nav: Features (dropdown), Pricing, Examples, Blog, About, Documentation, Sign up, Log in; mega footer with product/docs/company/community.
+- typography: Modern grotesque sans (site uses 'Turret'? no — INFERENCE: Inter/system), balanced headings, readable copy; presumably monochrome + green/brand accent.
+- colorStrategy: Signature green accent (teal→green) with white + dark text; clean, data-trustworthy, minimal color noise; consistent dotted-grid/EU flag motifs.
+- layoutSystem: Single-column marketing with feature rows, product screenshot blocks, testimonial grid; centered hero; consistent width shell.
+- spacing: Moderate-generous spacing; readable sections without huge hero; consistent vertical rhythm.
+- components: Dashboard screenshot blocks, feature icon rows, transparent-metrics badges, ecosystem/integrations cards, words-of-transparency blocks, testimonial grid.
+- cards: Feature/integration/testimonial cards with rounded corners and subtle borders; pricing card for Enterprise.
+- visualHierarchy: Headline → sub → CTAs; each section has one idea; eyebrow labels; dashboard always prominent within hierarchy.
+- motion: Subtle hovers/fades (INFERENCE); no heavy scroll animation; live-element minimal.
+- interactions: Page anchors, slider on pricing, demo link, book-a-demo — friction low; copy snippet + dashboard tour interactions.
+- onboarding: Start free trial; paste one-line script; dashboard shows live data immediately; docs + examples; enterprise onboarding via demo.
+- pricingPresentation: Interactive pricing slider mapping pageviews to monthly price; free tier + enterprise card; per-seat add-on visible; yearly = 2 months free messaging.
+- trustMechanisms: Transparency as trust: public metrics page (MRR, signups, uptime), SOC2 in progress, EU ownership, no-cookies statements, GDPR posture.
+- socialProof: 31,300+ users stat, Capterra 4.8, testimonials from indie trust brands, press mentions, public dashboard transparency (all FACT per site/metrics page).
+- copywriting: Calm, plain, pro-privacy; frames as 'respect your visitors'; message-bank buried in feature and benefit language; voice: competent, fair, transparent.
+- mobile: Responsive; dashboard/native mobile apps for iOS/Android exists (FACT via product); marketing page mobile-simple (INFERENCE).
+- accessibility: UNKNOWN — no specific claims; semantic markup assumed.
+- performance: Light site, fast (INFERENCE); logging minimal.
+- seo: Strong SEO on 'GDPR analytics', 'privacy analytics', example comps (FACT via visible URL/compare pages); ranking numbers UNKNOWN.
+- distinctiveDesign: Transparency-first product marketing (public MRR/signup count) + green-on-white identity + EU-host flag; unusually trustworthy, low-salesy for analytics.
+- nonGeneric: No stock hero photo; real dashboard screenshots; public numbers and founder-first transparency make it memorable.
+- unnecessaryComplexity: Low; homepage is focused despite many feature rows.
+- unusualSimplicity: The entire sales argument is 'not Google' — a single non-demanding dashboard with EU property; radical deletion of complexity rather than adding features.
+- productDifferentiation: EU hosting + transparency + free tier + public metrics vs Fathom (US-host, no free) and Plausible; enterprise SOC2/SAML angle; friendly API.
+- distribution: SEO, Word-of-mouth, public-metrics posts, founder content (Adriaan on LinkedIn/blog), podcast/migrations from Google ecosystem, transparency culture.
+- revenueEvidence: FACT: published pricing + public metrics (MRR ~$32–39K across 2024–25; 31,300+ users; 1,330 paying customers per year-in-review). Bootstrapped, profitable; team ~3 in NL. Precise 2026 MRR UNKNOWN publicly.
+- learn: 1) Radical transparency (show MRR publicly) builds trust upping conversion. 2) A badge-required free tier seeds distribution. 3) Anchor one enemy (Google) to own a niche. 4) Keep onboarding to a single snippet.
+- notCopy: Simple Analytics name, logo, green palette, public-metrics dashboard, 'no cookies' copy, EU-flag imagery, compare pages and demo widget.
+- evidenceGrade: FACT
+- sources: https://simpleanalytics.com, https://simpleanalytics.com/pricing, https://simpleanalytics.com/about, https://trustmrr.com/startup/simple-analytics
+
+### P05_4. Kit (https://kit.com)
+- name: Kit
+- url: https://kit.com
+- category: Micro-SaaS marketing site — creator email marketing/newsletter platform (formerly ConvertKit)
+- targetCustomer: Solo creators, newsletter writers, course sellers, and small media companies who monetize an audience via email, digital products, paid newsletters, and funnels.
+- primaryProblem: Email tools (Mailchimp) feel marketer-first, template-heavy, and expensive; creators need a simple, deliverable-first platform that grows the subscriber relationship and monetizes it without a big CRM learning curve.
+- valueProposition: The platform for creators: 'Email marketing, automations, landing pages, subscriber signals, commerce, paid recommendations — one simple interface built for creators, with a reach-first recommendation network.'
+- businessModel: Bootstrapped subscription SaaS (no VC debt), free tier up to 10k subscribers, flat monthly plan by subscriber count, 0.6% transaction economics on commerce plus optional paid-recommendations marketplace; acquired FanBridge (2021) and SparkLoop, rebranded ConvertKit→Kit (June 2024).
+- pricing: FACT (https://kit.com/pricing): Free $0 (up to 10,000 subscribers, core send with broadcasting credits); Creator $33/mo billed yearly (~$390/yr; monthly ~$40) up to 10k subs with automations etc.; Pro $66/mo billed yearly (~$790/yr) with advanced features (subscriber tagging, priority support, higher broadcast credits); $10/mo per additional 1,000 subs above baselines; annual = ~2 months free. Commission on commerce: across plans ~3.5%+$0.30 processing, Kit 'keeps only 0.6%' per homepage claim; Paid Recommendations marketplace 23.5% fee for creators.
+- freeTier: Free: up to 10,000 subscribers, core sending with broadcast credits, basic automations, limited support; no credit card. Common bottleneck: broadcast credits and automations gated.
+- mainCta: Header 'Start free trial' (email) + 'Request a demo' + 'Log in'; page hero CTAs 'Start free' and video watch CTA.
+- heroStructure: Full-width gradient/panel hero with strong headline ('Email your audience and make money from your work' style), product dashboard/demo imagery, and dual CTAs (free trial + demo); benefits chips under.
+- demoStrategy: Video walkthrough and a 'view a live example' style link; core demo = free-trial send of a real newsletter (signup-first model, no interactive canvas demo on marketing site).
+- homepageIa: Rich single-page: hero → trust strip (creators → results) → value pillars (Analytics/Subscriber Signals/Recommendations/Landing pages/Forms/Email designer/Automations/Commerce/Marketplace) → creator-use-case rows → open-source plugin (Kit MCP) → testimonials → pricing → FAQ → footer; subpages: Use Cases, Pricing, Resources, About, Blog.
+- navigation: Top nav: Use Cases (dropdown), Pricing, Resources, About, Blog, Sign in, Start free trial; footer splits for creators/developers/company/resources.
+- typography: Clean modern sans (site uses Inter/system-inflected), balanced heading hierarchy with an author-y warmth; generous line-height (INFERENCE).
+- colorStrategy: Refreshed 'Kit' identity: warm orange/peach gradient brand with white + charcoal text; brighter than old ConvertKit purple; precise tokens UNKNOWN.
+- layoutSystem: Multi-section single-column with alternating imagery; feature rows, benefit cards, testimonial/logo bands, pricing block; grid used for integrations/store.
+- spacing: Generous; airy hero and feature blocks; conventional SaaS rhythm.
+- components: Benefit chips, feature screenshots, customer quote cards, logo strip, compare table, FAQ accordion, embeddable forms (product itself), marketplace cards.
+- cards: Feature cards with icons + captions; customer logos; marketplace listing cards in the App Store; testimonial cards.
+- visualHierarchy: One headline per section; eyebrow → H2 → copy → CTA pattern throughout; screenshots give the 'drive-by' answer.
+- motion: Decent reveals, tab/accordion interactions, video lightbox; no groundbreaking animation (INFERENCE).
+- interactions: Hover on nav/cards, FAQ accordions, video play, form-embed CTA; primary interaction = start free trial (no card).
+- onboarding: Free-trial email + guided onboarding: import subscribers, design first broadcast, build landing page; extensive resources (docs/blog); human concierge migrations from Mailchimp/Substack historically (FACT from founder/How to migrate pages).
+- pricingPresentation: Tiered pricing table by subscriber-count bands with Free/Creator/Pro toggle; yearly=2 months free; compare grid; per-1k add-on visible; commission shown for commerce + marketplace.
+- trustMechanisms: Deliverability-first stance, creator testimonial logos (ex: 'used by thousands of creators'), free-forever tier, concierge migration promise, public revenue transparency from founder (Nathan Barry posts), no-VC messaging.
+- socialProof: Named creator testimonials, showcase creators, revenue transparency (Nathan Barry's public profit posts; 'millions in creator earnings' claim), case studies, device-marketplace ecosystem.
+- copywriting: Creator-first, warm, benefit-led: 'The platform for creators'; frames features in dollars ('turn subscribers into revenue'); honest yet persuasive; strong formulas (SAS/PS).
+- mobile: Responsive marketing site; email product has mobile app; subscription funnel mobile-optimized (INFERENCE).
+- accessibility: UNKNOWN — no explicit a11y claims; semantic markup assumed.
+- performance: Moderate-heavy imagery; likely fast via standard CDN (INFERENCE); exact CWV not published.
+- seo: Strong long-tail: 'email marketing for creators', comparison/reviews pages, use-case SEO (FACT via visible URL/compare structure); ranking data UNKNOWN.
+- distinctiveDesign: Warm creator-brand energy (orange tones vs gray SaaS), explicit 'creators-first' framing, and visible free-tier/migration message differentiate from Mailchimp.
+- nonGeneric: No stock corporate imagery; creator-first language, warm/colorful identity; product screenshots are real-work visuals; 0.6% fee claim is rare honesty.
+- unnecessaryComplexity: Moderate → long homepage with many features; new 'Kit' rebrand adds slight freshening; earnest and feature-dense.
+- unusualSimplicity: Radical pricing (free up to 10k subs) and a creator-centric funnel that hides automation complexity behind defaults; recommendation network one-click monetization.
+- productDifferentiation: Only creator-first email with free-forever tier, subscriber signals, recommendations marketplace + MCP/open-source; positioning as 'vs Mailchimp' for creators, not vs Substack.
+- distribution: Content marketing machine (Nathan Barry books/emails, guide SEO), YouTube/creator partnerships, marketplace + app store, concierge migrations, affiliate/creator-referral loops.
+- revenueEvidence: FACT: published pricing (Free/Creator $33/Pro $66 annual). THIRD-PARTY estimates: ~$29M ARR (2021, founder), ~$33.5M (2022), $43.8M revenue 2024 (GetLatka est), ~$52M ARR 2025 (Sacra estimate); $200M secondary valuation 2021 (Propel/Angellist SPV) with ~1,000+ angel LPs; founder publicly tracked to >$4M (2019) and >$29M (2021). Exact current revenue UNKNOWN/unreleased.
+- learn: 1) Free tier at 10k subscribers is a diabolically generous hook for creator word-of-mouth. 2) Creator testimonial + revenue transparency beats logos. 3) Own a niche (creators) rather than competing on features with Mailchimp. 4) Public founder numbers (revenue, churn) can market the product.
+- notCopy: Kit name/logo/orange identity, 'The platform for creators' headline, creator testimonials, 0.6%-fee claim, recommendation marketplace, MCP/plugin suite, ConvertKit history.
+- evidenceGrade: FACT
+- sources: https://kit.com, https://kit.com/pricing, https://sacra.com/c/convertkit, https://operatorbook.dev/stories/convertkit-revenue
+
+### P05_5. Ghost (https://ghost.org)
+- name: Ghost
+- url: https://ghost.org
+- category: Micro/commercial open-source SaaS marketing site — publishing platform & newsletter system
+- targetCustomer: Independent publishers, bloggers, media outlets, and newsletter operators who want self-hostable or managed open-source publishing with subscriber revenue (memberships, paid newsletters, webhooks) — no VC lock-in.
+- primaryProblem: Publishing platforms (Substack/Medium/WordPress) either own the audience, take fees, serve ads, or are closed — publishers want an open-source, self-hostable, fee-free system that still lets them get paid.
+- valueProposition: Open-source publishing platform powering creators & publishers; 'Own your content, your audience, your revenue' — no ads, no data selling, 0% fees on membership revenue, self-host or managed Ghost(Pro).
+- businessModel: Open-core commercial: free self-hosted open-source software (MIT) funding an annually-licensed managed hosting product Ghost(Pro) (Starter/Publisher/Business/Custom); non-profit foundation; affiliate program (30% lifetime recurring per current affiliate page) and theme marketplace; no VC.
+- pricing: FACT (https://ghost.org/pricing/): Ghost(Pro) managed plans billed yearly: Starter $18/mo, Publisher $29/mo, Business $199/mo, Custom (volume/region). 14-day free trial. Plus one-off extra site tiers/scale prices at higher volume tiers (Enterprise). 0% platform fee on subscribers — creators keep 100% of subscription revenue (minus Stripe/PayPal processor fees ~2.9%+30c at their merchant account).
+- freeTier: Free-to-host self-installable open-source software (self-managed); for Ghost(Pro) the free trial is 14 days; self-hosted OSS is 'free' but you supply your own hosting/SMTP. Distinct from Substack's free hosting model.
+- mainCta: Header 'Explore' (product), 'Dashboard' / 'Get started — free' primary CTA; hero CTAs for creators/publishers/businesses; 'Start your free trial'.
+- heroStructure: Split/centered hero with strong product screenshot ('publish beautifully'), headline about owning publishing; CTAs segmented by audience (for creators, publishers, businesses, developers).
+- demoStrategy: 'See a demo' link to a public Ghost demo instance (ghost.org/demo) with admin + blog preview; 14-day free trial for Ghost(Pro); no-login product feel.
+- homepageIa: Home: hero → loop segments (Creators/Publishers/Business/Developers) → product pillars (Editor, Memberships, Portals, Payments, Integrations) → open-source/non-profit/narrative → revenue numbers banner → CTA 'Get started'; subpages: Pricing, About, Explore, Marketplace, Docs.
+- navigation: Top nav: Product (dropdown: Creators/Publishers/Businesses/Developers/Explore/Marketplace/Themes/Compare), Pricing, Marketplace, Resources (Docs/Themes/Integrations/Changelog/Blog), Get Started.
+- typography: Clean contemporary sans (system + Inter); publishing-grade readability, modest display sizes; serif-like accent touches via fonts used in editor demos (INFERENCE).
+- colorStrategy: Ghost's near-black/white + signature lime-green accent (used in CTAs/links/badges) on white; occasional dark sections; red/green in dashboards. Compact and editorial.
+- layoutSystem: Editorial single-column layout echoing its own blog; feature rows, comparison tables, stats band; clean sans rhythm.
+- spacing: Tight-to-moderate; newsletter-like density giving an editorial feel, not airy marketing.
+- components: Segmented hero links, stat band, product feature blocks with screenshots, packaging cards, comparison table (vs Substack/WordPress), testimonial quotes, footer mega-nav.
+- cards: Product/pricing/layout cards, theme cards, integration/ecosystem cards; minimal borders, spaced list style.
+- visualHierarchy: Clear headline hierarchy; stats band ('$10M+ ARR', '0% fees') serve as credibility hierarchy above sections.
+- motion: Minimal; standard hovers/fades; product screenshots are static (INFERENCE).
+- interactions: Nav dropdowns, FAQ accordions, pricing toggle (monthly/yearly), live-demo links; product-first.
+- onboarding: 14-day Ghost(Pro) trial; self-hosting option for developers; guided setup wizard, docs, migration guides from Substack/WordPress; webhooks for integrations.
+- pricingPresentation: 4 packaging cards (Starter/Publisher/Business/Custom) with feature list; yearly shown; trial banner; '0% platform fee' central message; enterprise pricing links.
+- trustMechanisms: Open source + non-profit narrative; live revenue transparency (annualized ARR shown on /about and homepage); no-VC promise; migration guides as trust content.
+- socialProof: Live transparency counter ('$10.9M ARR', '30,441 paying customers', churn stats), customer logos (e.g. journalists/media namespaces), testimonials, open-source community (GitHub stars/forks displayed in footer).
+- copywriting: Editorial, anti-establishment, founder-voice ('Publishing is broken; we're fixing it'); benefits framed as ownership and revenue; direct comparisons to Substack/WordPress by name.
+- mobile: Responsive; strong mobile for reading; dashboard mobile-usable (INFERENCE).
+- accessibility: UNKNOWN — docs mention a11y; not a marketing claim on page.
+- performance: Publishing-grade; claims 'fast, modern web stack' (FACT via homepage performance statements); exact metrics not shown.
+- seo: Unusually strong for SaaS: blog-first SEO, 'ghost vs' comparisons, docs, themes, marketplace; occupies 'ghost cms' queries (FACT; ranking data UNKNOWN).
+- distinctiveDesign: The 'open-source, non-profit, shows-its-money' aesthetic — a rare institutional honesty; lime-on-ink identity; editorial not-product-cliché.
+- nonGeneric: Live revenue/paying-customer statistics, non-profit narrative, and 'get your own dashboards' demo give it a non-generic institutional voice.
+- unnecessaryComplexity: Moderate: many audience segments (creators/publishers/business/devs) make homepage busy; deep docs end-destination heavy.
+- unusualSimplicity: The core loop is one sentence: publish + collect payments, keep the platform open-source and non-profit. Radical trust-over-marketing.
+- productDifferentiation: Open-source + non-profit + 0% fee + self-host option + MIT license — impossible to replicate with a VC-funded rival; strong API/webhooks for developers.
+- distribution: Word-of-mouth among tech-savvy publishers, open-source GitHub virality, SEO/blog leadership, affiliate 30% lifetime, theme marketplace, migration content; launched via $350K Kickstarter (2013).
+- revenueEvidence: FACT (published live on site): Ghost(Pro) generates ~$10.9M ARR (annualized ~$907K/MRR as of 2026 data shown); 30,441 paying customers; churn visible; credibility: '$100M+ revenue earned each year by publications running on Ghost' claim; profitability 'every year since the beginning' (founder). Third-party: founder-posted revenue 2020/2021; Kickstarter ~$350K.
+- learn: 1) Open-source + non-profit is a genuine wedge when incumbents extract fees — prove it on the homepage. 2) Show live revenue, churn and customer count publicly. 3) 0%-fee model on subscriptions is a pricing-barrier killer. 4) Compare directly by name (vs Substack, WordPress) to own the debate.
+- notCopy: Ghost name/logo/lime-on-black identity, 'open-source publishing' / non-profit narrative, live ARR counter, 0%-fee claim, compare copy, theme marketplace.
+- evidenceGrade: FACT
+- sources: https://ghost.org, https://ghost.org/pricing/, https://ghost.org/about, https://ghost.org/help/funding/, https://john.onolan.org/democratising-publishing/
+
+### P05_6. Beehiiv (https://www.beehiiv.com)
+- name: Beehiiv
+- url: https://www.beehiiv.com
+- category: Micro-SaaS marketing site — newsletter platform with monetization suite
+- targetCustomer: Newsletter creators, indie publishers, podcasters and media upstarts who want to acquire subscribers fast, monetize via ads/via paid subscriptions, and grow — founder-led, growth-obsessed.
+- primaryProblem: Newsletter tools (Mailchimp/Substack) separate publishing from growth tools (referrals, ads, recommendations) and take commissions; creators want an all-in-one with serious growth features and low platform fees.
+- valueProposition: The all-in-one newsletter platform built to grow: legendary editor, AI, automations, ad network (Beehiiv Ads), paid subscriptions, digital products, community, analytics & A/B tests — 0% commission on subscriptions/digital products (Scale+), 400M+ monthly readers ecosystem.
+- businessModel: VC-funded SaaS platform: flat monthly fees (Launch/Scale/Max/Enterprise) + 0% commission on paid subs per homepage + ad network take rate (Beehiiv Ads: ~20% of sold ads historically; direct sponsorship 5–20% based on plan) + Boosts (20% take). Funded with ~$49.7M (Series B $33M, 2024).
+- pricing: FACT (homepage/pricing + docs): Launch $0 (first 2,500 subscribers, basic starter, Beehiiv branding, limited features), Scale $43/mo billed annually (most popular; 5,000 subs, unlimited emails, custom domain, Advanced editor+AI, automations, referrals, 0% commission, ad network access), Max $96/mo billed annually (10,000 subs, advanced monetization, Beehiiv branding removal, higher limits), Enterprise custom (volume pricing, API access). (Verification warning: figures from current page; annual billing branded; prices vary by plan documents.)
+- freeTier: Launch plan $0 (up to 2,500 subscribers, published newsletter URL, limited sends/features, Beehiiv branding). Growth-gated rather than feature-gated initial hook.
+- mainCta: Header 'Pricing', 'Log in', primary 'Get started free'; hero CTAs 'Start free' / 'Book a demo'; marketing funnel emphasizes 'Sign up free' with later monetization upsell.
+- heroStructure: Full-width gradient/3D-style hero with headline around growing a newsletter business, dual CTA free + demo, and impression stats (135K+ publishers, 400M+ readers) in trust strip below.
+- demoStrategy: 'Start for free' is the demo (real account, real content, no card); embedded product walkthrough/video + example newsletter UIs in feature rows; docs/examples for each growth feature.
+- homepageIa: Home: hero → trust band (stats) → Product pillars (Publish/Grow/Earn/Analyze/Connect) → feature deep-dives with screenshots → customer stories / testimonials → pricing → FAQ → footer; secondary product pages per pillar.
+- navigation: Top nav: Product (dropdown: Newsletters/Podcasts/Digital Products/Community), Publish, Grow, Earn, Analyze, Connect (API/Integrations), Pricing, Resources, Get started.
+- typography: Product-led yet friendly modern grotesque sans (site uses a geometric/grotesque pair — INFERENCE: Inter-like), strong bold headlines, straightforward body.
+- colorStrategy: Beehiiv's electric purple/violet signature accent on white, with neon-3D/gradient art in hero; secondary coral/orange for monetization accents (INFERENCE from brand).
+- layoutSystem: Conventional single-column marketing with hero, feature rows, screenshots, testimonial/grid; generous section spacing.
+- spacing: Generous/airy — big hero paddings and comfortable feature blocks.
+- components: Hero stats band, feature-row deep dives with screenshots, product pillar cards, testimonial carousels, pricing toggle, FAQ accordion, 'Start free' CTAs repeated.
+- cards: Product/feature cards with screenshot + caption; testimonial/mini-stats cards; pricing feature-list cards.
+- visualHierarchy: H2-led reasoning sections with eyebrow + copy; stats act as early trust anchor; screenshots carry most instructional weight.
+- motion: Moderate: scroll reveals, animated gradients, screenshot hovers; growth-tool vibe (like Morning Brew-adjacent, founder-led) (INFERENCE).
+- interactions: Hover states, pricing plan toggles, video plays, FAQ accordions, referral program visible actions.
+- onboarding: Free signup → custom domain (fees), import subscribers, pick template, first send; guidance via docs, academy, templates, webinars; billable at Scale threshold.
+- pricingPresentation: 4-plan card grid with strong 'Most popular' (Scale) emphasis, yearly/annual toggle, per-plan limits table; 0% commission banner on paid subs/products; FAQ/limits below.
+- trustMechanisms: Big stats (135K+ publishers, 400M+ unique readers/mo, 4.9/5 from 28k+ reviews), press logos (Reuters, TechCrunch), case-study revenue claims, ad-network payout claims, VC logos.
+- socialProof: Public stats, featured creator success stories with revenue/follower numbers, testimonial grid, 'as featured in' press logos, strong social/community (Twitter/YT) presence.
+- copywriting: Growth-obsessed, millennial-founder voice: 'Create, monetize, grow' framing; promises '0% commission' prominently; formula style — direct benefits, money/followers numbers.
+- mobile: Responsive marketing site; app not the focus for publishers (editor is browser); mobile reading emphasized (INFERENCE).
+- accessibility: UNKNOWN — no public a11y claims; semantic markup assumed.
+- performance: Moderately heavy (many assets) but standard; publishing platform sites are fast (INFERENCE); CWV not published.
+- seo: Strong: 'beehiiv alternatives', 'Substack vs Beehiiv', growth-guide blog SEO (FACT via visible URL/compare pages), plus massive community/affiliate program.
+- distinctiveDesign: Purple identity + growth-tool energy stands out from Substack's muted editorial look; founder-led storytelling plus ad-network monetization is its signature.
+- nonGeneric: Explicit monetization layer (Ads/Boosts/referrals) integrated into the marketing story; media-grade 'viral growth' claims; influencer-led visual touches.
+- unnecessaryComplexity: Moderate: many product pillars with deep subfeatures can overwhelm; pricing tier nuance (boosts/ads/commissions) is complex.
+- unusualSimplicity: Radical pricing hook: free 2,500 subscriber tier + 0% commission on paid subs — removes Substack's 10% fee objection entirely.
+- productDifferentiation: Growth engine (recommendations, referrals, magic links, ads, boosts, science-of-newsletter) + free tier + 0% commission + ad network — a 'grow faster' counter to Substack.
+- distribution: Aggressive growth itself is the story: creator referrals, ad-network liquidity, community/course content (Beehiiv Academy), podcasts & webinars, affiliate 30–60% commissions, press (Reuters/TechCrunch), founder-led LinkedIn/X.
+- revenueEvidence: FACT: pricing on homepage. FOUNDER/TECH-PRESS: hit ~$30M ARR mid-2025 (Tyler Denk LinkedIn post); ~$32M run-rate Nov 2025 (Hollywood Reporter); Reuters Jan 2026 reports expecting ~$50M revenue this year, 40,000+ MAU, ~15,000 paying; raised ~$49.7M (Series A $12.5M 2023; Series B $33M 2024 at ~$190M+ valuation); not yet profitable (path to profitability stated 2027). Bootstrapping contrast: unlike most rivals, uses VC fuel to buy growth assets.
+- learn: 1) 'Free tier + 0% commission' kills the Substack-fee objection a copycat can reuse. 2) Make the growth tools (referral, ad network, boosts) the story, not just the editor. 3) Use founder-led public revenue milestones as marketing. 4) Partner-sponsored growth (ad network) is a second revenue rail beyond subs.
+- notCopy: Beehiiv name/logo/purple identity, '0% commission' campaign, ad network & boost mechanics, 135K+/400M+ stats, founder/creator testimonials, exact feature screenshots.
+- evidenceGrade: FACT
+- sources: https://www.beehiiv.com, https://www.beehiiv.com/pricing, https://www.reuters.com/technology/beehiiv-revenue-2026/, https://techcrunch.com/2024/05/14/beehiiv-30m-series-b, https://www.hollywoodreporter.com/business/business-news/beehiiv-newsletter-company-2026/
+
+### P05_7. SavvyCal (https://savvycal.com)
+- name: SavvyCal
+- url: https://savvycal.com
+- category: Micro-SaaS marketing site — scheduling / meeting-booking software
+- targetCustomer: Freelancers, agencies, founders, remote teams, and busy professionals who spend too much time coordinating calls and want invitee-friendly scheduling that respects their calendar.
+- primaryProblem: Calendly-style schedulers optimize the host's bookability but make invitees pick blind dates; back-and-forth emails and double-bookings waste time.
+- valueProposition: 'The fresh way to find a time to meet' — scheduling that optimizes for the invitee: calendar overlay showing conflicts, time zone-aware links, custom domains, round-robin, buffered limits, group sessions — beautiful, fast, privacy-default.
+- businessModel: Bootstrapped flat monthly-per-user SaaS (Basic/Premium), annual discount, free trial, no VC (raised TinySeed small amount 2019), money-back guarantee.
+- pricing: FACT (https://savvycal.com/pricing): Basic $10/user/mo, Premium $17/user/mo (shown as billed yearly with 'save 2 months' note; monthly available), 30-day money-back guarantee, free trial; per-user seats; Premium adds full feature set incl. custom domain branding, delegate, paid bookings. Only Basic/Premium tiers + annual savings.
+- freeTier: No free plan on pricing page; free trial for all plans (trial + money-back language per pricing/FAQ).
+- mainCta: Header 'Sign in' + primary 'Start free trial' / 'Get started'; hero CTA same; market-level 'See pricing' secondary.
+- heroStructure: Clean value-prop headline ('The fresh way to find a time to meet') with live-looking week/calendar UI showing overlay/conflict semantics beside copy + small trust note ('Join over 2,000 happy customers').
+- demoStrategy: 'Try free trial' (auth-gated) plus a visible example scheduling-link that opens a mock polling page; hero embeds the actual scheduling widget metaphor — demo-by-widget.
+- homepageIa: Home: hero → feature rows (overlay, time zones, buffers, custom domains, round-robin, group, embed, API) → seamless workflow screenshots → integrations/comparison → testimonials → pricing → footer; subpages: Features, Pricing, Integrations, Comparison, About.
+- navigation: Top nav: Features, Pricing, Integrations, Resources, Sign in, Start free trial; footer product/company/legal/blog.
+- typography: Typography-first, premium look: a grotesk/geometric sans, crisp; generous display sizes (INFERENCE from rendered glyphs).
+- colorStrategy: Warm premium palette: near-black ink, cream/off-white background, coral/orange accent (SavvyCal's signature roundel), occasional deep-plum/indigo; palette feels artisan, not enterprise.
+- layoutSystem: Single-column with alternating product screenshots and feature copy; centered hero; cards for integrations/testimonials; clean grid.
+- spacing: Generous, calm; spacing as the luxury cue — sections let the UI breathe.
+- components: Feature bullets with icons, integration grid, video/testimonial block, pricing cards, comparison table (vs Calendly), FAQ.
+- cards: Integration cards (icons grid), testimonial cards, pricing cards; rounded, bordered, restrained.
+- visualHierarchy: One headline per view, eyebrow + H2 + copy + screenshot rhythm; clear CTAs each section.
+- motion: Subtle fade/rise and hover; the calendar widget maybe interactive; no heavy parallax (INFERENCE).
+- interactions: Hover nav/cards, pricing toggle (basic/premium/annual detail), demo link taps; product screens echo interactions.
+- onboarding: Free trial → connect Google/Outlook calendar → create first link → share; single-user quick start, great docs; invitee UX is the differentiating touch.
+- pricingPresentation: Clear 2-tier pricing with annual/'save 2 months' messaging + money-back guarantee block; feature comparison on pricing page; per-seat scaling.
+- trustMechanisms: 'Join over 2,000 happy customers', 30-day money-back guarantee, integrations badges (Google/Outlook/zoom), privacy/independence ('we are a real, independent company') messaging.
+- socialProof: Explicit customer count (2,000+), testimonials, founder quotes/build-in-public cred (Derrick Reimer's The Art of Product podcast + audience), comparison vs Calendly.
+- copywriting: Warm, craft-voiced: 'fresh', 'happy customers', 'the scheduling experience your invites deserve'; anti-CRON-style commentary; plain-English benefit bullets.
+- mobile: Responsive marketing; scheduling widget highly mobile-optimized (core to product); marketing page mobile-simple (INFERENCE).
+- accessibility: UNKNOWN — no explicit claims; contrast seems high (INFERENCE).
+- performance: Light page, fast (INFERENCE); no CWV published.
+- seo: 'savvycal' + 'scheduling' long-tail + comparison/blog content; ranking data UNKNOWN.
+- distinctiveDesign: Crafty, invitee-centric voice and warm palette differentiate from samely Calendly pink/blue; product screenshots emphasize 'the invitee's view' — a novel design angle.
+- nonGeneric: Anti-enterprise warmth, honest pricing, founder-voiced copy, custom algorithmic scheduling (overlay) shown literally in UI.
+- unnecessaryComplexity: Low — a focused 2-tier feature set; some depth in scheduling edge cases (buffers, round-robin) is shown but not overwhelming.
+- unusualSimplicity: The whole argument is one interaction improvement: seeing invitee conflicts before booking. The marketing literally leads with that calendar overlay.
+- productDifferentiation: Invitee-first UX + own-brand custom domain + round-robin + premium craft vs Calendly's host-first opacity; affiliate/SEO/community less-competitive wedge.
+- distribution: Founder-audience (The Art of Product podcast/list, Indie Hackers), SEO, affiliates, Product Hunt (launch #2 of month Jan 2021), comparison pages, word-of-mouth among indie hackers.
+- revenueEvidence: FACT: published pricing. FOUNDER/PUBLIC: Derrick Reimer reached ~$10K MRR in first year (Apr 2021), ~$20K MRR Oct 2021 (Product Hunt AMA), multi-year profitable trajectory; GetLatka est ~$1M ARR 2024; TinySeed-backed but bootstrapped-lean team (single dev + small ops). Current MRR UNKNOWN/unreleased.
+- learn: 1) Optimize the side of the market everyone ignores (invitee) and design the homepage around that one insight. 2) Crafty warm branding + craft-informed copy beats enterprise sameness. 3) Build an audience first (podcast/list) to self-distribute. 4) Flat, honest per-user pricing + money-back guarantee lowers risk.
+- notCopy: SavvyCal name/logo/coral palette, 'fresh way to find a time to meet' headline, calendar-overlay UI, round-robin features, founder-testimonials.
+- evidenceGrade: FACT
+- sources: https://savvycal.com, https://savvycal.com/pricing, https://first-mrr.com/study/savvy-cal, https://www.getlatka.com/companies/savvycal
+
+### P05_8. Buttondown (https://buttondown.com)
+- name: Buttondown
+- url: https://buttondown.com
+- category: Micro-SaaS marketing site — minimal email newsletter tool for developers & writers
+- targetCustomer: Developers, technical writers, and pro-focused newsletter authors who want a plain, fast, programmable (API/Markdown/git-like) email tool — anti-bloat crowd.
+- primaryProblem: Newsletter platforms (Mailchimp, Beehiiv, Substack) add widgets, growth puns, and fees; technical authors want a distraction-free, reliable, API-friendly minimalist tool they can self-serve.
+- valueProposition: 'The last email platform you'll switch to' — a plain-spoken, Markdown-first, RIP-friendly newsletter tool with APIs, RSS-to-email, automations, and 0% cut on paid subscriptions, run profitably by a small team.
+- businessModel: Bootstrapped/self-funded subscription SaaS with a freemium 100-subscriber tier and add-on modules ($/mo subscriptions); no VC, no growth-at-all-costs; team of ~6; profitable (cash-flow) since ~2023–25.
+- pricing: FACT (https://buttondown.com/pricing): Free for first 100 subscribers; then volume-based subscriber fee; add-ons each $9/mo (tagging/segmentation, paid subscriptions, comments+surveys, analytics, RSS-to-email, sponsorships, attachments), $29/mo (custom-domain archives, multiple newsletters, automations), $79/mo (whitelabeling/teams). Classic tiers: Basic $9 (1k subs) / Standard $29 (3k) / Professional $79 (10k) with ~17% annual discount; add-ons additive (est). 0% cut on paid subscriptions (creators keep 100%).
+- freeTier: Free forever up to 100 subscribers (send to them, guest-limit; upgrade gated by subscriber count, + volume tiers/add-ons).
+- mainCta: Header 'Pricing', 'Login', primary 'Get started free' / CTA 'Start writing'; hero primary CTA plus 'See pricing' secondary.
+- heroStructure: Minimal manifesto-style hero: one-line strong value prop ('The last email platform you'll switch to') with a short supporting sentence, calm typography, no screenshot-heavy hero.
+- demoStrategy: 'Get started free' (real product, real emails, no card) + a public 'live demo' send-link on homepage; product tour/FAQ; the tool itself is the demo.
+- homepageIa: Home: hero → positioning manifesto (why Buttondown: anti-bloat, anti-fees, anti-shutdown, anti-features) → quick-start steps → key features (Markdown, API, RSS-to-email, conversations, automations) → testimonials → pricing link → blog; subpages: Pricing, Docs/Handbook, Blog, Changelog, FAQ.
+- navigation: Top nav: Pricing, Docs/Handbook, Blog, Changelog, Sign in, Get started; lean footer with company/doc links.
+- typography: Type-focused, editorial: clean serif/sans combo (product uses a serif for body reading vibe; marketing uses grotesk sans — INFERENCE), generous line-height, bookish without being preachy.
+- colorStrategy: Subdued cream/off-white background with black text and one warm accent (orange/amber) — anti-newsletter-pink; calm and bookish (INFERENCE from brand materials).
+- layoutSystem: Single-column centered manifesto-style page; short; prose-led sections; minimal grid.
+- spacing: Very generous vertical whitespace — the editorial calm is the point.
+- components: Manifesto paragraphs, quick-start list, feature quote-rows, testimonial block, pricing/frequency toggle, blog cards.
+- cards: Rare; pricing boxes and a few feature/doc cards; page is mostly prose.
+- visualHierarchy: Prose-led hierarchy: headline → manifesto → steps; few images; authority through plainness.
+- motion: Minimal to none (INFERENCE); static, readerly feel.
+- interactions: Nav hovers, 'start writing' CTAs, pricing toggles; deliberately low-animation.
+- onboarding: Sign up free → write first email in Markdown → publish → done; docs/handbook covers API/automations; RSS-to-email for automatic import.
+- pricingPresentation: Radical honesty on pricing: free 100-sub tier, subscriber-slider for volume, plus modular add-ons; explicit FAQ comparing to pricier rivals; 0%-take on paid subscriptions emphasized.
+- trustMechanisms: Profit-sustainability statements ('cash-flow profitable'), no-VC, indie-friendly FAQ, technical credibility (API/Markdown/RSS), transparent funding/status page.
+- socialProof: Testimonials (developers/tech journalists named), technical community cred, contributor/coffee-funding public support, blog transparency.
+- copywriting: Dry, wry, editorial voice: 'The last email platform you'll switch to'; manifesto paragraphs ('we're not Mailchimp'), honesty and understatement over hype.
+- mobile: Responsive reading + mobile app unknown; marketing page mobile-simple (INFERENCE).
+- accessibility: UNKNOWN — text-first design helps a11y (INFERENCE); no formal claims.
+- performance: Extremely light, prose-first page; very fast (INFERENCE).
+- seo: Strong long-tail via blog + docs + manifesto framing ('why', 'vs Mailchimp'); ranking numbers UNKNOWN.
+- distinctiveDesign: Writer-first, anti-feature, prose-as-design; nearly the opposite of Beehiiv's feature-crammed growth aesthetic.
+- nonGeneric: Manifesto essays, dry humor ('anti-ly'), transparency (income/setup numbers) and modular pricing are genuinely uncommon.
+- unnecessaryComplexity: Very low; feature depth (API/automations) described in a sentence each.
+- unusualSimplicity: 100-subscriber free tier and modular add-ons mean the product grows with the writer — radically lean vs feature-farms.
+- productDifferentiation: Developer-grade plainness (Markdown/API), modular a-la-carte pricing, 0% cut, profitability-first — a counter-position to VC-funded newsletter suites.
+- distribution: Word-of-mouth in tech communities, HN/IndieHackers, founder's public writing (Justin Duke), bundling via open-source cred, testimonials/migrations, no paid ads.
+- revenueEvidence: FACT: published pricing. PUBLIC: founder publishes ~$15K MRR while side-project at Stripe (2023, Indie Bites); ~$392K/yr est late 2024 (OperatorBook); 2025 year-in-review: +61% YoY, cash-flow profitable (→ est ~$630K ARR); team ~6; $0 funding raised. Current MRR UNKNOWN.
+- learn: 1) Write as thinly as you code: prose-led positioning is its own design. 2) Modular a-la-carte pricing + a genuinely free tier earns vocal users. 3) Publicly demo profitability ('cash-flow profitable') differentiates from VC growth-chasing. 4) Niche down to technical professionals and let the niche market you.
+- notCopy: Buttondown name/logo/amber-cream palette, manifesto essays, 'The last email platform you'll switch to' headline, add-on pricing scheme, user testimonials.
+- evidenceGrade: FACT
+- sources: https://buttondown.com, https://buttondown.com/pricing, https://operatorbook.dev/stories/buttondown-revenue-392k-number-justin-duke-stopped-publishing
+
+### P05_9. Gumroad (https://gumroad.com)
+- name: Gumroad
+- url: https://gumroad.com
+- category: SaaS/creator-commerce marketing site — digital product marketplace & checkout
+- targetCustomer: Creators selling digital products (ebooks, courses, templates, software, memberships) who want a no-monthly-fee store, page, and checkout from a single link — beginner-through-power sellers.
+- primaryProblem: Selling digital goods requires a storefront, payment processor, VAT/tax handling, and delivery infrastructure — heavy setup and risky churn; creators want to collect a first dollar fast.
+- valueProposition: Sell digital products from a single link: Gumroad handles store, payments (Merchant of Record as Jan 2025), VAT, delivery, and checks in one flat-fee model with no monthly fees — 'Go from 0 to $1' ethos.
+- businessModel: Commission-based marketplace: flat take-rate on every sale (10% + $0.50 per transaction direct, 30% via Discover marketplace), no subscription; no monthly fee; Merchant of Record since Jan 1 2025 (handles sales tax/fees globally).
+- pricing: FACT (https://gumroad.com/pricing): 10% + 50¢ per transaction for sales via profile/product links; 30% for sales via Gumroad Discover (marketplace); $0 monthly fee; processing fees apply on top (approx 3.5% + 30¢ est per checkout economics); creator keeps remainder after fees. Multiple-products supported; no setup fee; partial-payments/milestones supported.
+- freeTier: No plan required to start — 'sign up free, pay per sale'; no monthly fee is the anti-Substack/managed SaaS argument; free tier = free creation & hosting of product (until sale).
+- mainCta: Header 'Discover', 'Log in', primary 'Start selling' / 'Get started'; hero CTA 'Earn your first dollar online' implied by copy + smaller 'See how pricing works'.
+- heroStructure: Compact hero: headline promising 'Go from 0 to $1' with simple product/dashboard framing, CTA (Start selling), and supporting micro-stats (e.g. weekly GMV proof); restrained, no over-the-top 3D.
+- demoStrategy: Product demo via live seller stores; 'view a sample product' link; the creator dashboard isn't simulated on marketing page — instead, real storefront samples show output.
+- homepageIa: Home: hero → 'how it works' (3 steps: create, link, earn) → pricing tiers (simple 10%+50¢) → features (discover, ratings, memberships, affiliates, tax) → counter-proof / success stats → FAQ/footer; subpages: Discover, Pricing, Features, About, Blog, Docs.
+- navigation: Top nav: Discover, Blog, Pricing, Features, About, Gumclaw (new sub-brand service), Sign in, Start selling; fat footer.
+- typography: Clean hero-ish sans (site uses a readable grotesk — INFERENCE: Inter/System), moderately bold, friendly; responsive copy style.
+- colorStrategy: Bold purple/violet primary (Gumroad's signature indigo) with clean white, occasional yellow/pink strokes; playful but product-confident.
+- layoutSystem: Standard single-column marketing; centered hero; step rows; feature grid; testimonial band; pricing module near top.
+- spacing: Comfortable-to-spacious; feature rows breathe; page length moderate.
+- components: Step cards, pricing toggle, feature lists, success-stat band, testimonial cards, FAQ accordion.
+- cards: Product/success/testimonial cards with rounded corners; Discover marketplace cards (product thumbnails, price, seller metrics).
+- visualHierarchy: Headline → value → 3-step explainer → pricing anchor → success proof → CTA; each section single-idea.
+- motion: Moderate: hovers on cards, animated dashboard teasers, fade reveals (INFERENCE).
+- interactions: Hover on Discover cards, pricing calculator interactions, accordion FAQ, profile/store links; low-friction CTAs.
+- onboarding: Sign up free → create a product (upload file/link), set price → get a link → share first sale; dashboard + docs; Discover bumps reach for marketplace inclusion.
+- pricingPresentation: Mission-driven transparent pricing: single flat 10% + 50¢ (direct) / 30% (Discover); paycheck calculator showing seller-keeps; no monthly fee; FAQ on taxes/fees.
+- trustMechanisms: $0 monthly fee, Merchant of Record (VAT/tax handled), flexible refunds, 5-star ratings/discover quality, transparency (founder Sahil's public letters), no-lock-in.
+- socialProof: Creator-success stories with earnings screenshots, 'earned last week' GMV hint on homepage, marketplace counts, testimonials, press/logo history.
+- copywriting: Founder-voiced, anti-corporate, fearless: 'Go from 0 to $1', 'Don't let your ideas die', honest on fees ('we take 10%, no surprises'), street-cred humor.
+- mobile: Responsive; checkout/store optimized for mobile; marketing mobile-simple (INFERENCE).
+- accessibility: UNKNOWN — no explicit statements; semantic markup assumed.
+- performance: Light-to-moderate marketing site, branded marketplace via images; likely fast (INFERENCE); CWV not published.
+- seo: 'sell digital products' long-tail, creator-education content, marketplaces/Discover; ranking data UNKNOWN.
+- distinctiveDesign: Founder-transparency + playful indigo identity + anti-SaaS flat fee; the self-referential 'I'm a digital product' ethos is memorable.
+- nonGeneric: Transparent single-fee model, live marketplace proof, open GitHub repo, founder letters — genuinely non-corporate tone.
+- unnecessaryComplexity: Low-to-moderate; pricing detail (10%/30%, processing, partials) needs a calculator; product breadth (memberships, affiliates, tax) is wide but explained well.
+- unusualSimplicity: The killer simplicity: no monthly cost, one fee on success — extremely low commitment to start.
+- productDifferentiation: Flat 10%-take + $0 monthly + Merchant-of-Record + marketplace (Discover) vs Podia (sub), Teachable, Substack (fee-on-subs), Kajabi; founder-led radical simplicity.
+- distribution: Word-of-mouth, Discover marketplace (buyer-side traffic), creator tutorials/education, founders' public transparency (essays/threads), GitHub repo, community posts.
+- revenueEvidence: FACT: published pricing. THIRD-PARTY/FOUNDER: Sahil Lavingia reported ~$9M revenue / ~$142M GMV (2020), flat-10% change early 2023 (~$1M→$1.8M monthly) flipping net from -$1M (2022) to ~$9M profit (2023); Sacra est 2024 revenue $12.18M; 2021 raised community round ~$5M+ at $100M valuation. Current revenue UNKNOWN/unreleased.
+- learn: 1) A flat, transparent take-rate with $0 monthly is a pricing moat for digital goods. 2) Marketplace distribution (Discover) turns product sellers into your SEO/GMV engine. 3) Founder-transparency and public numbers are marketing. 4) Merchant-of-Record (owning taxes) removes the #1 fear of indie sellers.
+- notCopy: Gumroad name/logo/indigo identity, 'Go from 0 to $1' copy, flat 10%+50¢ fee headline, Discover marketplace, founder public-letters branding, Gumclaw sub-brand.
+- evidenceGrade: FACT
+- sources: https://gumroad.com, https://gumroad.com/pricing, https://sacra.com/c/gumroad, https://www.businessinsider.com/gumroad-sahil-lavingia-2023
+
+### P05_10. Acquire.com (formerly MicroAcquire) (https://acquire.com)
+- name: Acquire.com (formerly MicroAcquire)
+- url: https://acquire.com
+- category: Marketplace/SaaS platform marketing site — acquire online businesses (M&A marketplace)
+- targetCustomer: Two-sided: startup founders wanting to sell (SME SaaS, content sites, marketplaces, agencies) and buyers (first-time acquirers, funds/PE, exiting operators) motivated to transact.
+- primaryProblem: Selling/buying a curated online business is in practice broker-dependent, expensive (10%+ fees), opaque, and slow; buyers can't find vetted deal flow.
+- valueProposition: Buy and sell vetted online startups: free listings for sellers, $25–$100/mo listing tiers + 6–8% closing fee on sale, buyer membership unlocking vetted deals + AI deal tools + M&A education; '500,000+ entrepreneurs, $500M+ closed deals.'
+- businessModel: Marketplace with dual revenue: seller-side monthly listing fees ($25/$50/$100) + success closing fee (8→7→6% tiered by asking price) + optional Guided-by-Acquire advisory (for $100k+ TTM SaaS, likely % of deal) + buyer membership subscriptions (~$390/yr starting Premium/Platinum).
+- pricing: FACT (https://acquire.com/seller-pricing/ and /pricing/): Seller — asking <$250k: 8% closing fee + $25/mo listing; $250k–$1M: 7% + $50/mo; >$1M: 6% + $100/mo; escrow free; Guided-by-Acquire advisory for SaaS w/ $100k+ TTM revenue. Buyer — Basic free (public listings only); Buyer membership 'starting at $390' (yearly, Premium/Platinum stamina-based sizes); academy/legal-doc tools included. (No monthly-fee waivers shown for high volume; historical MicroAcquire buyer plans were ~$249–$500/yr tiers — treat current $390 as primary.)
+- freeTier: Sellers: listing starts at $25/mo (not free); buyers have a free Basic browsing tier. Free SaaS valuation tool; free signed-up access to public listings.
+- mainCta: Header CTAs: 'Free SaaS valuation' (lead-gen hook), 'Join now' / 'Log in'; page CTAs 'Get started'/'Become a member'; hero CTA split seller/buyer.
+- heroStructure: JS-rendered shell aside, the page leads with 'Buy and sell vetted startups' → value split (Sellers/Guided-by-Acquire/Buyers) → fee narrative + comparison table (vs brokers 10–15%!) → testimonials/community proof → FAQ.
+- demoStrategy: No product demo needed: real deal-flow is the demo — the marketplace listings themselves (SaaS for sale) are browsable public; free valuation tool offers actionable first value.
+- homepageIa: Home (buy/sell split) → Seller pricing → Buyer pricing → Guided-by-Acquire advisory → Free SaaS valuation → marketplace categories tab (SaaS/Mobile/Marketplace/Shopify/Content/Ecom/Agency...) → Blog/Reports → Help/About; huge category SEO footers.
+- navigation: Top: Sellers (listing + guided) / Buyers / Pricing (sellers|buyers) / Resources (help, blog) / Free SaaS valuation; footer with categories index + company/legal.
+- typography: Clean multi-size grotesk sans, tight display; similar modern-M&A aesthetic (INFERENCE from shell + typical layout; actual typeface UNKNOWN).
+- colorStrategy: Dark navy/ink with electric turquoise/green accent, frequent dark sections; functional, financial-marketplace tone (INFERENCE).
+- layoutSystem: Conventional wide marketing grid with split-pane hero (seller/buyer), pricing cards, comparison table, testimonial grid, big category-links footer.
+- spacing: Comfortable SaaS spacing; content-heavy, section-driven.
+- components: Seller-vs-buyer split nav, pricing tiers, comparison table (vs brokers), testimonials, valuation CTA block, category link grid, FAQ accordions.
+- cards: Pricing cards (seller tiers; buyer membership), testimonial cards, category cards with counts.
+- visualHierarchy: Two-audience navigation is the master organizing principle; fee transparency (8%/7%/6% vs 10–15% brokers) is the marching visual point.
+- motion: Minimal–modest, JS-app-like reveals (INFERENCE); shell shows JS-required reload (performance caveat).
+- interactions: JS-required interactivity, valuation tool, plan selection, category browsing, FAQ accordions; strong 'Join now' funnel.
+- onboarding: Seller: signup → free valuation → list (fee) → metrics sync → vetting → market to 500k buyers. Buyer: signup → free browse → upgrade membership to unlock contacts/financials; academy course included.
+- pricingPresentation: Starkly honest price for M&A: tiered closing fees + listing fees with a 'vs other marketplaces (2.5–15%) and brokers (10–15%)' comparison table — a classic wedge-pricing page.
+- trustMechanisms: Verified buyer funds/$2B claim, 500k+ entrepreneurs, $500M+ closed deals, 2,000+ startups sold (FACT per site/LinkedIn); escrow + vetting; advisory team; legal licensing (CA DRE) displayed.
+- socialProof: Testimonial wall from buyers/sellers (named founders/funds), press logos, Inc 5000, deal-count milestones, video testimonials; public case studies of sold businesses.
+- copywriting: Financial-marketplace voice: direct, numbers-led ('8% max. 6% at scale'), benefit-led for both sides; anti-broker framing; FAQ reassuring.
+- mobile: Responsive marketing + app-like marketplace; JS-heavy may stress mobile (INFERENCE).
+- accessibility: UNKNOWN — JS-required shell hints a11y gaps; no claims.
+- performance: JS-heavy SPA-like marketing site: initial empty-state + JS boot is a real performance cost (INFERENCE from shell response); production measured CWV UNKNOWN.
+- seo: Massive programmatic category SEO: /saas-companies-for-sale/, /mobile-apps-for-sale/, agency, Amazon-FBA, etc., each with content + listings; blog + reports; ranking data UNKNOWN.
+- distinctiveDesign: Category-depth + fees-as-design + two-sided clarity; the buying/selling marketplace identity is memorably un-typical for a SaaS marketing site (it IS the marketplace).
+- nonGeneric: Real deal-flow and valuation tool as CTA, anti-broker fee table, legal M&A licensing marks, verified-buyer stats — genuinely functional, not decorative.
+- unnecessaryComplexity: Moderate: two audiences + advisory + marketplace mean a dense site; JS-gating adds friction.
+- unusualSimplicity: A marketplace you can self-serve end-to-end (valuation → list → offer → escrow → close) — radically simpler than broker-led M&A.
+- productDifferentiation: Only meaningful self-serve M&A marketplace for small SaaS with transparent 6–8% fees, escrow, vetting, free valuation, education academy vs brokers (10–15%) and bespoke M&A firms.
+- distribution: SEO (category pages dominate 'SaaS businesses for sale'), founder-led content (Acquisition Multiples Report), free valuation tool inbound, partner/referral program, podcast/media, LinkedIn founder audience.
+- revenueEvidence: FACT: published seller/buyer pricing. PUBLIC: Andrew Gazdecki's claims — $500M+ closed deals, 2,000+ startups sold, 500k+ entrepreneurs, $2B+ verified buyer funds; bootstrapped profitability earlier (~$4M ARR @ 5k subscribers per teardown), raised total ~$11.3M (Seed/Series A); 20–30 employees (LinkedIn). Exact current ARR UNKNOWN/unreleased.
+- learn: 1) A two-sided marketplace can price against the incumbent's hidden cost (brokers 10–15%) — print the comparison table. 2) Lead-gen with a genuinely useful free tool (SaaS valuation) builds the funnel. 3) Programmatic category SEO can dominate niche queries. 4) Transparency (verification, escrow, deal counts) is the trust lever for financial marketplaces.
+- notCopy: Acquire.com logo/nav naming, 6–8% fee structure + listing-fee tiers, '2,000+ startups sold' stats, valuation tool, M&A licence/badge, testimonials, category-page copy.
+- evidenceGrade: FACT
+- sources: https://acquire.com, https://acquire.com/seller-pricing/, https://acquire.com/pricing/, https://microacquire.com, https://www.productmarketfit.tech/startup/acquire-com/, https://www.startupanatomy.com/acquirecom

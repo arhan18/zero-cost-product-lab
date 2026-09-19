@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scenica Pricing — Credits, plans, and honest math</title>
+<meta name="description" content="Scenica pricing: trial, Creator, Studio. Credit-metered cinematic builds with hard caps and portable export.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="header-pill">
+    <a class="brand" href="index.html" aria-label="Scenica home"><span class="brand-serif">Scenica</span><span class="rec" aria-hidden="true"></span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html#pipeline">Workflow</a>
+      <a href="index.html#presets">Presets</a>
+      <a href="index.html#showcase">Showcase</a>
+      <a href="pricing.html" aria-current="page">Pricing</a>
+    </nav>
+    <div class="header-actions">
+      <span class="credits mono" id="planBadge">TRIAL · 120 CR</span>
+      <a class="ghost-btn" href="index.html">Sign in</a>
+      <a class="cta-btn" href="#plans">Choose a plan</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="index.html#pipeline">Workflow</a>
+    <a href="index.html#presets">Presets</a>
+    <a href="index.html#showcase">Showcase</a>
+    <a href="pricing.html">Pricing</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero price-hero">
+  <div class="wrap">
+    <p class="eyebrow mono">PRICING — CREDIT-METERED, CAPPED, PORTABLE</p>
+    <h1 class="display">Expressive sites,<br>honest math.</h1>
+    <p class="lead">One credit is one cent of generation cost. Every expensive job is quoted before it runs, failed jobs refund automatically, and overages hard-stop — never surprise bills.</p>
+    <div class="idea-banner funnel" id="ideaBanner" hidden>
+      <p class="mono funnel-kicker">YOUR PROJECT</p>
+      <blockquote class="funnel-idea" id="ideaQuote"></blockquote>
+      <p class="funnel-note">Your idea travels with you — pick a plan to continue.</p>
+    </div>
+    <div class="bill-toggle" role="group" aria-label="Billing period">
+      <button id="billM" aria-pressed="true">Monthly</button>
+      <button id="billA" aria-pressed="false">Annual · save 20%</button>
+    </div>
+    <p class="trust mono">FULL SITE ≈106 CR · EDIT ≈1 CR · STILL ≈4 CR · ENGINEERING ESTIMATES, NOT MARKETING</p>
+  </div>
+</section>
+
+<section class="plans" id="plans" aria-labelledby="plansTitle">
+  <div class="wrap">
+    <h2 id="plansTitle" class="h1">Pick how much<br>you build.</h2>
+    <div class="plan-grid">
+      <article class="plan-card" data-plan="trial">
+        <p class="mono">TRIAL</p><p class="serif plan-price">Free</p>
+        <p class="mono">120 CREDITS · ONE-TIME</p>
+        <ul><li>1 watermarked preview build</li><li>No custom domain · no export</li><li>Taste the pipeline end-to-end</li></ul>
+        <button class="ghost-btn plan-pick" data-p="trial">Start trial</button>
+      </article>
+      <article class="plan-card featured" data-plan="creator">
+        <p class="mono">CREATOR · MOST FLEXIBLE</p><p class="serif plan-price"><span class="p-month">$29</span><span class="p-annual" hidden>$23</span> <small>/mo</small></p>
+        <p class="mono">3,000 CREDITS / MO · ≈8 CINEMATIC SITES</p>
+        <ul><li>200 chat edits included</li><li>3 live sites · custom domain</li><li>ZIP export you own</li><li>20 GB bandwidth / mo</li></ul>
+        <button class="cta-btn plan-pick" data-p="creator">Choose Creator</button>
+      </article>
+      <article class="plan-card" data-plan="studio">
+        <p class="mono">STUDIO · FOR CLIENT WORK</p><p class="serif plan-price"><span class="p-month">$59</span><span class="p-annual" hidden>$47</span> <small>/mo</small></p>
+        <p class="mono">8,000 CREDITS / MO · ≈20 CINEMATIC SITES</p>
+        <ul><li>500 chat edits · priority queue</li><li>10 live sites · white-label export</li><li>Client workspaces-lite</li><li>100 GB bandwidth / mo</li></ul>
+        <button class="ghost-btn plan-pick" data-p="studio">Choose Studio</button>
+      </article>
+    </div>
+    <p class="mono plans-note" id="planNote">SELECTED: TRIAL · <a href="#calc" style="color:var(--sc-signal)">OR BUILD YOUR MONTH ↓</a></p>
+  </div>
+</section>
+
+<section class="calc" id="calc" aria-labelledby="calcTitle">
+  <div class="wrap calc-grid">
+    <div>
+      <p class="eyebrow mono">USAGE ESTIMATOR</p>
+      <h2 id="calcTitle" class="h1">Build your month.</h2>
+      <p class="sub">Every number below is a real credit cost from the same rates the builder charges — not a marketing estimate.</p>
+      <label class="calc-label" for="cSites">Full site builds / month: <b id="cSitesV">4</b></label>
+      <input type="range" id="cSites" min="0" max="20" value="4">
+      <fieldset class="calc-field"><legend class="mono">QUALITY PER SITE</legend>
+        <label><input type="radio" name="q" value="60" checked> Standard · 60 cr</label>
+        <label><input type="radio" name="q" value="106"> Cinematic · 106 cr</label>
+        <label><input type="radio" name="q" value="180"> Maximum · 180 cr</label>
+      </fieldset>
+      <fieldset class="calc-field"><legend class="mono">MOTION COVERAGE</legend>
+        <label><input type="radio" name="m" value="0" checked> Hero only · +0</label>
+        <label><input type="radio" name="m" value="40"> Several sections · +40/site</label>
+        <label><input type="radio" name="m" value="90"> Full cinematic · +90/site</label>
+      </fieldset>
+      <fieldset class="calc-field"><legend class="mono">EXTRAS</legend>
+        <label><input type="checkbox" id="cExport" checked> ZIP exports · 10 cr each × <input type="number" id="cExportN" value="4" min="0" max="50"></label>
+        <label><input type="checkbox" id="cImg"> Extra stills · 4 cr each × <input type="number" id="cImgN" value="8" min="0" max="200"></label>
+      </fieldset>
+    </div>
+    <div class="calc-out browser-frame">
+      <div class="browser-bar"><span></span><span></span><span></span><span class="mono url">estimate · live</span></div>
+      <div class="calc-body">
+        <p class="mono">RECOMMENDED</p>
+        <p class="serif calc-plan" id="calcPlan">Creator</p>
+        <p class="mono" id="calcWhy">Covers ~640 credits/mo with room for 6 more builds.</p>
+        <dl class="calc-nums">
+          <div><dt>Expected usage</dt><dd id="calcUse">640 cr</dd></div>
+          <div><dt>Included</dt><dd id="calcInc">3,000 cr</dd></div>
+          <div><dt>Remaining</dt><dd id="calcLeft">2,360 cr</dd></div>
+          <div><dt>Price</dt><dd id="calcPrice">$29/mo</dd></div>
+        </dl>
+        <a class="cta-btn" id="calcGo" href="index.html#pipeline">Continue with Creator →</a>
+        <p class="funnel-note">ESTIMATE ONLY · METERED LIVE IN THE BUILDER · FAILED JOBS REFUND</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topups" aria-labelledby="topTitle">
+  <div class="wrap">
+    <p class="eyebrow mono">ONE-TIME · STACKS ON YOUR CYCLE · 12-MO EXPIRY</p>
+    <h2 id="topTitle" class="h1">Need more<br>without changing plans?</h2>
+    <div class="plan-grid two">
+      <article class="plan-card"><p class="mono">REFILL</p><p class="serif plan-price">1,000 <small>cr · $20</small></p><p class="sub">≈9 cinematic builds or 1,000 edits. A mid-cycle refill.</p><button class="ghost-btn top-buy" data-t="Refill · 1,000 cr · $20">Buy refill · $20</button></article>
+      <article class="plan-card"><p class="mono">SPRINT · BEST VALUE</p><p class="serif plan-price">3,000 <small>cr · $50</small></p><p class="sub">≈28 cinematic builds. A project sprint without touching your plan.</p><button class="ghost-btn top-buy" data-t="Sprint · 3,000 cr · $50">Buy sprint · $50</button></article>
+    </div>
+  </div>
+</section>
+
+<section class="hosting" aria-labelledby="hostTitle">
+  <div class="wrap">
+    <p class="eyebrow mono">LIVE SITES · DOMAINS · TRAFFIC</p>
+    <h2 id="hostTitle" class="h1">Hosting that stays<br>out of the way.</h2>
+    <div class="host-grid">
+      <div class="host-card"><p class="mono">LIVE SITES</p><p class="sub">Creator 3 · Studio 10 included. Extra sites $5/mo each. Publish on scenica.site or your domain.</p></div>
+      <div class="host-card"><p class="mono">BANDWIDTH</p><p class="sub">Creator 20 GB · Studio 100 GB included. Overage draws 10 cr/GB from your pool — hosting is convenience, export is freedom.</p></div>
+      <div class="host-card"><p class="mono">CANCEL = PAUSE, NOT DELETE</p><p class="sub">Lapsed sites pause with a placeholder; projects, content, and domains are kept. Resubscribe to restore, or export the ZIP first.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="compare" aria-labelledby="cmpTitle">
+  <div class="wrap">
+    <h2 id="cmpTitle" class="h1">Compare every plan.</h2>
+    <div class="cmp-scroll"><table class="cmp">
+      <thead><tr><th>Capability</th><th>Trial</th><th>Creator</th><th>Studio</th></tr></thead>
+      <tbody>
+        <tr><td>Credits</td><td>120 once</td><td>3,000 / mo</td><td>8,000 / mo</td></tr>
+        <tr><td>Full cinematic builds</td><td>1 partial</td><td>≈8 / mo</td><td>≈20 / mo</td></tr>
+        <tr><td>Chat edits</td><td>—</td><td>200 / mo</td><td>500 / mo</td></tr>
+        <tr><td>Live sites</td><td>watermarked preview</td><td>3</td><td>10</td></tr>
+        <tr><td>Custom domain</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>ZIP export</td><td>—</td><td>✓</td><td>✓ white-label</td></tr>
+        <tr><td>Video generation</td><td>—</td><td>V1.5 capped pack</td><td>V1.5 capped pack</td></tr>
+        <tr><td>Workspaces</td><td>—</td><td>—</td><td>lite</td></tr>
+        <tr><td>Priority queue</td><td>—</td><td>—</td><td>✓</td></tr>
+        <tr><td>Support</td><td>docs</td><td>email</td><td>priority email</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="enterprise" aria-labelledby="entTitle">
+  <div class="wrap ent-grid">
+    <div><p class="eyebrow mono">BEYOND STUDIO</p><h2 id="entTitle" class="h1">Need more than<br>a monthly workspace?</h2><p class="sub">Agency volume, team workflows, higher generation limits, dedicated support, commercial controls. No invented tiers — tell us the workload, we quote the caps.</p><a class="ghost-btn" href="index.html#own">Talk to us →</a></div>
+    <div class="status-card"><span class="mono">ENTERPRISE</span><span class="url mono">Custom caps · custom domains · SSO-later</span><span class="mono ok">● QUOTE ON WORKLOAD</span></div>
+  </div>
+</section>
+
+<section class="faq" aria-labelledby="faqTitle">
+  <div class="wrap faq-narrow">
+    <h2 id="faqTitle" class="h1">Questions worth answering<br>before you pay.</h2>
+    <details open><summary>What is a credit?</summary><p>One cent of generation cost. A cinematic site costs ≈106 credits, an edit ≈1, a still ≈4. The builder shows the quote before every expensive job.</p></details>
+    <details><summary>What does a full site cost?</summary><p>Standard 60 cr, Cinematic 106 cr, Maximum 180 cr — plus motion coverage if you animate beyond the hero (+40 or +90 per site). The estimator above uses these exact rates.</p></details>
+    <details><summary>What happens if credits run out?</summary><p>Generation hard-stops with a clear message. Top up with a one-time pack or wait for the monthly reset. Nothing ever overbills.</p></details>
+    <details><summary>Do credits reset or roll over?</summary><p>Plan credits reset monthly and do not roll over. Top-up packs last 12 months.</p></details>
+    <details><summary>Do I own the generated site?</summary><p>Yes. Your brief, content, and export are yours. ZIP contains clean HTML/CSS/JS plus assets and metadata — it opens standalone with no calls to Scenica.</p></details>
+    <details><summary>Can I use a custom domain?</summary><p>On Creator and Studio. Connect it in one step; extra live sites beyond your quota are $5/mo each.</p></details>
+    <details><summary>What happens if I cancel?</summary><p>Sites pause (placeholder), projects and domains are kept. Resubscribe to restore, or export first.</p></details>
+    <details><summary>Which plan for heavy cinematic projects?</summary><p>Studio: 8,000 credits cover ≈20 maximum-quality builds with full motion, plus priority queue. Beyond that, Enterprise caps.</p></details>
+    <details><summary>What is included in the trial?</summary><p>One partial watermarked preview build — the full pipeline taste, no domain, no export, no card required (mocked in this prototype).</p></details>
+  </div>
+</section>
+
+<section class="price-cta">
+  <div class="wrap"><p class="mono" id="ctaIdea" hidden></p><h2 class="h1">Your idea is waiting.</h2><a class="cta-btn large" id="ctaGo" href="index.html#pipeline">Continue to builder →</a></div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap foot-grid">
+  <span class="brand-serif">Scenica</span><span class="mono">BUILD A MORE EXPRESSIVE WEB</span>
+  <nav aria-label="Footer"><a href="index.html#pipeline">Product</a><a href="index.html#presets">Templates</a><a href="pricing.html">Pricing</a></nav>
+  <span class="mono status">PRICES ARE PLAN HYPOTHESIS · COSTS FROM ai-economics.md</span>
+</div></footer>
+<script src="pricing.js" defer></script>
+</body>
+</html>

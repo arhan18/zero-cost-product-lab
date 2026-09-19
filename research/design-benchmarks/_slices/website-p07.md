@@ -1,0 +1,449 @@
+### P07_1. Cards Against Humanity (https://www.cardsagainsthumanity.com/)
+- name: Cards Against Humanity
+- url: https://www.cardsagainsthumanity.com/
+- category: Unusual/creative differentiation — physical party game + irreverent anti-marketing consumer brand
+- targetCustomer: Young/young-at-heart party hosts and friend groups who want an adult, dark-humored party game; broad mainstream since ~2011.
+- primaryProblem: Traditional party games feel lame, sanitized, and are unrelatable for friend groups with a darker, candid sense of humor.
+- valueProposition: A fill-in-the-blank party game that turns 'your awkward personality and lackluster social skills into hours of fun' — plus a company that treats every marketing touchpoint as comedy performance art.
+- businessModel: Physical product commerce: one-time game + paid expansions and packs sold via webstore, Amazon and retail; merch ('other bullshit'); no subscription, no app ('No! We don't want to'); game also offered free as CC-licensed printable PDF.
+- pricing: FACT (structure): main game sold once with expansions and $5 themed packs; past documented prices $5-for-nothing (2015), $6 'BS' (2014); Black Friday 2013 hiked prices +$5. Exact current webstore prices not captured (UNKNOWN).
+- freeTier: FACT: the entire base game is downloadable free under Creative Commons BY-NC-SA 4.0 ('Steal the game' section, since 2011); expansions explicitly NOT free ('We need to make money somehow').
+- mainCta: 'Buy the game' / 'Buy Now' button per product; ticker banner 'GET NEW EXPANSIONS AND ANNOY ELON MUSK!'; email-capture for product announcements.
+- heroStructure: No value-prop hero: giant logo + tiny self-deprecating press quotes ('Bad.' — NPR, 'Stupid.' — Bloomberg) + headline 'Cards Against Humanity' above 3D product box renders; humor precedes explanation.
+- demoStrategy: Product photography + 3D box renders; the game itself is the demo (free PDFs with printing instructions, giant 'Free! Download now!' badge); online card-testing lab (lab.cardsagainsthumanity.com).
+- homepageIa: Ticker banner → logo/press hero → 'Buy the game' product grid (Main Game, Family Edition, Expansions, $5 Packs, other stuff) → 'Steal the game' free download → 'Stuff we've done' stunt showcase (Black Friday 2018, Science Scholarship, Holiday Hole) → email capture → 'Your dumb questions' FAQ accordion.
+- navigation: Deliberately minimal: Shop / About + cart in header; sticky ticker; footer groups Shop / Info / Find Us (social). No product-heavy nav.
+- typography: Big condensed display type for the logo and headlines, clean readable body; strong black/white contrast with one accent; playful but print-like.
+- colorStrategy: Mostly monochrome black/white with red + gold accents; inverted card palette (black cards / white cards) echoes the game; product photography provides the color.
+- layoutSystem: Loose editorial asymmetric grid: product renders, alternating blocks, FAQ stack; no rigid marketing-grid feel.
+- spacing: Generous editorial whitespace around renders and copy; low density for a commerce site.
+- components: Ticker banner, 3D product renders, press-quote badges, huge download badge with arrows, FAQ accordion ('Expand All'), email-capture block, stunt showcase cards.
+- cards: Product cards (3D render + witty label + Buy CTA); 'Stuff we've done' cards (image + title + 'Read'); no testimonial cards in the usual sense.
+- visualHierarchy: Brand humor is the hierarchy: giant logo, minimal 'value prop', press one-liners as proof; product frames the message, not features.
+- motion: Subtle only: ticker scroll, hover states; the antics live in the copy, not the animation.
+- interactions: FAQ accordion, hover on products, ticker ticker, email form; no long click-through flows.
+- onboarding: N/A for buyers (one-click checkout); new players guided by printed rules; online Lab for testing new cards.
+- pricingPresentation: No price tables: tactile product pages and a 'Buy' button; expansion/pack strategy keeps ticket low ($5 packs); famously refuses subscription/app models.
+- trustMechanisms: 15-year brand fame, press quotes, CC free download ('since day one'), retailer ubiquity (Amazon, Target), and its transparency stunts double as proof of character.
+- socialProof: Press one-liners (NPR, Bloomberg), retailer links, large social presence (Instagram/TikTok/Bluesky in footer), and its famous stunts' press coverage.
+- copywriting: Signature deadpan irreverence at full density: 'America's #1 gerbil coffin', 'Are you offended by your game? So are we. It's pretty fucked up!', FAQ answers written as comedy.
+- mobile: Responsive; ticker collapses and product grid stacks (INFERENCE from markup); mobile shopping flow standard.
+- accessibility: FACT: 'Skip to main content' link present; full WCAG conformance UNKNOWN.
+- performance: FACT: image CDN (img.cah.io with auto=format/q params); measured Core Web Vitals UNKNOWN.
+- seo: Brand-name-dominant; site is thin on long-tail content — SEO is not the growth engine; distribution is earned via stunts and word-of-mouth.
+- distinctiveDesign: Anti-marketing as product: the website's job is to be funny, not to persuade; design documents personality instead of features.
+- nonGeneric: Every element carries a joke — upside-down box renders, absurd product names (Ass Pack, Weed Pack, Your Shitty Jokes), FAQ as comedy; no stock photography.
+- unnecessaryComplexity: Product surface is minimal; the theatrical stunts (holes in the ground, selling nothing for $5, cars for $97) are intentionally 'wasteful' as marketing.
+- unusualSimplicity: One transaction type, no accounts, no subscription, no app, no freemium — radical simplicity as principle.
+- productDifferentiation: Game mechanics are copyable; the differentiated asset is the brand — a company that publishes its stunts, gives the game away, and treats customers as co-performers.
+- distribution: Word-of-mouth + annual Black Friday stunts (2013 price-hike, $6 BS 2014 ~$180k, $5-for-nothing 2015 $71k, Holiday Hole 2016, 99% Off Sale cars $97) + social + retail; 1.5M free PDF downloads/year documented (2013).
+- revenueEvidence: FACT on documented campaigns (TechCrunch/NBC/CNBC/Vox): $71,145 for selling nothing (2015, 11,248 buyers), ~$180k bullshit sales (2014), ~$12M estimated lifetime game revenue by 2013 (Yahoo/Media), $4M+ raised for charity since 2012, $250k women-in-science scholarship. Current company revenue private — UNKNOWN.
+- learn: Treat marketing as a product: the setup is the joke and the public makes it real (Max Temkin's 'improv' framing); publish your stunts with receipts for compounding trust; a 'give it away free' position is a brand moat, and anti-selling sells.
+- notCopy: CAH name/logo, card text and game writing, 'party game for horrible people', trademarked slogans, and the specific stunt concepts (hole, bullshit boxes, $97 cars).
+- evidenceGrade: FACT
+- sources: https://www.cardsagainsthumanity.com/, https://techcrunch.com/2015/11/28/heres-what-cards-against-humanity-is-doing-with-the-71145-they-made-on-black-friday/, https://www.cnbc.com/2015/11/27/cards-against-humanity-wins-black-friday-sells-nothing.html, https://www.vox.com/2015/11/28/11620980/cards-against-humanity-sells-nothing-for-71000-on-black-friday, https://finance.yahoo.com/news/cards-against-humanity-pay-want-190000351.html
+
+### P07_2. Neal.fun (https://neal.fun/)
+- name: Neal.fun (Neal Agarwal)
+- url: https://neal.fun/
+- category: Unusual/creative differentiation — single-developer portfolio of viral browser 'toys', games and visualizations ('Weird Web 2.0')
+- targetCustomer: General internet users, students/educators, and the 'other web' crowd who want delightful, surprising, beautifully-crafted browser experiences; no account needed.
+- primaryProblem: Mainstream web is aggressive, full of ads and signup walls; people want for-fun, well-made, zero-friction browser entertainment.
+- valueProposition: 'Games and stuff by Neal' — a stream of high-craft browser toys (The Password Game, Infinite Craft, Absurd Trolley Problems) with no accounts, no paywalls, no onboarding.
+- businessModel: Ad-supported free games + donations ('Buy me a coffee') + business partnerships (partnerships@neal.fun); newsletter list for launches; no subscription.
+- pricing: Free to play; no paid products observed; 'Buy me a coffee' donation link; historical income: full-time living from neal.fun ad revenue (Wikipedia).
+- freeTier: FACT: everything is free — all games, no accounts, no paywalls.
+- mainCta: Click a game tile; secondary links: 'Buy me a coffee', newsletter 'Get new posts', Twitter/Instagram.
+- heroStructure: No hero: a watering-plant easter egg counter ('Watered 0 times today') then a grid of dozens of hand-drawn SVG title cards, then 'Hi! I'm Neal.' — the catalog IS the homepage.
+- demoStrategy: Every toy is instantly playable in-browser with zero friction; the tile grid doubles as the demo — no screenshots or marketing prose.
+- homepageIa: Watering-plant counter → icon grid of games (newest first: Unusual Suspects, Wiki Spy, Cursor Camp, Sandboxels…) → 'Hi! I'm Neal.' intro + social links → newsletter/contact/privacy footer.
+- navigation: Single-page index grid; no nav menu; footer has contact and privacy links only.
+- typography: Clean system/UI sans; each game gets its own hand-lettered SVG logo tile, so the catalog feels individually crafted.
+- colorStrategy: Plain white background carrying per-game palettes; each toy owns its own visual identity rather than a site theme.
+- layoutSystem: Simple responsive grid of icon cards; no editorial layout, no motion-heavy chrome.
+- spacing: Tidy uniform grid spacing; deliberately sparse.
+- components: SVG icon cards, watering-can/climate micro-gadget, email capture, donation link, per-game landing pages.
+- cards: Icon + short name cards only (no screenshots, no ratings); the card grid functions as the library.
+- visualHierarchy: Flat and equal-weighted — no product is 'heroed'; the portfolio is the product.
+- motion: Small engineered delights inside toys and a few page micro-interactions (watering counter); no heavy marketing animation.
+- interactions: Tile hover, click-to-play; the real interactivity is inside each game (parsing Wordle answers, moon phases in The Password Game).
+- onboarding: None — zero-friction design is the strategy; every toy self-explains in seconds.
+- pricingPresentation: No pricing UI; donation (Buy me a coffee) and business-contact links in the footer.
+- trustMechanisms: Creator's track record of viral hits; personal brand (Neal Agarwal); each hit lends fame to the portfolio.
+- socialProof: FACT (per Wikipedia/press): The Password Game >1M visits day one, 10M+ plays by Oct 2023; Infinite Craft (Feb 2024) went viral; repeated Reddit/Twitter virality.
+- copywriting: Deadpan, brief, self-aware: The Password Game is 'a game that tests your password strength, your patience, and your will to live.'
+- mobile: Grid collapses to single column; toys are browser-based and designed to run on phones (INFERENCE — most are simple canvas/DOM games).
+- accessibility: UNKNOWN; no skip-link or conformance statements observed.
+- performance: Static, lightweight index page; toys are client-side and load fast (INFERENCE); measured Core Web Vitals UNKNOWN.
+- seo: Each game gets a clean URL (/password-game etc.) which captures long-tail search demand after virality (FACT: Wikipedia + press rank for 'password game').
+- distinctiveDesign: Curation and craft replace marketing copy — the 'portfolio-as-product' at its purest; the weird-web aesthetic is the brand.
+- nonGeneric: Hand-drawn logos, no stock imagery, no cookie-banner noise, no pop-ups; personality per tile.
+- unnecessaryComplexity: None at the site level; complexity inside toys is intentional (the Password Game's absurd rule stack is the joke).
+- unusualSimplicity: No accounts, no paywalls, no onboarding, one grid — radical frictionlessness.
+- productDifferentiation: Consistent creator brand across a portfolio of standalone viral franchises; among the most-played browser toys of the decade.
+- distribution: Virality of each launched toy (Tweet → Reddit → press), embedded shares, newsletter; repeated 'new toy = new wave' launches; earned press (Engadget, BBC, Wikipedia).
+- revenueEvidence: FACT (Wikipedia citing interviews): Neal made a full-time living from neal.fun ad revenue after graduating Virginia Tech; today ad-supported + donations + partnerships. Absolute revenue figures not public — UNKNOWN.
+- learn: Ship a portfolio of many small zero-friction toys, not one big product; each viral hit refills attention for the next; personality brand (one maker, real name) amplifies every launch; hard fun and absurd constraints spread.
+- notCopy: Neal.fun name, his games' specific mechanics/logos/copy (The Password Game rules, Infinite Craft logic), 'Weird Web 2.0' phrasing.
+- evidenceGrade: FACT
+- sources: https://neal.fun/, https://en.wikipedia.org/wiki/Neal_Agarwal, https://en.wikipedia.org/wiki/The_Password_Game, https://en.wikipedia.org/wiki/Infinite_Craft
+
+### P07_3. Radio Garden (https://radio.garden/)
+- name: Radio Garden
+- url: https://radio.garden/
+- category: Unusual/creative differentiation — live-radio globe web experience, born as EU-funded art/research project, now an indie company
+- targetCustomer: Radio lovers, culture explorers and 'armchair travelers' who listen to feel a place, not just a sound.
+- primaryProblem: Radio is geographically fragmented and faceless; there is no easy way to hear what a city sounds like right now.
+- valueProposition: Spin a globe, tap a green dot, and stream live radio from that exact place — radio as a geographic, cultural experience ('just like the air knows no barriers to radio signals').
+- businessModel: Free ad-supported web + Radio Garden Premium subscription (launched 2023 on iOS/Android); company origin: commissioned 2013-2016 by the Netherlands Institute for Sound and Vision + Transnational Radio Knowledge Platform; operated since 2019 as independent company Radio Garden B.V. (Amsterdam); 40k+ stations.
+- pricing: FACT (PCMag/review): free with pop-up ads; Premium $2.99/month or $24.99/year (Android seen at ~$2.49/mo / ~$25/yr).
+- freeTier: FACT: full globe + all stations stream free with occasional pop-up ads; Premium adds ads-free listening + extras (equalizer per PCMag).
+- mainCta: None in the traditional sense — the CTA is the globe itself ('Press play to start Radio Garden'); secondary: Browse, About/Settings, app download.
+- heroStructure: The interactive globe fills the whole screen; no marketing hero or copy stack on load.
+- demoStrategy: The product is the demo: streams begin immediately, no signup, no account; the app is a passive exploration.
+- homepageIa: Full-screen globe (dots = live stations) → play/pause + live stream → search/browse → states list; settings/about page documents team and origins.
+- navigation: Minimal overlay: Settings/About, Browse (curated playlists), team/info page; app-store links; no heavy nav.
+- typography: Clean unobtrusive sans; type is subordinate to the globe; small caps labels ('sprouting live radio streams').
+- colorStrategy: Dark starfield/earth tones with green 'sprouting' dots and soft UI accents; the garden metaphor runs through the palette.
+- layoutSystem: Single full-bleed canvas centred on viewport; overlays for info/playlists.
+- spacing: Full-viewport immersive layout; no scrolling marketing sections.
+- components: WebGL/map globe, dot station pins, audio player, search, browse/playlists, about page, app badges.
+- cards: Browse cards for curated mixes and regions; station 'cards' are inline; card system is secondary to the globe.
+- visualHierarchy: One object (the globe) dominates; text is minimized to near-silence.
+- motion: Rotating globe, dots 'sprout' and pulse, smooth crossfade between streams — motion is the core interaction.
+- interactions: Drag/spin globe, click dots, search, browse, favourite, Premium unlock; tactile exploratory UX.
+- onboarding: Open and play — zero setup; Premium is opt-in via app stores.
+- pricingPresentation: Premium as an in-app subscription; pitch is 'ad-free' + equalizer; the free tier of this experience is foregrounded.
+- trustMechanisms: Institutional origins (Sound & Vision, universities), transparent team/about page ('head gardener' Jonathan Puckey), 40k+ station catalog, press pedigree (NPR, Radio World).
+- socialProof: FACT: NPR Weekend Edition (Dec 2016, days after launch), Radio World feature, NYT Magazine essay framing; pandemic-era 'armchair travel' virality.
+- copywriting: Warm extended metaphor: 'sprouting live radio streams', 'tending to the garden', 'keeping the weeds at bay'.
+- mobile: FACT: mobile-first redesign (2020) + native iOS/Android apps (2018, Premium 2023) — radio on the go is a core use case.
+- accessibility: UNKNOWN; globe interaction is pointer-based and may not be keyboard-accessible.
+- performance: Depends on streaming 40k+ station feeds; no measured CWV data (UNKNOWN); the site is canvas/WebGL heavy.
+- seo: Weak long-tail structure; growth is press/brand-driven, not SEO-driven (INFERENCE).
+- distinctiveDesign: One metaphor fully executed: radio as a garden on a planet — geography replaces the browse-list; the interface is the emotional pitch.
+- nonGeneric: No dashboard lists-first UX; deliberately unhurried exploration over utility; unlike TuneIn/iHeart list interfaces.
+- unnecessaryComplexity: Deliberately minimal feature set; PCMag notes missing podcasts/rewind — a sparseness, not clutter.
+- unusualSimplicity: The globe removes the browse-catalog problem entirely — place as the organizing principle.
+- productDifferentiation: Place-topology radio vs list-topology competitors; art-project provenance as a differentiator; global station breadth.
+- distribution: Press virality at launch (NPR within a week), pandemic 'window onto other places' surge, app-store curation, word-of-mouth from radio obsessives.
+- revenueEvidence: FACT: Premium $2.99/mo + $24.99/yr (PCMag); originally publicly funded (Institute for Sound & Vision, HERA) with funding challenge documented (Radio World); company is small/private — absolute revenue UNKNOWN.
+- learn: A single strong metaphor plus a zero-friction demo can carry a whole product; public-institution origins are a marketing moat ('not a startup, a research project'); 'feel a place' beats 'pick a station'.
+- notCopy: Radio Garden name, the globe/dot visual language, the garden metaphor, station catalog, Premium specifics.
+- evidenceGrade: FACT
+- sources: https://radio.garden/, https://radio.garden/settings/radio-garden, https://en.wikipedia.org/wiki/Radio_Garden, https://www.pcmag.com/reviews/radio-garden, https://www.radioworld.com/global/radio-garden-turns-earth-into-radio-tuner, https://www.npr.org/2016/12/18/506045527/jonathan-puckey-s-radio-garden-knows-no-borders
+
+### P07_4. Poolsuite (https://poolsuite.net/)
+- name: Poolsuite (fka Poolside FM)
+- url: https://poolsuite.net/
+- category: Unusual/creative differentiation — 'ultra-summer' nostalgic internet radio with a full brand universe (events, sunscreen, DAO, merch, apps)
+- targetCustomer: Music listeners and 'global leisure enthusiasts' seeking atmosphere over utility; nostalgia-driven Gen Z/Millennial audience; brand collectors.
+- primaryProblem: Mainstream music apps are utilitarian and cold; listeners want a vibe, a mood, an escape — 'change the weather in the room'.
+- valueProposition: 'The ultra-summer internet radio station, playing an infinity pool of summer sounds 24/7. Swimwear optional. Formerly Poolside FM.' — a perpetual pool-party where the interface is a 90s Mac desktop showing archive pool footage.
+- businessModel: Free ad-free-ish listening + membership/subscription tiers (monthly subscriber; historic 'Executive Club' & 'Grand Leisure' offerings per Palm Report) + merch + worldwide parties/events + brand extensions (Vacation sunscreen; Manor DAO NFT/events); Palm Report newsletter as retention loop.
+- pricing: FACT: free tier for unlimited listening + newsletter + party invites; paid membership exists with named tiers (monthly subscriber, Executive Club, Grand Leisure); exact membership price not visible in scanned pages — UNKNOWN.
+- freeTier: FACT: unlimited listening is free; membership adds perks (per V3 Palm Report: embroidered cap + year of Cosmos Premium, more to come).
+- mainCta: 'Become a member' / 'Create account' (free tier); 'Log in'; navigation via OS-window chrome (TV toggle, channels, submit track).
+- heroStructure: The player IS the hero: a Classic-Mac-desktop skin with window chrome, a timestamp in 1997, a CRT 'Pool TV' looping archive videos, track ticker and channel list — no marketing headline.
+- demoStrategy: Music streams instantly in-browser; the retro OS interface plus looping pool VHS footage is the demo itself.
+- homepageIa: Reader at poolsuite.net: header ('Become a member / Log in', palm logo) → desktop window with Pool TV, track ticker ('TSTD EDITS 09…'), channel list, play/pause/submit controls; brand manifesto line 'Born in the Highlands of Scotland…'.
+- navigation: OS-window chrome + minimal links; newsletter/party signup; Palm Report (newsletter) with back issues.
+- typography: Retro pixel/semi-pixel type, all-caps labels, VHS-era aesthetics; playful and cinematic.
+- colorStrategy: Pacific-sunset palette (teal, coral, gold) with retro gradients and palm-tree logo; CRT scanline vibes.
+- layoutSystem: Skeuomorphic desktop: overlapping windows, taskbar, CRT frames — dense pastiche, deliberately stylized.
+- spacing: Deliberately cramped desktop-pastiche density; each toggle is a prop.
+- components: Audio player, CRT 'Pool TV' video loop, channel selector, mixtapes, share/favourite, submit-a-track, membership CTA, newsletter.
+- cards: Mostly N/A — app-style tiles/channels rather than marketing cards.
+- visualHierarchy: Imagery and vintage motion lead; text is minimal and invented to the fantasy ('Wed 4 Mar 1997').
+- motion: Looping archive footage (beaches, pools, retro ads) inside the CRT window — motion as atmosphere.
+- interactions: Play/pause, channel switching, fullscreen TV, favourite/share, submit track; audio-focus rather than dashboards.
+- onboarding: Lightweight free account creation (email magic-link pattern per Palm Report); the nostalgia starts on first load.
+- pricingPresentation: 'Become a member' CTA; membership benefits announced in the Palm Report; price not surfaced on scanned pages (UNKNOWN).
+- trustMechanisms: 10+ years of history (since 2014), major press laurels (TechCrunch: 'the most fun you will have on the internet today'), app-store availability, real-world events.
+- socialProof: FACT: TechCrunch (2019), Vice (2014), widespread 'app of the day' reviews, community newsletter/collabs.
+- copywriting: Summer-supremacist voice: 'Swimwear optional', 'the handsome price of zero dollars', 'an infinity pool of summer sounds' — copy sells a feeling.
+- mobile: FACT: native iOS app (2020, styled like a Nokia 3310) and Android app (2025); website responsive (INFERENCE).
+- accessibility: UNKNOWN — skeuomorphic retro UI and audio-first design may weaken a11y; no conformance statements observed.
+- performance: Audio + looping video are heavy; no measured CWV (UNKNOWN).
+- seo: Brand-led; presses/waves + newsletters rather than SEO (INFERENCE).
+- distinctiveDesign: The interface is a costume: a fake 90s desktop that makes radio feel like a vacation — nostalgia as a design strategy at full commitment.
+- nonGeneric: Entirely bespoke UI; no stock music-app patterns; invented lore ('iffy Ferrari 308', jet-ski invitation copy).
+- unnecessaryComplexity: The fictional OS is arguably 'unnecessary' — possible initial confusion (INFERENCE), but it is the product.
+- unusualSimplicity: No search, no algorithmic queue, deliberately limited controls — an always-on ambient stream.
+- productDifferentiation: Atmosphere-as-product and brand-first business (radio → sunscreen → events → DAO); a 'work of leisure' studio, not a streaming player.
+- distribution: Nostalgia virality, press waves (2014/2019/2020), newsletter (Palm Report, biweekly), events and merch, app store retargeting; founder storytelling (Scottish Highlands origin).
+- revenueEvidence: FACT: paid membership model exists (monthly subscriber / Executive Club / Grand Leisure), merch, Vacation sunscreen venture, Manor DAO NFT fundraising; exact membership price UNKNOWN; company private — no public revenue.
+- learn: Sell a feeling, not a feature; a costume UI can become the entire brand; extend brand equity into adjacent mini-products (sunscreen, clubs, events); a newsletter is the retention and relaunch engine.
+- notCopy: Poolsuite name/logo, palm-tree mark, 'ultra-summer'/'swimwear optional' copy, the 90s-Mac chrome and CRT loops, Vacation/Manor DAO properties.
+- evidenceGrade: FACT
+- sources: https://poolsuite.net/, https://palmreport.poolsuite.net/poolsuite-v3, https://en.wikipedia.org/wiki/Poolsuite, https://techcrunch.com/2019/07/26/poolside-fm-is-the-most-fun-you-will-have-on-the-internet-today/
+
+### P07_5. Kagi (https://kagi.com/)
+- name: Kagi
+- url: https://kagi.com/
+- category: Unusual/creative differentiation — user-funded, ad-free subscription search engine and ecosystem; mission-driven challenger in a 'solved' category
+- targetCustomer: Privacy-conscious technical/professional users and families who can feel search quality decline and are willing to pay; 'tens of thousands of pioneers'.
+- primaryProblem: Free search is driven by ads and tracking: manipulated rankings, noisy results, eroded privacy — you are the product.
+- valueProposition: 'Reclaim the web, restore your privacy' — ad-free, tracker-free search 'fully funded by its users' with powerful controls (Lenses, filters), plus an ecosystem (Kagi Assistant, Orion browser, Translate, News, Small Web curation).
+- businessModel: User-funded subscription; no ad revenue ever; bootstrapped 2018-2023 (~$3M from founder), then $670K community SAFE (2023) + ~$2.5M round from ~93 community angels (2023/24); Public Benefit Corporation (early 2024); live-stats transparency.
+- pricing: FACT (kagi.com/pricing): Trial free 100 searches; Starter $5/mo (300 searches); Professional $10/mo (unlimited); Ultimate $25/mo (unlimited + premium AI models); annual billing ~10% off; monthly alternates; pro-rated upgrades.
+- freeTier: FACT: Trial = 100 searches + 100 Assistant interactions, no card; additionally free Orion browser, Kagi Translate, Small Web, Summarizer.
+- mainCta: 'Start your journey' / 'Start your Free Trial' / 'Sign up for free'; in-page ecosystem links.
+- heroStructure: Manifesto headline ('Reclaim the web, restore your privacy') over a full sentence of value, then ecosystem product tiles with real UI screenshots — claim first, proof by product immediately.
+- demoStrategy: Real product screenshots (search results, Assistant answers, devices); the 100-search free trial; Small Web as an ethos demo; press voices quoted inline.
+- homepageIa: Manifesto hero → Kagi Ecosystem (Search / Assistant / Orion Browser) → Web Essentials (Translate / News / Summarize) → app badges → 'Human-First by Design' (Small Web, AI philosophy) → press-quote band → Kagi for Teams / Libraries → FAQ → final 'Your web. Your voice.' CTA.
+- navigation: Slender top nav (Teams, Libraries, Pricing, Why pay for search?, Blog, Sign up free, Sign in); footer grouped Company / Media / Resources.
+- typography: Clean geometric sans; editorial and confident; moderate weights with a crisp quote band.
+- colorStrategy: Near-white with deep indigo/ink text and a warm amber accent; bright 'orb' logo; restrained premium calm — the anti-Google-busy aesthetic.
+- layoutSystem: Symmetric card grids on white; alternating feature rows; generous gutters; dark sections used sparingly.
+- spacing: Airy, premium white space throughout; unhurried layout mirrors the 'no-noise' pitch.
+- components: Product-row cards with screenshots, press-quote band, plan tab toggles, accordion FAQ, app-store badges, community/social icons, Doggo mascot.
+- cards: Feature cards (icon + title + short line + link) and press-quote cards with names and roles.
+- visualHierarchy: One big claim, then layered proof: product cards → press quotes → org case (Teams/Libraries) → FAQ.
+- motion: Light and functional: hover states, tab switches; nothing flashy — calm as a brand statement.
+- interactions: Plan/persona tabs (Individual/Family/Team), monthly/annual toggle, accordion FAQ, signup links.
+- onboarding: Free 100-search trial requires only email/OAuth — no payment; browser extension setup helps switch; docs guide the rest.
+- pricingPresentation: Transparent 4-tier grid with per-plan value bullets and a hard 'search allowance' currency; 'Why pay for search?' essay; Fair Pricing policy (unused month → full credit); published milestones ('crossed $1M annual revenue', '50K members').
+- trustMechanisms: Live Stats page (kagi.com/stats), Public Benefit Corporation status, community-funded origin, published history, press quotes, 'based on your subscription' incentives.
+- socialProof: FACT: quotes from John Gruber ('best search engine in the world'), David Pierce/The Verge ('best Google alternative I've tried'), Cory Doctorow ('I immediately bought a family plan'), Matthew Gault/Gizmodo; 50K members milestone (June 2025).
+- copywriting: Manifesto-lite for realists: 'The human resistance needs you'; plain, concrete product prose; decisive anti-ad language.
+- mobile: FACT: native iOS/Android search apps + Orion browser; responsive site (INFERENCE).
+- accessibility: Text-first and high-contrast (INFERENCE); full WCAG conformance UNKNOWN.
+- performance: Image CDN (storage.googleapis) with webp; search speed is a product claim; independent Core Web Vitals UNKNOWN.
+- seo: Blog essays ('Why pay for search?', Small Web), docs hub, help center; strong links from privacy/tech community; press-driven authority.
+- distinctiveDesign: The anti-Google aesthetic made literal: calm, ad-free, tracker-free layout that mirrors the product promise — calm is the argument.
+- nonGeneric: 'Humanize the Web' tagline, orb mark, Doggo mascot, Small Web curation, live-stats page — all bespoke.
+- unnecessaryComplexity: Ecosystem breadth (search + AI + browser + translate + news) can overwhelm newcomers (INFERENCE), mitigated by clear grouping.
+- unusualSimplicity: Radical simplification: remove ads, trackers, and algorithmic noise; 'pay instead of being the product' as a simplicity thesis.
+- productDifferentiation: Category creator of consumer pay-for-search; Lenses/custom ranking; no data asymmetry; Privacy Pass anonymity; publisher-friendly positioning.
+- distribution: Founder/blog essays and podcast circuit, press narration of the 'resistance' to Big Tech, community evangelism, word-of-mouth among paid loyalists; transparent milestones create shareable moments.
+- revenueEvidence: FACT: docs history 'We cross $1M annual revenue milestone' (2024); 'Celebrated 50K Members' (June 2025); bootstrapped ~$3M + $670K SAFE + ~$2.5M community round; live stats public. Latest exact ARR UNKNOWN (Live Stats live).
+- learn: A sharp thesis ('ads broke search') plus transparency plus calm premium design can reopen a category everyone thought was closed; publish your numbers and milestones to earn trust; a hard-capped free trial converts believers, Fair Pricing removes churn fear.
+- notCopy: Kagi/Orion names, orb logo, Doggo mascot, 'Humanize the Web'/'Reclaim the web' slogans, Lenses branding, live-stats page pattern.
+- evidenceGrade: FACT
+- sources: https://kagi.com/, https://kagi.com/pricing, https://help.kagi.com/kagi/company/history.html, https://kagi.com/2025, https://www.theverge.com/web/631636/kagi-review-best-search-engine
+
+### P07_6. Glitch (https://glitch.com/)
+- name: Glitch
+- url: https://glitch.com/
+- category: Unusual/creative differentiation — friendly, whimsically-branded collaborative coding platform and remix community (developer tool as a warm place) — project hosting ended Jul 8 2025
+- targetCustomer: Hobbyist-to-pro developers, students, educators, and artists who want to build/remix web apps instantly without cold, institutional tooling.
+- primaryProblem: Developer tools feel intimidating and hostile; standing up and deploying a full-stack app is friction-heavy for beginners.
+- valueProposition: 'The friendly community where everyone builds the web' — instant in-browser IDE with one-click remixing and playful MOP aesthetic; 'a consumerized version of cloud computing'.
+- businessModel: Freemium SaaS: generous free hosting + Pro ($10/mo, $96/yr, 2020; earlier 'Boosted Apps' tier); Teams product; acquired by Fastly May 2022 (~$40M per PitchBook); project hosting ended July 8, 2025 — Pro subscriptions refunded and discontinued.
+- pricing: FACT (TechCrunch 2020): Pro $10/month or $96/year (5 always-on apps, rate-limit removal, double storage, 4x RAM); free tier for hobby apps; subscriptions stopped May 2025.
+- freeTier: FACT: generous free tier — instant hosting and remixing for casual apps; Pro was for power/boosted apps.
+- mainCta: Historical: 'Start remixing' / 'Remix this' on every app; today the homepage is a graceful shutdown notice: download projects, set redirects (through end of 2026).
+- heroStructure: Historical: bright editorial hero ('Anyone can build the web' energy) with animated canvases and swirling community app cards; current site: 'Au revoir, Glitch!' notice + migration links.
+- demoStrategy: Every app page was a live demo — 'Remix' copied and ran the code in seconds; the platform demos itself.
+- homepageIa: Historical: editorial hero → community app gallery → how-it-works → culture/values (union, ethical tech) → blog; current: shutdown notice → export/redirect guide → forum.
+- navigation: Historical: playful top nav (Explore, Start a project, Pricing, About) with remix chrome; current: minimal utility nav.
+- typography: Relaxed editorial sans with vivid color accents and playful all-caps labels; human over chrome.
+- colorStrategy: Bright toy-box palette (yellows, blues, pinks, greens) on white — deliberately anti-terminal, high-chroma friendliness.
+- layoutSystem: Editorial cards, big type, playfully staggered imagery; generosity over density.
+- spacing: Playful generous spacing; canvases breathe.
+- components: Community app cards (screenshot + avatar + Remix/View), animated hero canvas, in-browser editor frames, culture blog, 'jams'.
+- cards: App cards = user-generated content with instant actions; the gallery doubles as the social proof.
+- visualHierarchy: Emotional (play, sharing) over instructional; demos everywhere, people first.
+- motion: Animated hero canvas, hover tilt, playful transitions — motion as delight.
+- interactions: One-click 'Remix', instant in-browser editor, community follow, ready-made starter packs; code reinterpreted as play.
+- onboarding: Build without signing up first; remix-first learning; later accounts for persistence.
+- pricingPresentation: Pro card at the bottom of the funnel ($10/mo, $96/yr); free tier foregrounded; upgrade presented as optional power.
+- trustMechanisms: Fog Creek lineage (Joel Spolsky), ethics-first culture (unionized March 2020 — one of the first tech startups), open ethos, education partnerships.
+- socialProof: FACT: 5M+ apps and bots (2020), 1M+ users (Wikipedia), 'creator interviews' blog, Mozilla Thimble partnership, awards posts.
+- copywriting: Warm, inclusive, human: 'the friendly community where everyone builds the web'; Anil Dash's reflective essays ('Do you remember why we named this thing Glitch?').
+- mobile: Responsive site (INFERENCE); full editor less usable on mobile.
+- accessibility: Culture emphasized accessibility-minded design (INFERENCE); current conformance UNKNOWN.
+- performance: Legacy architecture and 'bad actors'/abuse costs were the cited reasons hosting ended (FACT per announcement); among the ecosystem's lessons.
+- seo: Docs, tutorials, blog ('Tips & Tutorials'), app galleries; strong developer-search presence historically.
+- distinctiveDesign: Proof that developer tools can be joyful: whimsical brand, community gallery as homepage, remix as the core verb.
+- nonGeneric: No dark-terminal default; characterful illustrations; playful naming (Gomix→Glitch) and cartoon creator interviews.
+- unnecessaryComplexity: Editor + hosting + community + teams sprawl; costly legacy infrastructure and moderation/abuse burdens (FACT) ultimately ended hosting.
+- unusualSimplicity: 'Remix like a cassette' — one button forks, runs and hosts any app; the friendliest possible entry to coding.
+- productDifferentiation: Remix culture + warmth against serious PaaS; every app forkable; community gallery as product surface.
+- distribution: Community galas/JAMS, Anil Dash's essays and storytelling, education partnerships, viral starter projects, DevRel culture; watched by mainstream press (The Verge etc.).
+- revenueEvidence: FACT (timeline/press): $30M Series A (Tiger Global, Jul 2019), Fastly acquisition May 2022 (PitchBook: ~$40M deal), Pro $10/mo pricing; actual ARR UNKNOWN (Growjo estimate ~$3.6M, low-confidence) and the company subsequently shut hosting (2025).
+- learn: Warmth can draw millions to an intimidating craft — brand alone can't rescue expensive, undifferentiated infrastructure; watch unit economics and abuse costs from day one (cautionary case: full shutdown by Jul 2025).
+- notCopy: Glitch name/logo, toy-box color scheme, 'friendly community' phrasing, GIF/remix metaphors, its specific editor UI.
+- evidenceGrade: FACT
+- sources: https://glitch.com/, https://blog.glitch.com/post/changes-are-coming-to-glitch, https://blog.glitch.com/post/goodbye-glitch, https://techcrunch.com/2020/04/15/glitch-debuts-10-mo-subscription-platform-for-power-users/, https://www.theverge.com/news/673457/glitch-coding-platform-shutting-down
+
+### P07_7. Window Swap (https://www.window-swap.com/)
+- name: Window Swap
+- url: https://www.window-swap.com/
+- category: Unusual/creative differentiation — pandemic-born voyeuristic 'windows of the world' platform; slow-web calm as a product
+- targetCustomer: Curious global internet users, wanderlust-bound commuters and 'armchair travelers'; gift-givers looking for meaningful digital presents.
+- primaryProblem: Lockdown and travel limits confined people indoors; people yearned for a calming, human way to 'see elsewhere'.
+- valueProposition: 'Watch windows around the world' — randomly play a real 10-minute open-window video filmed by someone somewhere; 'a gift of calm for someone you love'; submit your own window.
+- businessModel: Freemium: WindowSwap All-Access subscription $5/mo (all windows ever uploaded, unlimited bookmarks, playlists, back button); Tip Jar (tips flow to window submitters); gift All-Access subscriptions; volunteer-submitted user content.
+- pricing: FACT (homepage): All-Access upgrade $5 monthly; gift 'Gift WindowSwap All-Access'; Tip Jar tiers.
+- freeTier: FACT: free random window viewing with basic features; bookmarks/playlists/back-button/history gated behind All-Access.
+- mainCta: 'Open a window somewhere in the world' + 'Submit' your own window; secondary: 'Upgrade for $5 monthly', 'Gift WindowSwap All-Access'.
+- heroStructure: Cinematic full-screen frame of a real window view + title 'Open a window somewhere in the world' + submit affordance — a threshold, not a pitch.
+- demoStrategy: The viewer is the product — first click plays a stranger's real window video; no demo, the whole site is the demo.
+- homepageIa: Hero title → 'Open a window' → All-Access pitch ($5/mo) → Tip Jar social-economy section → 'take our survey' → WindowSwap Artists (50-windows collaborative music video) → footer (Instagram/news/contact).
+- navigation: Minimal: Login, Submit, Buy-us-a-coffee, Latest News, Contact, Instagram; No heavy menu.
+- typography: Calm editorial serif-display for headings over light sans body; gentle scale.
+- colorStrategy: Soft cream/sky pastels and photographic color from user windows; restrained UI.
+- layoutSystem: Centred cinematic single-column; large media containers; no grid clutter.
+- spacing: Open, contemplative negative space — the 'gift of calm' in layout.
+- components: Video viewer/modal, tip buttons, All-Access pitch card, survey link, artist-project banner, capitalization on curated T&Cs.
+- cards: Minimal cards; content is full-bleed media rather than card grids.
+- visualHierarchy: One window view per click — the anti-timeline hierarchy.
+- motion: Soft crossfades between windows; deliberate slowness over flash.
+- interactions: Click-through window, shuffle, bookmark (premium), tip, submit via form/T&Cs.
+- onboarding: Zero-form: a random window plays instantly; submission flow demands 10-min horizontal footage (community-defined rules).
+- pricingPresentation: Single lightweight upgrade pitch + gift CTA + Tip Jar; pricing kept almost invisible to preserve calm.
+- trustMechanisms: Human-curated submissions; founders' personal story (Singapore husband-and-wife quarantine project, CNN); tips routing to real households.
+- socialProof: FACT: CNN Travel feature (Jul 2020), widespread pandemic virality, NYT Magazine framing, artist collab (50 windows / 30 countries / 3 artists).
+- copywriting: Slow-web sweetness: 'a gift of calm', 'open a window somewhere in the world'; instructions written warmly (photosite-like T&C).
+- mobile: Viewing on a phone is explicitly encouraged ('use it on your phone'); responsive (INFERENCE).
+- accessibility: Standard video controls; WCAG conformance UNKNOWN.
+- performance: Vimeo-hosted video embeds (FACT from markup); page weight/autoplay behavior UNKNOWN.
+- seo: Concept-brand and press-driven; little long-tail keyword play (INFERENCE).
+- distinctiveDesign: Voyeuristic calm made into a product: peeking through strangers' windows; the concept is the design; everything subordinated to one metaphor.
+- nonGeneric: No feed, no likes, no algorithm — one random window at a time; UGC with romance (meta point of view of a real person).
+- unnecessaryComplexity: Very little UI; premium upsell deliberately light.
+- unusualSimplicity: Two actions ('open' / 'submit') plus gifting — radical restraint.
+- productDifferentiation: Place-led storytelling vs social video; curation over recommendation; 'ambient human connection' vs engagement engines.
+- distribution: Built for the lockdown moment (2020), CNN/press virality, quarantine shareability, gift economy; organic submission flywheel.
+- revenueEvidence: FACT: live $5/mo All-Access tier, tip jar, gift subscriptions; small creative business — overall revenue figures not public (UNKNOWN).
+- learn: A timely emotional concept + a submission economy made romantic + one light premium feature (back button!) converts; gifting extends reach; the founders' own story is a coverage magnet.
+- notCopy: Window Swap name/brand, ten-minute-horizontal rule, 'a gift of calm' copy, the artists-collab campaigns, its specific curated T&Cs.
+- evidenceGrade: FACT
+- sources: https://www.window-swap.com/, https://www.cnn.com/travel/article/window-swap-quarantine-trnd
+
+### P07_8. HEY (https://www.hey.com/)
+- name: HEY (HEY.com by 37signals)
+- url: https://www.hey.com/
+- category: Unusual/creative differentiation — radically opinionated premium email + calendar service; relaunching a 'solved' category on philosophy and design
+- targetCustomer: Professionals who resent bloated inboxes, spam, newsletters and surveillance, and who value privacy, design and a strong point of view.
+- primaryProblem: Email is a mess: first-time-sender noise, duplicated inbox/trad categories, spy pixels, and no good model for 'less email'.
+- valueProposition: 'A delightfully fresh take on email + calendar': The Screener (admit/reject senders), The Imbox ('not a typo'), Paper Trail (receipts), Feed (newsletters), Reply Later/Set Aside, HEY Calendar — 'email is a treasure' reclaimed from an anti-Kevin company.
+- businessModel: Flat paid subscription only — no ads, no data-selling; direct from 37signals (Basecamp) with a founder voice; family plans; premium vanity addresses.
+- pricing: FACT (hey.com/pricing): HEY for You $99/year (~$8.25/mo); HEY for Families $179/year total (up to 5 people); short addresses $349/yr (3-char) and $999/yr (2-char); annual billing only; 30-day free trial, no card.
+- freeTier: FACT: 30-day trial, no credit card ('We can't charge you until you decide'); no permanent free tier.
+- mainCta: 'Try HEY free' / sign-up; newsletter capture ('Join more than 150,000 people').
+- heroStructure: Layered, tilted stack of deep product screenshots with one-line radical claims ('The first time someone emails you they land in The Screener'); founder letter (Jason Fried) anchors trust.
+- demoStrategy: Feature-by-feature scrolling page with live-looking mock UIs (Screener, Imbox), playable mock interactions inside the marketing site (INFERENCE), and the 30-day no-card trial as the real demo.
+- homepageIa: Hero → Screener → Imbox → Paper Trail → try-it CTA → founder letter → HEY Calendar → testimonials/quotes → features hub → pricing.
+- navigation: Slim brand nav; each page single-column storytelling; /features deep-links; pricing with full FAQ.
+- typography: Clean modern sans with big playful headlines; 37signals' typographic craft and monochrome-plus-warmth palette.
+- colorStrategy: Signature warm coral/orange-to-magenta gradients on cream — deliberately non-corporate-blue; screenshots pop against it.
+- layoutSystem: Asymmetric magazine layout with stacked/tilted 3D-feel screenshot cards; alternating text/media.
+- spacing: Generous magazine white space; editorial rhythm.
+- components: Stacked screenshot cards, feature tab dashes, founder video/letter, testimonial blocks, pricing drawer, short-URL price surcharge menu.
+- cards: Feature cards with tilted stacked screenshots; testimonial quote cards.
+- visualHierarchy: One philosophy per fold; headline leads, screenshot confirms.
+- motion: Gentle scroll-linked transitions and tilt hover (INFERENCE — consistent with the design language); no heavy animation.
+- interactions: Interactive-looking mock UIs in the marketing page, product tours, feature navigation.
+- onboarding: 30-day trial; guided first-day screener flow; address selection with vanity pricing.
+- pricingPresentation: Bold 'Two flavors, two prices' — flat honest pricing with candid FAQ ('annual billing only'); the anti-ads stance itself is the pitch.
+- trustMechanisms: 37signals bootstrap-renown; 'you're not a product' positioning; connected to 'we won't get swallowed by Big Tech' (Andy Baio quote); privacy guarantees.
+- socialProof: FACT: launch coverage (The Verge), quotes from Andy Baio; 150k newsletter subscribers; long-standing Basecamp/37signals customer trust.
+- copywriting: Confident plainspoken philosophy: 'The Imbox: It's not a typo', 'Email is a treasure', 'Two flavors, two prices'.
+- mobile: FACT: apps for iOS and Android + web/desktop (announced at launch); responsive site (INFERENCE).
+- accessibility: Text-first, high-contrast (INFERENCE); conformance UNKNOWN.
+- performance: Fast marketing site; product-level performance marketed; measured Core Web Vitals UNKNOWN.
+- seo: Feature pages target long-tail (imbox, reply later); 37signals domain authority and essays.
+- distinctiveDesign: Design-as-argument: the Imbox typo, The Screener, tilted stacked screenshots, sunshine palette — the design says 'you've been doing email wrong'.
+- nonGeneric: Zero generic templates; the coral gradient and vocabulary (Imbox, Feed, Set Aside) became signature.
+- unnecessaryComplexity: New vocabulary and a walled @hey.com address raise switching costs; some power users reject short-vanity pricing (INFERENCE).
+- unusualSimplicity: Reduces email to a few deliberate decisions (reply now / reply later); 'you get less email' is the product promise.
+- productDifferentiation: Philosophy-first email with screener, paper trail and native calendar; anti-surveillance; cross-platform consistency.
+- distribution: 37signals audience + June-2020 manifesto launch + famous Apple App Store dispute (July 2020) which earned global press; YouTube 'Going the Distance' documentary; word of mouth among designers/founders.
+- revenueEvidence: FACT: published pricing; 37signals LLC ~$80.8M estimated ARR 2024 (GetLatka, third-party); HEY-specific revenue not broken out — UNKNOWN.
+- learn: You can relaunch a 'dead' category with a clear philosophy; naming changes perception (Imbox); sunny human design differentiates against corporate utilities; a no-card 30-day trial and flat pricing build trust.
+- notCopy: HEY trademark/marketing, 'Imbox', 'Reply Later', 'Paper Trail', 37signals voice and visual identity, on-brand copy.
+- evidenceGrade: FACT
+- sources: https://www.hey.com/, https://www.hey.com/pricing, https://www.theverge.com/2020/6/15/21286466/hey-email-basecamp-price-availability-platforms-launch, https://getlatka.com/companies/hey.com
+
+### P07_9. Are.na (https://www.are.na/)
+- name: Are.na
+- url: https://www.are.na/
+- category: Unusual/creative differentiation — member-owned 'slow internet' visual knowledge platform (channels of blocks) with radical financial transparency
+- targetCustomer: 'Students, hobbyists and connected knowledge collectors' — designers, researchers and artists who want depth, calm, collaboration and no engagement algorithm.
+- primaryProblem: Social feeds are noisy, addictive and optimized for engagement; saving and connecting ideas with other people in context is broken.
+- valueProposition: 'Playlists, but for ideas' / 'an Internet memory palace' — save links, images and files into collaborative channels and connect ideas across disciplines; ad-free, noise-free, and '100% community-owned and supported'.
+- businessModel: Freemium member-supported, no ads, intentionally no outside investors (except community crowd-funding); Guest free tier; Premium and Supporter subscriptions; Republic Reg CF rounds; live-public financials (MRR, members, expense allocation).
+- pricing: FACT (are.na/about): Premium $70/year or $7/month (unlimited blocks, advanced search, pin/table/presentation, reader mode); Supporter $120/year (adds Are.na Annual, investor reports, early access); Guest free forever (200 blocks).
+- freeTier: FACT: Guest — 200 blocks 'a good option to test Are.na'; exports and collaboration available on all plans.
+- mainCta: 'Try it now' / 'Sign up' / upgrade Premium ($70/yr) / Supporter ($120/yr).
+- heroStructure: Quiet three-line manifesto ('Are.na is: 1. online software for saving and organizing … 2. a toolkit for assembling new worlds from the scraps of the old'), audience line, then pricing tiers.
+- demoStrategy: The platform is exploratory immediately: public channels/discovery are the demo; no walled showcase; browser extension and API invite hands-on use.
+- homepageIa: Manifesto → audience → analogies ('playlists, but for ideas') → pricing tiers (Guest/Premium/Supporter) → 'Think better together' → company story (four full-time) → live transparency stats (MRR, members, paying members, expenses, goals).
+- navigation: Top-level Discover/Explore, Editorial, Community, Annual, Gift Shop, plus Product/Company/Support doc footer.
+- typography: Custom typeface 'Areal' by Dinamo — restrained geometric sans; editorial low-contrast.
+- colorStrategy: Soft neutral gray-beige and near-black with one quiet accent; anti-flashy, print-like calm.
+- layoutSystem: Single-column manifesto at a generous measure; channel grids live inside the product.
+- spacing: Slow-web generous spacing; uncluttered throughout.
+- components: Pricing table with 'all plans include', public channel cards, editorial essays (On Pricing, Roadmap), Annual books, live-stats block, Republic funding ink.
+- cards: Channel cards as mosaic previews; a deliberately non-chronological card language.
+- visualHierarchy: Textual manifesto first, product second — the opposite of flashy SaaS homepage.
+- motion: Minimal; subtle hover; slow culture.
+- interactions: Channels, connections/blocks, collaboration invites, exports (PDF/ZIP/HTML), API, browser extension, presentation mode.
+- onboarding: Guest tier guides the block/connection model; help docs; upgrade after hitting 200-block ceiling.
+- pricingPresentation: Flat 3-tier with 'all plans include' list; candid pricing FAQ and a public essay ('On Pricing') explaining they surveyed 800+ members before raising prices and make concessions (students, currency) on request.
+- trustMechanisms: Live public financials (MRR $117k→$125k, 37-41k members, 18-20k paying), 'we don't have outside investors (other than you)', 14+ year independence, custom font, roadmap.
+- socialProof: FACT: 20,516 paying members (live), Republic crowdfunding community, creative-industry adoption, editorial voice (Au/editorial).
+- copywriting: Quiet, intellectual, honest: 'a community-owned library', 'the fuzzy feeling of giving a little extra to support an independent company'.
+- mobile: Web app responsive (INFERENCE); iOS app exists part-time (per about); no confirmation of Android.
+- accessibility: High-contrast text-first design (INFERENCE); conformance UNKNOWN.
+- performance: Community explicitly asked for speed and Are.na publicly committed to performance work (On Pricing) — a known focus (INFERENCE).
+- seo: Editorial essays (pricing, roadmap) + member-channels at scale produce long-tail discovery (INFERENCE).
+- distinctiveDesign: The anti-social-network made architectural: no likes, no follower counts, no algorithmic feed; the 'library' metaphor governs the entire design.
+- nonGeneric: Custom typeface, gray-calm palette, philosophical copy, channel topology — nothing borrowed from feed-fueled platforms.
+- unnecessaryComplexity: The channel/connection model has a learning curve (INFERENCE), softened by docs and onboarding.
+- unusualSimplicity: Strips feeds, metrics and virality heuristics; a 200-block free ceiling is a charming constraint.
+- productDifferentiation: Member/community ownership + channel topology + ethics-first positioning vs Pinterest/Notion/Readwise; grants and editorial extend the 'library' ethos.
+- distribution: Slow organic growth since 2011, member invitations (active members invite ~3 on average per Republic), editorial, grants, Annual/gift shop, community crowd-funding that makes investors into advocates.
+- revenueEvidence: FACT (live, published): $117,035→$125,085 MRR (2025-26 readings), 18,791→20,516 paying members, goal $135-150k MRR by Dec 2026; ~$343.5K ARR in 2021 (GetLatka).
+- learn: Positioning as a 'library, not a feed' earns durable, willing payers; publish live financials to convert users into owners; community crowd-funding turns investors into a brand army; let the tool be its own demo.
+- notCopy: Are.na name/logo, Areal typeface, 'playlists for ideas' phrasing, channel mechanics, the live-stats transparency pattern.
+- evidenceGrade: FACT
+- sources: https://www.are.na/, https://are.na/about, https://www.are.na/editorial/on-pricing, https://getlatka.com/companies/arena, https://republic.com/arena
+
+### P07_10. Liquid Death (https://www.liquiddeath.com/)
+- name: Liquid Death
+- url: https://www.liquiddeath.com/
+- category: Unusual/creative differentiation — commodity water sold as an entertainment-first counter-culture brand; the site is a theater of the absurd
+- targetCustomer: Gen Z/Millennial beverage drinkers eschewing alcohol, sugar and plastic who respond to humor; 'better-for-you' shoppers; brand collectors of its merch/Country Club.
+- primaryProblem: Bottled water is boring and plastic is harmful; healthy beverages are marketed (in the company's framing) embarrassingly earnestly.
+- valueProposition: 'Murder your thirst' — water, sparkling and iced tea in infinitely-recyclable aluminum tallboy cans sold with rock-band energy; 'making fun of the corporate marketing everyone hates' while being the 'deadliest beverage company'.
+- businessModel: DTC + national retail (113k→133k outlets, US+UK) + merch + 'Country Club' loyalty + 'Death Peddlers' affiliate program + celebrity/brand collabs; revenue ~$333M (2024, Sacra); $1.4B valuation (March 2024 Series E, $67M).
+- pricing: Product: one-time purchases per SKU (on-site prices not captured in this scan — UNKNOWN); also subscriptions/merch via store; loyalty rewards ('Earn Skulls'). No SaaS-style pricing.
+- freeTier: N/A for physical goods; free 'Sell Your Soul' stunt (signed EULA in exchange for free water; matched $3M donation to beach cleanups); free entertainment content/social.
+- mainCta: 'SHOP NOW' per product, 'WATCH VIDEO' on campaigns, 'JOIN THE CLUB' (Country Club), 'SELL LIQUID DEATH' (Death Peddlers), 'LEARN MORE' (Death to Plastic).
+- heroStructure: Full-bleed campaign banner first (e.g., 'LIQUID DEATH X GARAGE BEER — WANT YOUR PEE' with WATCH VIDEO), then category banners ('LESS SUGAR.* HUGE FLAVOR.', 'DEADLY MOUNTAINS. DELICIOUS WATER.'), then a full themed product wall.
+- demoStrategy: Video-first: each campaign banner is an entertain-mercial; product photography is the palette; 'Sell Your Soul' and 'Timewaster 5000' pages are interactive stunts.
+- homepageIa: Campaign carousel → category banners (Energy / Soda / Tea / Water) → big 'MURDER YOUR THIRST' statement → themed product grid (Orange Horror, Killer Cola, Cherry Obituary…) → 'PLC is a myth — aluminum is infinitely recyclable' education → Killer Merch → Country Club → Death Peddlers → social footer + newsletter.
+- navigation: Category nav: Beverages (Shop All/Mountain Water/Soda/Sparkling Energy), Merch, Store Locator, Account (Sell Your Soul), Info (Earn Skulls, Gift Card, Water Quality, Contact 'Summon Us'), Company (Timewaster 5000, Death to Plastic, Murder Head Death Club, FAQ, Careers, Manifesto).
+- typography: Heavy condensed all-caps display type — tattoo/Death-metal energy; sharp high-contrast; poster-like.
+- colorStrategy: Black ground + white type + one high-voltage accent per line (reds, greens, yellows); can artwork does the branding work.
+- layoutSystem: Full-bleed duotone banners, product grid, commerce modules (merch, club, affiliate) — standard Shopify skeleton under thick brand styling.
+- spacing: Bold poster rhythm; big type at the top of each module.
+- components: Campaign carousel, category banners, product cards (flavor name + calorie count), educational stat block, merch/club/affiliate tiles, country selector, rewards copy.
+- cards: Product cards where every SKU name is a joke (Dead Billionaire iced tea, Blueberry Buzzsaw, Squeezed to Death).
+- visualHierarchy: Shock-name first ('WANT YOUR PEE'), then functional benefit ('LESS SUGAR'), then product — comedy ranks above feature.
+- motion: Campaign videos and subtle carousel; motion serves the theater (INFERENCE).
+- interactions: Video plays, product CTAs, store country selector, Country Club join, Death Peddlers affiliate signup.
+- onboarding: Account for rewards/tracking; country-localized store; email capture framed as 'You agree to be brainwashed by Liquid Death marketing'.
+- pricingPresentation: Direct one-time commerce pricing per SKU (not captured here); loyalty and merch upsells; no subscription-first presentation.
+- trustMechanisms: Public Water Quality Report PDF, sustainability claims (infinite recyclability of aluminum), stunt philanthropy ($3M beaches via soul-selling), transparency and humor as trust.
+- socialProof: FACT (on-site + press): 7.5M Instagram + 7.2M TikTok (2026, on-site), 'fastest growing water and iced tea brand' (company cited SPINS), retail ubiquity 113k-133k stores.
+- copywriting: Entertainment-first at every touchpoint: product names, 'HELL YES', 'Summon Us', 'DEATH TO PLASTIC', email fine print — the voice never breaks character.
+- mobile: FACT: distinct mobile banners served; Shopify-powered responsive commerce; mobile-first Gen Z audience.
+- accessibility: FACT: a phone accessibility line is provided in the footer; WCAG/AA conformance UNKNOWN.
+- performance: Heavy hero imagery via CDN (cdn.shopify.com files); no measured Core Web Vitals (UNKNOWN).
+- seo: Campaign/localized store pages, 'where to buy', water-quality content, strong branded search demand.
+- distinctiveDesign: Whole-brand theater: every name, page, email and campaign delivers the same comedy — design consistency as marketing moat.
+- nonGeneric: Zero corporate-earnest beverage photography; every SKU and page named in-character; localized absurdity.
+- unnecessaryComplexity: Commerce sprawl (products + merch + club + affiliates) mirrors big-CPG conventions (INFERENCE).
+- unusualSimplicity: The product is radically simple — 'it's just water in a can'; only the brand is new.
+- productDifferentiation: Commodity disruption through anti-branding and entertainment; moat = brand equity + retail velocity + community ('fandom you can't buy with money').
+- distribution: Entertainment-first organic social (dark-comedy sketches), celebrity collabs (Garage Beer, Feastables), PR stunts (soul-selling, corpse-y collabs), retail expansion, earned press (NBC/Guardian/Inc).
+- revenueEvidence: FACT (company statements + third-party): $263M global sales 2023 (company), ~$333M 2024 (Sacra estimate, +27% YoY), $1.4B valuation Mar 2024 after $67M Series E; funding ~$342M total (Sacra/Crunchbase-class).
+- learn: For commodity products the brand IS the product; make marketing entertainment and it doubles as acquisition; radical consistency of a single joke compounds; earned social + retail velocity can outcompete paid media.
+- notCopy: Liquid Death name/skull, 'Murder Your Thirst', flavor-name puns, Country Club/Death Peddlers programs, soul-selling/EULA stunt, its campaign concepts.
+- evidenceGrade: FACT
+- sources: https://www.liquiddeath.com/, https://sacra.com/research/liquid-death, https://www.nbcnews.com/business/business-news/liquid-death-became-billion-dollar-beverage-brand-rcna143037, https://www.theguardian.com/business/article/2024/may/28/liquid-death-the-viral-canned-water-brand-killing-it-with-gen-z

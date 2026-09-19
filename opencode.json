@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+     "providers": {
+       "google": {
+         "type": "openai",
+         "name": "Gemini Free",
+         "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai/",
+         "apiKey": "AQ.Ab8RN6I3qQe2a-1od1GA8gqEUevpB2UkiF4Yw7QiYSsDJNrEXw"
+       },
+       "omniroute": {
+         "type": "openai",
+         "name": "OmniRoute",
+         "baseUrl": "http://localhost:20128/v1",
+         "apiKey": "not-needed"
+       }
+     },
+     "models": {
+       "google/gemini-2.0-flash": {
+         "provider": "google",
+         "name": "gemini-2.0-flash"
+       },
+       "omniroute/auto": {
+         "provider": "omniroute",
+         "name": "auto"
+       },
+       "omniroute/oc/big-pickle": {
+         "provider": "omniroute",
+         "name": "oc/big-pickle"
+       }
+     }
+   }

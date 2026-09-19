@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dodo Shield — stop a $1 problem becoming a $30 dispute</title>
+<meta name="description" content="Dispute alerts for Dodo Payments sellers. Catch suspicious payments before the bank files — alert or opt-in auto-refund.">
+<meta name="theme-color" content="#FAF7F0">
+<meta property="og:title" content="Dodo Shield — stop a $1 problem becoming a $30 dispute">
+<meta property="og:description" content="Rule-based dispute alerts for Dodo Payments sellers. Alert-only default, opt-in capped auto-refund. Free v0 experiment.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141210'/%3E%3Cpath d='M16 6l8 5v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9v-6z' fill='none' stroke='%23FBD38D' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FAF7F0;--ink:#141210;--muted:#6B6259;--line:#E7DFD3;--amber:#B45309;--amberbg:#FFF7ED;--moss:#3F6212;--mossbg:#F2F8E4;--card:#fff;--r:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:0 0 10px 0;z-index:50;font-weight:700}
+.skip:focus{left:0}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;font-size:.86em}
+.small{font-size:13px;color:var(--muted)}
+/* nav */
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(250,247,240,.94);backdrop-filter:blur(6px);z-index:10}
+header .wrap{display:flex;align-items:center;gap:22px;padding:13px 22px}
+.brand{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:22px;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--amber)}
+nav{display:flex;gap:18px;margin-left:8px}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}
+nav a:hover{color:var(--ink)}
+header .btn{margin-left:auto;padding:9px 20px;font-size:14px}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:13px 26px;border-radius:999px;text-decoration:none;font-weight:700;border:0;cursor:pointer;font-size:15px}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;padding:68px 0 46px;animation:rise .5s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero{animation:none}html{scroll-behavior:auto}}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);background:var(--amberbg);border:1px solid #F3D3A7;padding:5px 13px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:clamp(36px,5.4vw,60px);line-height:1.04;margin:0 0 18px;letter-spacing:-.01em}
+.hl{background:linear-gradient(transparent 62%,#FBD38D 62%,#FBD38D 94%,transparent 94%)}
+.hero p.sub{font-size:18.5px;color:var(--muted);max-width:34em;margin:0 0 24px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.micro{font-size:13px;color:var(--muted)}
+/* mock alert card */
+.mock{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px -30px rgba(20,18,16,.35);overflow:hidden}
+.mock-bar{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line);background:#F5F0E6}
+.dot{width:10px;height:10px;border-radius:50%;background:#D8CFC0}
+.mock-body{padding:18px}
+.mock-row{display:flex;justify-content:space-between;gap:10px;padding:11px 13px;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;font-size:13.5px}
+.mock-row.hit{border-color:#F59E0B;background:#FFFBEB}
+.mock-row.won{border-color:#84CC16;background:#F7FEE7}
+.pill{display:inline-block;padding:2px 11px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.alert{background:#FEF3C7;color:var(--amber);border:1px solid #F59E0B}
+.ok{background:#ECFCCB;color:var(--moss);border:1px solid #84CC16}
+/* sections */
+section.block{padding:52px 0}
+.kicker{font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:clamp(26px,3.4vw,36px);line-height:1.12;margin:0 0 10px;letter-spacing:-.01em}
+.lede{color:var(--muted);max-width:44em;margin:0 0 26px;font-size:17px}
+/* stat band */
+.band{background:var(--ink);color:var(--paper);border-radius:20px;padding:34px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px}
+.band .n{font-family:Fraunces,Georgia,serif;font-size:42px;font-weight:650;color:#FBD38D;line-height:1}
+.band p{margin:8px 0 0;font-size:14px;color:#CFC6B8}
+/* flow */
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:stretch}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.fcard strong{display:block;font-size:16px;margin-bottom:6px}
+.fcard p{margin:0;font-size:14px;color:var(--muted)}
+.farrow{align-self:center;font-size:26px;color:var(--amber);font-weight:700}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;counter-reset:st}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;position:relative}
+.step::before{counter-increment:st;content:counter(st,decimal-leading-zero);font-family:Fraunces,Georgia,serif;font-size:40px;color:#E3C79B;line-height:1}
+.step strong{display:block;margin:8px 0 6px;font-size:17px}
+.step p{margin:0;font-size:14.5px;color:var(--muted)}
+/* problem */
+.problem{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.problem .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.notice{border-left:4px solid var(--amber);background:var(--amberbg);padding:14px 18px;border-radius:0 12px 12px 0;margin:22px 0;font-size:15px}
+/* demo */
+.demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{margin:0 0 6px;font-size:19px}
+label{display:block;font-weight:600;margin:12px 0 4px;font-size:14.5px}
+input[type=text],input[type=number],input[type=email]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:9px;font:inherit;background:#FFFDF8}
+.rule{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--line)}
+.rule:last-child{border:0}
+.switch{margin-left:auto;min-width:54px;height:30px;border-radius:999px;border:1px solid var(--line);background:#E9E2D4;cursor:pointer;position:relative;flex:none}
+.switch[aria-checked=true]{background:var(--ink)}
+.switch::after{content:"";position:absolute;top:3px;left:4px;width:22px;height:22px;border-radius:50%;background:#fff;transition:left .12s}
+.switch[aria-checked=true]::after{left:26px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:11px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+/* pricing */
+.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.price{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column}
+.price.feat{border:2px solid var(--ink);box-shadow:0 18px 44px -26px rgba(20,18,16,.4)}
+.price .amt{font-family:Fraunces,Georgia,serif;font-size:44px;font-weight:650}
+.price ul{margin:14px 0 20px;padding:0;list-style:none;font-size:14.5px;color:var(--muted)}
+.price li{margin:7px 0;padding-left:22px;position:relative}
+.price li::before{content:"✓";position:absolute;left:0;color:var(--moss);font-weight:700}
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;font-size:15.5px}
+details p{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+/* final */
+.final{background:var(--ink);color:var(--paper);border-radius:22px;padding:56px 40px;text-align:center}
+.final h2{color:var(--paper)}
+.final p{color:#CFC6B8;max-width:36em;margin:0 auto 24px}
+.final .btn{background:#FBD38D;color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:13.5px}
+footer .wrap{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.farrow{transform:rotate(90deg);justify-self:center}.demo-grid,.problem{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#demo">Skip to live demo</a>
+<header><div class="wrap"><a class="brand" href="#top">dodo<span>shield</span></a>
+<nav><a href="#flow">Flow</a><a href="#demo">Live demo</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#legal">Legal</a></nav>
+<a class="btn" href="#demo">Start test</a></div></header>
+
+<div class="wrap" id="top">
+<section class="hero">
+<div>
+<div class="eyebrow">v0 experiment · for Dodo Payments sellers</div>
+<h1>Don’t let a <span class="hl">$30 dispute</span> end your Dodo account.</h1>
+<p class="sub">Dodo Shield watches every <span class="mono">payment.succeeded</span>, flags stolen cards, card-testers and sketchy emails — then alerts you or auto-refunds (your choice) <em>before</em> the bank files.</p>
+<div class="cta-row"><a class="btn" href="#demo">Run a test payment</a><a class="btn ghost" href="#limits">Read the honest limits</a></div>
+<p class="micro">No code · test key stays in your browser · free while it’s an experiment</p>
+</div>
+<div class="mock" aria-label="Sample alert flow">
+<div class="mock-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="small" style="margin-left:8px">sample · not real data</span></div>
+<div class="mock-body">
+<div class="mock-row hit"><span><span class="mono">buyer@mailinator.com</span> · $49<br><span class="small">disposable-email + 4 fails → success</span></span><span class="pill alert">ALERT</span></div>
+<div class="mock-row"><span>Email alert → auto-refund <span class="mono">$49</span><br><span class="small">under your $100 cap · one refund per payment</span></span><span class="pill alert">SENT</span></div>
+<div class="mock-row won" style="margin-bottom:0"><span>No bank filing · no $30 fee<br><span class="small">you kept the account in good standing</span></span><span class="pill ok">AVOIDED 🎉</span></div>
+</div>
+</div>
+</section>
+
+<section class="block" style="padding-top:0">
+<div class="band">
+<div><div class="n">$30</div><p>per dispute on Dodo — including ones Visa RDR “resolves” for you. Source: Dodo docs, Sep 2026.</p></div>
+<div><div class="n">0.9%</div><p>Visa dispute-ratio tripwire. Cross it (or 100 disputes/mo) and fines scale toward $50k+/mo.</p></div>
+<div><div class="n">$1</div><p>per manual refund, within 30 days. A $1 refund before filing beats a $30 fee after it.</p></div>
+</div>
+</section>
+
+<section class="block" id="flow">
+<div class="kicker">The flow</div>
+<h2>Suspicious in. Dispute never out.</h2>
+<p class="lede">Three moves, seconds apart. You choose per rule whether step two is a tap-to-refund alert or a capped auto-refund.</p>
+<div class="flow">
+<div class="fcard"><strong>1 · Payment with suspicious email</strong><p><span class="mono">buyer@mailinator.com</span> pays $49 after 4 failed attempts. The disposable-domain + card-test rules trip on <span class="mono">payment.succeeded</span>.</p></div>
+<div class="farrow">→</div>
+<div class="fcard"><strong>2 · Alert + your refund choice</strong><p>Email lands instantly. Alert-only? One click opens the Dodo payment. Auto-refund ON and under your cap? <span class="mono">POST /refunds</span> fires itself.</p></div>
+<div class="farrow">→</div>
+<div class="fcard"><strong>3 · Dispute avoided 🎉</strong><p>No bank filing, no $30 fee, no ratio hit. The ledger logs rule, amount and receipt — proof you acted first.</p></div>
+</div>
+<div class="notice" id="limits"><strong>Honest limits:</strong> RDR auto-saves still cost $30 · refunds only within 30 days and need available balance · Dodo owns the network case as Merchant of Record, you own evidence within 10 days. This tool wins <em>before</em> filing — nothing can un-file a dispute.</div>
+</section>
+
+<section class="block" id="why">
+<div class="kicker">Why it matters</div>
+<h2>Your first dispute can bench you.</h2>
+<div class="problem">
+<p class="lede" style="margin:0">New Dodo sellers feel this the worst: two bad payments in your first fifty orders is already a 4% ratio — four times the tripwire. Sellers on Stripe learned this with lifetime bans; Dodo sellers have woken up to suspension banners and platform-wide auto-refunds with no warning. One card-tester at 3&nbsp;a.m. is all it takes.</p>
+<div class="card"><strong>What a card-tester does at night</strong><p class="small">01:12 · <span class="mono">$9</span> fails → 01:13 · <span class="mono">$9</span> fails → 01:14 · <span class="mono">$129</span> succeeds with a throwaway email. Without rules, that $129 becomes your most expensive order ever: product gone, $30 fee, ratio dented. With rules, it’s a $1 refund and a log line.</p></div>
+</div>
+</section>
+
+<section class="block">
+<div class="kicker">How it works</div>
+<h2>Three steps, five minutes.</h2>
+<p class="lede">No code. No dashboard spelunking. Pattern borrowed from the best in the space, rebuilt for Dodo.</p>
+<div class="steps">
+<div class="step"><strong>Connect test</strong><p>Paste a Dodo test key, copy one webhook URL, tick <span class="mono">payment.*</span>, <span class="mono">dispute.*</span>, <span class="mono">refund.*</span>. Green badge, done.</p></div>
+<div class="step"><strong>Arm 4 rules</strong><p>Disposable email, velocity, failed→succeeded, first-payment high-ticket. Thresholds editable, saved instantly.</p></div>
+<div class="step"><strong>Choose refund mode</strong><p>Alert-only default, or opt-in capped auto-refund per rule. Over-cap and edge cases always fall back to manual.</p></div>
+</div>
+</section>
+
+<section class="block" id="demo">
+<div class="kicker">Live demo</div>
+<h2>Break it here, not on real money.</h2>
+<p class="lede">The rule engine below runs entirely in your browser. Try the throwaway email, then flip on auto-refund and watch the outcome change.</p>
+<div class="demo-grid">
+<div class="card">
+<h3>Rules</h3>
+<div class="card" style="background:var(--paper);margin:12px 0;padding:16px" id="autoset">
+<strong style="font-size:14.5px">Refund mode (your choice)</strong>
+<div class="small">Default is alert-only. Opt in per rule and capped payments refund themselves.</div>
+<label class="small"><input id="s_auto" type="checkbox"> Allow auto-refund on selected rules</label>
+<label class="small">Max auto-refund $ <input id="s_cap" type="number" min="1" value="100" style="width:84px"></label>
+<p class="small" style="margin-bottom:0">Guardrails: test key first · any opted-in rule fires · one refund per payment · 30-day + balance checks · full log. Demo simulates.</p>
+</div>
+<div id="rules"></div>
+<p class="small">Stored in localStorage only. Switch them all off and we’ll warn you.</p>
+</div>
+<div class="card">
+<h3>Test payment</h3>
+<label>Email <input id="f_email" type="email" value="buyer@mailinator.com"></label>
+<label>Amount USD <input id="f_amt" type="number" value="49" min="1"></label>
+<label>Failed attempts before this <input id="f_fails" type="number" value="4" min="0"></label>
+<label><input id="f_first" type="checkbox" checked> First payment from this customer</label>
+<p><button class="btn" id="run">Run test payment</button> <button class="btn ghost" id="seed">Load 3 samples</button></p>
+<p class="small">Simulator only — nothing touches Dodo. Real wiring is documented below.</p>
+</div>
+</div>
+<div class="card" style="margin-top:16px">
+<h3>Prevented-feed ledger</h3>
+<div id="empty" class="small" role="status">Quiet. Run a test above and this ledger fills.</div>
+<table id="feed" hidden aria-live="polite" aria-label="Prevented payments ledger"><thead><tr><th>Time</th><th>Payment</th><th>Rule</th><th>Status</th><th>Next</th></tr></thead><tbody></tbody></table>
+<p><button class="btn ghost" id="clear">Clear ledger</button></p>
+</div>
+</section>
+
+<section class="block" id="connect">
+<div class="kicker">Connect</div>
+<h2>Test mode in a minute.</h2>
+<div class="card">
+<label>Dodo test key (never leaves your browser in v0) <input id="k" type="text" placeholder="dodo_test_..." autocomplete="off"></label>
+<p style="margin-bottom:4px">Webhook URL — paste in Dodo Dashboard → Developer → Webhooks → Add endpoint:</p>
+<p class="mono" id="wh" style="background:#F5F0E6;padding:10px 14px;border-radius:9px">https://dodo-shield-api.aqeelbrh65.workers.dev/webhooks/dodo</p>
+<p class="small">Subscribe to <span class="mono">payment.succeeded, payment.failed, dispute.opened, dispute.won, dispute.lost, refund.succeeded</span> · receiver verifies <span class="mono">webhook-id / signature / timestamp</span>, dedupes by webhook-id, then runs your rules. Backend status: <strong>live, alert-first</strong> (auto-refund server-disabled until enabled). After creating the endpoint, copy its signing secret into the receiver to activate.</p>
+<p class="small">Subscribe to <span class="mono">payment.succeeded, payment.failed, dispute.opened, dispute.won, dispute.lost, refund.succeeded</span> · verified via <span class="mono">webhook-id / signature / timestamp</span> (Standard Webhooks). <span id="kbadge"></span></p>
+<p><button class="btn ghost" id="verify">Verify locally</button></p>
+<pre class="mono small" style="white-space:pre-wrap;background:#F5F0E6;padding:12px 14px;border-radius:9px">POST /refunds   ← fires only for opted-in rules under your cap
+{ "payment_id": "pay_...", "reason": "shield: disposable-email + velocity" }</pre>
+</div>
+</section>
+
+<section class="block" id="pricing">
+<div class="kicker">Pricing</div>
+<h2>Cheaper than one dispute.</h2>
+<p class="lede">Experiment pricing, stated plainly. No charge in v0 — these are the hypotheses we’ll test next.</p>
+<div class="price-grid">
+<div class="price"><strong>Test drive</strong><div class="amt">$0</div><ul><li>All 4 rules, unlimited test payments</li><li>Alert-only + simulated auto-refund</li><li>Ledger + honest docs</li></ul><a class="btn ghost" href="#demo">Start free</a></div>
+<div class="price feat"><strong>Solo · planned</strong><div class="amt">$19</div><ul><li>2,000 protected payments / mo</li><li>Live alerts + capped auto-refund</li><li>Saved-fee report each month</li></ul><a class="btn" href="#join">Join the test list</a></div>
+<div class="price"><strong>Studio · planned</strong><div class="amt">$49</div><ul><li>10,000 protected payments / mo</li><li>All rules + multi-product feed</li><li>Priority rule tuning help</li></ul><a class="btn ghost" href="#join">Join the test list</a></div>
+</div>
+<div class="card" id="join" style="margin-top:16px">
+<h3>Join the test list</h3>
+<p class="small" style="margin-top:0">One email. We write when live billing opens — no drip, no spam. Stored only; confirmation mail starts once our sending domain is verified.</p>
+<label>Work email <input id="j_email" type="email" placeholder="you@yourproduct.com" autocomplete="email"></label>
+<label>Plan <input id="j_plan" type="text" value="solo" style="max-width:200px"></label>
+<p><button class="btn" id="j_go">Notify me</button> <span class="small" id="j_msg" role="status"></span></p>
+</div>
+<p class="small">One prevented dispute ($30 fee + ratio hit) pays for months. “Planned” means hypothesis — we measure willingness with a real pay button before charging anyone.</p>
+</section>
+
+<section class="block" id="faq">
+<div class="kicker">FAQ</div>
+<h2>Asked, answered.</h2>
+<details open><summary>Does this replace Dodo’s fraud protection or RDR?</summary><p>No — it sits in front. Dodo screens velocity, geography and failed attempts, and RDR auto-resolves Visa disputes under $100. We add seller-visible rules and act before the bank files. Note RDR resolutions still bill the $30 fee.</p></details>
+<details><summary>Alert-only or auto-refund?</summary><p>Your call, per rule. Default is alert-only with a one-click path into Dodo. Enable auto-refund with a max-amount cap and qualifying hits refund themselves; over-cap and edge cases always stay manual. Live firing needs the Phase-12 backend that holds your key — the demo simulates.</p></details>
+<details><summary>Can it still miss a dispute?</summary><p>Yes. Friendly fraud (“forgotten subscription”) looks identical to a happy customer until the bank letter arrives. Nothing prevents 100% — the goal is catching the cheap, obvious ones first.</p></details>
+<details><summary>What data do you keep?</summary><p>In v0: nothing server-side. Rules, settings and the test ledger live in your browser’s localStorage. No invented testimonials, no invented user counts — the proof here is the demo you just ran.</p></details>
+<details><summary>Why Dodo-first instead of Stripe?</summary><p>Stripe already has ByeDispute, Radar and a crowded shelf. Nobody builds the pre-dispute rule layer for Dodo’s indie sellers — the fastest-growing, least-served corner.</p></details>
+</section>
+
+<section class="block" id="legal">
+<div class="kicker">Legal</div>
+<h2>Plain rules.</h2>
+<details><summary>Privacy — v0 collects nothing</summary><p>Dodo Shield v0 runs entirely in your browser. Rules, settings and the test ledger live in your browser’s localStorage; nothing is sent to any server, there is no analytics, no cookies, no account. Pasting a test key never transmits it anywhere. Clearing site data removes everything.</p></details>
+<details><summary>Terms — experimental, test mode only</summary><p>Provided as-is for testing with Dodo test mode. No warranty; no dispute is guaranteed preventable. Do not use live keys in v0. Refunds you issue in Dodo follow Dodo’s terms ($1/refund, 30-day window, balance rules). Operator contact is published at public launch.</p></details>
+</section>
+
+<section class="block">
+<div class="final">
+<h2>Sleep through your next launch night.</h2>
+<p>Arm four rules in five minutes. The next card-tester meets a $1 refund, not a $30 dispute and a suspension banner.</p>
+<a class="btn" href="#demo">Protect my first payment</a>
+</div>
+</section>
+</div>
+
+<footer><div class="wrap"><span>dodo-shield v0 · alert + opt-in auto-refund experiment</span><span>Flows inspired by ByeDispute · all copy &amp; visuals original · evidence: <span class="mono">evidence/dodo-shield/</span></span></div></footer>
+<script>
+const DEF={disp:{on:true,auto:false,label:"Disposable email domain",desc:"mailinator, tempmail, guerrillamail + 17 more"},vel:{on:true,auto:false,label:"Velocity >3 / email / 30 min",n:3},cardtest:{on:true,auto:false,label:"Failed then succeeded (card testing)",n:2},highticket:{on:true,auto:false,label:"First payment over $",n:79}};
+const DISP=["mailinator.com","tempmail.com","guerrillamail.com","10minutemail.com","yopmail.com","trashmail.com"];
+const R=JSON.parse(localStorage.getItem("ds_rules_v0")||"null")||JSON.parse(JSON.stringify(DEF));
+Object.keys(DEF).forEach(k=>{if(R[k].auto===undefined)R[k].auto=false});
+const S=Object.assign({autoGlobal:false,cap:100},JSON.parse(localStorage.getItem("ds_settings_v0")||"{}"));
+let feed=JSON.parse(localStorage.getItem("ds_feed_v0")||"[]");
+let velLog=JSON.parse(localStorage.getItem("ds_vel_v0")||"{}");
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem("ds_rules_v0",JSON.stringify(R));localStorage.setItem("ds_feed_v0",JSON.stringify(feed));localStorage.setItem("ds_vel_v0",JSON.stringify(velLog));localStorage.setItem("ds_settings_v0",JSON.stringify(S));}
+function renderRules(){const el=$("rules");el.innerHTML="";Object.keys(R).forEach(k=>{const r=R[k];const d=document.createElement("div");d.className="rule";d.innerHTML=`<div><strong>${r.label}</strong><div class="small">${r.desc||""} ${r.n!==undefined?`(threshold: <input type="number" min="1" value="${r.n}" data-k="${k}" aria-label="Threshold for ${r.label}" style="width:64px">)`:""}<br><label class="small"><input type="checkbox" data-auto="${k}" ${r.auto?"checked":""} ${S.autoGlobal?"":"disabled"}> auto-refund this rule</label></div></div>`;const b=document.createElement("button");b.className="switch";b.setAttribute("aria-checked",r.on);b.setAttribute("aria-label",r.label);b.onclick=()=>{r.on=!r.on;b.setAttribute("aria-checked",r.on);save();warn()};d.appendChild(b);el.appendChild(d)});el.querySelectorAll("input[data-k]").forEach(i=>i.onchange=e=>{R[e.target.dataset.k].n=+e.target.value||R[e.target.dataset.k].n;save()});el.querySelectorAll("input[data-auto]").forEach(i=>i.onchange=e=>{R[e.target.dataset.auto].auto=e.target.checked;save()});warn()}
+function renderSettings(){$("s_auto").checked=S.autoGlobal;$("s_cap").value=S.cap;$("s_auto").onchange=e=>{S.autoGlobal=e.target.checked;save();renderRules()};$("s_cap").onchange=e=>{S.cap=+e.target.value||100;save()}}
+function warn(){if(!Object.values(R).some(r=>r.on)){if(!$("rwarn")){const p=document.createElement("p");p.id="rwarn";p.className="small";p.style.color="#B45309";p.textContent="Warning: all rules off — no protection.";$("rules").appendChild(p)}}else{const w=$("rwarn");if(w)w.remove()}}
+function renderFeed(){const t=$("feed"),tb=t.querySelector("tbody");tb.innerHTML="";if(!feed.length){t.hidden=true;$("empty").style.display="block";return}t.hidden=false;$("empty").style.display="none";feed.slice().reverse().forEach(f=>{const tr=document.createElement("tr");const badge=f.refunded?"AVOIDED":f.auto?"AUTO-REFUND":f.hit?"ALERT":"OK";const sub=f.refunded?"refund confirmed":f.auto?`would auto-refund $${f.amt} (demo — live needs backend + live key)`:f.hit?(f.capped?`over $${S.cap} cap → manual only · email queued`:"email queued (v0 demo) · manual refund"):"clean";const next=f.refunded?`<span class="pill ok">Avoided · saved $29*</span>`:f.auto?`<span class="pill ok">Refund fired · saved $29*</span><br><a href="https://app.dodopayments.com" target="_blank" rel="noopener">Verify in Dodo →</a>`:f.hit?`<a href="https://app.dodopayments.com" target="_blank" rel="noopener">Open in Dodo →</a><br><button class="btn ghost" data-done="${f.id}" style="margin-top:8px;padding:6px 14px;font-size:13px">I refunded it</button>`:`<span class="small">nothing to do</span>`;tr.innerHTML=`<td class="mono">${f.time}</td><td class="mono">${f.id}<br>${f.email} · $${f.amt}</td><td>${f.rule}</td><td><span class="pill ${f.refunded||f.auto?"ok":f.hit?"alert":"ok"}">${badge}</span><div class="small">${sub}</div></td><td>${next}</td>`;tb.appendChild(tr)});tb.querySelectorAll("button[data-done]").forEach(b=>b.onclick=()=>{const r=feed.find(x=>x.id===b.dataset.done);if(r){r.refunded=true;save();renderFeed()}})}
+function check(email,amt,fails,first){const dom=(email.split("@")[1]||"").toLowerCase();const now=Date.now();velLog[email]=velLog[email]||[];velLog[email]=velLog[email].filter(t=>now-t<30*60*1000);velLog[email].push(now);const hits=[];const mk=(k,t)=>{const want=S.autoGlobal&&R[k].auto;hits.push({t,auto:want&&amt<=S.cap,want})};if(R.disp.on&&DISP.includes(dom))mk("disp","disposable-email");if(R.vel.on&&velLog[email].length>R.vel.n)mk("vel",`velocity ${velLog[email].length}/${R.vel.n}`);if(R.cardtest.on&&fails>=R.cardtest.n)mk("cardtest",`card-test ${fails} fails→success`);if(R.highticket.on&&first&&amt>=R.highticket.n)mk("highticket",`first-payment $${amt}`);return hits}
+function pushFeed(email,amt,hits){const autoHits=hits.filter(h=>h.auto);const auto=autoHits.length>0;const capped=hits.length>0&&!auto&&hits.some(h=>h.want);const rule=hits.length?hits.map(h=>h.t+(h.auto?" ⟳auto":"")).join(" + "):"no rule matched";feed.push({time:new Date().toLocaleTimeString(),id:"pay_test_"+Math.random().toString(36).slice(2,8),email,amt,rule,hit:hits.length>0,auto,capped});save();renderFeed()}
+$("run").onclick=()=>{const e=$("f_email").value.trim()||"buyer@example.com",a=+$("f_amt").value||0,fl=+$("f_fails").value||0,fi=$("f_first").checked;pushFeed(e,a,check(e,a,fl,fi))};
+$("seed").onclick=()=>{[["buyer@mailinator.com",49,4,true],["fan@gmail.com",12,0,false],["new@yopmail.com",129,1,true]].forEach(s=>pushFeed(s[0],s[1],check(s[0],s[1],s[2],s[3])))};
+$("clear").onclick=()=>{feed=[];velLog={};save();renderFeed()};
+$("verify").onclick=()=>{const v=$("k").value.trim();$("kbadge").textContent=v.startsWith("dodo_test_")?"✓ test key shape OK (local only, never sent).":v?"✗ expected dodo_test_... (local check).":"Enter a test key to check shape (stays in browser)."};
+$("j_go").onclick=async()=>{const m=$("j_msg");const email=$("j_email").value.trim();m.textContent="…";try{const r=await fetch("https://dodo-shield-api.aqeelbrh65.workers.dev/join",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({email,plan:$("j_plan").value.trim()||"solo"})});const j=await r.json();m.textContent=j.ok?"✓ You're on the list. One email at launch, nothing else.":j.error==="bad_email"?"That email doesn't look right — try again.":"Couldn't save — try again in a bit."}catch{m.textContent="Network hiccup — try again in a bit."}};
+renderSettings();renderRules();renderFeed();
+</script>
+</body>
+</html>

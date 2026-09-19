@@ -1,0 +1,501 @@
+# Design Benchmarks — Slice P03: Application/Product UI
+
+### P03_1. Linear (https://linear.app/)
+
+- **name:** Linear
+- **url:** https://linear.app/
+- **category:** Application/Product UI
+- **targetCustomer:** Software product teams - founders, product managers, engineers, and designers - building modern software at startups through large engineering orgs; positioned for 'teams building great software'.
+- **primaryProblem:** Traditional issue trackers (e.g. Jira) are slow, cluttered, and add overhead instead of helping teams ship; issue tracking and project management feel like tax rather than leverage.
+- **valueProposition:** 'The issue tracking tool you'll enjoy using' - a fast, keyboard-first project management and issue tracking tool with fuzzy search, a command palette, cycles, roadmaps, and paid AI assistance that makes issue management feel as refined as a consumer design product.
+- **businessModel:** SaaS freemium, seat-based subscriptions (Basic, Business, Enterprise) plus optional add-ons (Linear Insights, AI features). Third-party sources (Sacra) estimate about $100M ARR as of mid-2026 (HYPOTHESIS).
+- **pricing:** Free plan $0; Basic about $10/user/mo and Business about $16/user/mo (billed yearly) per linear.app/pricing; Enterprise is custom (contact sales). Monthly billing is higher; AI/Insights add-ons at higher tiers. Limits verified on linear.app/pricing.
+- **freeTier:** Yes - Free plan at $0 caps stored issues and teams (about 250 issues, up to 2 teams) per linear.app/pricing, driving teams to paid plans for unlimited workspace.
+- **mainCta:** Homepage 'Get started' / 'Start using Linear'; pricing CTAs 'Start free'; desktop/mobile downloads listed.
+- **heroStructure:** Sleek, largely dark single-page hero: a bold product statement with minimal ornament, product-UI screenshots/overlays, then sections on speed and keyboard-first design, a 'faster way to build' narrative, customer quotes, and a pricing band. INFERENCE on exact section order from page structure.
+- **demoStrategy:** The site embeds polished product screenshots; the real demo is the product itself - a free tier with full core features, so trying the app IS the demo. INFERENCE: no separate guided-demo page observed.
+- **homepageIa:** Compact top nav (Features, Method, Pricing, Customers, Changelog, Blog) with a persistent CTA cluster; footer is a full sitemap. In-app IA is a left sidebar (Inbox, My issues, Views, Cycles, Projects, Roadmaps) - INFERENCE.
+- **navigation:** Minimal marketing nav with dropdowns; in-product navigation is keyboard/command-driven (command palette) rather than click-driven - a distinctive inversion of typical app IA.
+- **typography:** Tight-tracking neo-grotesk-style sans with high-contrast weights and tabular numerals; restrained headline scale. Exact family UNKNOWN (custom typeface in-app).
+- **colorStrategy:** Near-monochrome (deep black/white) with a single vivid brand accent (blue/indigo) used sparingly on CTAs and highlights; the product is famously dark-mode-first with subtle color coding for labels.
+- **layoutSystem:** Centered max-width column with generous full-width feature bands and customer-quote rows; pricing uses a toggle plus plan cards; no busy grids.
+- **spacing:** Very generous, deliberate vertical whitespace; sections breathe with a consistent rhythm. INFERENCE from observed page structure.
+- **components:** Marketing: feature blocks, customer-quote rows, logo strip, pricing cards, FAQ. In-app (documented via docs/help): issue rows, board/table/roadmap views, command palette, keyboard-shortcut overlay.
+- **cards:** Light card use on marketing (feature tiles, pricing cards); in-app prefers dense list rows over card dashboards for speed.
+- **visualHierarchy:** Single dominant statement, minimal secondary narrative, CTA repeated at intervals; pricing page ranks Free-to-Enterprise plans left to right.
+- **motion:** Subtle scroll reveals on marketing; in-app transitions are quick and functional (drag reorder). Specifics UNKNOWN.
+- **interactions:** In-app (documented): command palette for everything, keyboard-first editing, drag-and-drop between columns, quick filters, inline issue creation; optimistic updates are part of the speed identity.
+- **onboarding:** Free signup via email/SSO into a ready-but-empty workspace; templates and a keyboard-shortcut sheet lower ramp-up (INFERENCE; not fully observed).
+- **pricingPresentation:** Monthly/annual toggle, plan cards (Free/Basic/Business/Enterprise) with per-seat prices, a feature checklist, add-on rows, and an enterprise contact-sales path; clean table below the cards.
+- **trustMechanisms:** Named tech-company customer wall, speed-and-craft claims, status/security pages, changelog transparency, and a '40,000+ companies' claim (site).
+- **socialProof:** 'Trusted by 40,000+ companies' site claim; customer testimonials and logos; large developer-community mindshare. Third-party ARR estimates (Sacra) not independently verified.
+- **copywriting:** Restrained, confident, product-obsessed voice; short headlines, benefit-loaded sublines, no hype words; the tone itself signals craft.
+- **mobile:** A Linear mobile app (iOS) is widely known but not verified in fetched homepage sources - UNKNOWN beyond that.
+- **accessibility:** UNKNOWN - no dedicated accessibility statement surfaced in fetched content.
+- **performance:** Speed is the core stated promise; concrete official benchmarks not surfaced (the '50ms interactions' figure appears only on third-party/clone marketing pages - not verifiable here). Claims INFERENCE, numbers UNKNOWN.
+- **seo:** Moderately strong: /features, /method, /pricing, /customers, changelog and blog target product-management keywords; brand-search dominated.
+- **distinctiveDesign:** The benchmark for 'designed developer tools': keyboard-first, dark, ultra-fast issue tracking that looks like a premium consumer app - proof that productivity software can be beautiful.
+- **nonGeneric:** Yes - unmistakably differentiated: speed + keyboard-first UX + design quality in a category defined by legacy bloat (Jira, Asana).
+- **unnecessaryComplexity:** Low on the marketing surface; in-app feature set (views, cycles, roadmaps, workflows) grows complex for large orgs but uses progressive disclosure (INFERENCE).
+- **unusualSimplicity:** The command palette as the primary navigation makes the whole app feel like one search box - teams add issues via a keystroke.
+- **productDifferentiation:** Speed, keyboard-first interaction, and visual craft as a moat in issue tracking, plus a strong API/integration ecosystem and AI; competitors replicating just the UI miss the performance architecture.
+- **distribution:** Product-led growth via free tier, developer word-of-mouth, changelog-driven content marketing, top-brand logos, integrations, and an enterprise motion on top.
+- **revenueEvidence:** FACT: pricing page plans/limits verified. INFERENCE: '40,000+ companies' site claim. HYPOTHESIS (third-party, unverified): Sacra ~$100M ARR estimate (July 2026); reported Series C $82M at $1.25B valuation (June 2025) and reported 177% NRR from coverage - not independently confirmed here.
+- **learn:** Make speed and craft the product: keyboard-first navigation, a command palette, and eye-level polish turn a boring category (issue tracking) into a beloved brand; changelog-driven marketing builds developer trust.
+- **notCopy:** Linear brand/logo, dark theme combination, command-palette implementation, issue view layouts, proprietary illustrations, headline copy, and trademarked product/method naming.
+- **evidenceGrade:** INFERENCE
+- **sources:**
+  - https://linear.app/
+  - https://linear.app/pricing
+  - https://www.sacra.com/c/linear
+
+### P03_2. Notion (https://www.notion.com/)
+
+- **name:** Notion
+- **url:** https://www.notion.com/
+- **category:** Application/Product UI
+- **targetCustomer:** Individuals to large organizations - students, knowledge workers, startups, and enterprises - who want one workspace for notes, docs, wikis, projects, and databases.
+- **primaryProblem:** Work lives scattered across many apps (docs, wikis, task managers, databases); information gets lost and teams juggle disconnected tools.
+- **valueProposition:** An all-in-one 'connected workspace for wiki, docs & projects' - flexible blocks and databases let teams build custom pages for notes, knowledge bases, projects, and more, now extended with AI and agents.
+- **businessModel:** Freemium SaaS per-member subscriptions plus metered AI credits (Notion AI); enterprise sales. Reported major funding (Series D $275M at $10B valuation, Sept 2021, via Wikipedia).
+- **pricing:** Free plan $0; Plus about $10/member/mo and Business about $20/member/mo (yearly billing; monthly higher) per notion.com/pricing; Notion AI costs extra (about $10 per 1000 credits); Enterprise custom (contact sales).
+- **freeTier:** Yes - Free plan for individuals: unlimited blocks and pages, about 10MB file uploads, 7-day version history, and up to 10 guests (per pricing page limits at research time).
+- **mainCta:** 'Get Notion free' homepage CTA; secondary 'Contact sales'; downloads for Mac, Windows, iOS, Android, web.
+- **heroStructure:** Editorial hero with a short connected-workspace statement, product screenshots/video of the flexible canvas, sections per use case (Notes, Docs, Wiki, Projects, AI), customer logos, and a CTA band. INFERENCE on exact order from page structure.
+- **demoStrategy:** Product screenshots and embedded UI previews; the free tier removes signup friction so the product itself is the demo; a large templates gallery demonstrates what the canvas can do.
+- **homepageIa:** Top nav: Products (Notion, AI, Agents, Calendars, Meeting Notes, Projects, etc.), Solutions, Templates, Pricing; large footer sitemap. In-app IA: left sidebar page tree plus search and command menu.
+- **navigation:** Suite-wide mega-menu; in-app navigation is a wiki-style page tree via sidebar, full-text search, and a command palette.
+- **typography:** Clean geometric sans with a comparatively modest headline scale; editorial, calm, product-first tone; in-app supports serif/sans/mono fonts per page. Exact marketing family UNKNOWN (custom font).
+- **colorStrategy:** Near-monochrome neutrals with a few warm accent moments; the product is famously low-chroma with user-controlled page emoji/covers supplying color; light and dark modes.
+- **layoutSystem:** Centered marketing with alternating text-image bands, template/use-case gallery grids, and pricing as toggle + plan cards + feature matrix.
+- **spacing:** Calm, generous marketing whitespace; in-app density is largely user-controlled per page (INFERENCE).
+- **components:** Marketing: persona tabs, use-case blocks, template preview cards, plan cards, feature matrix, FAQ. In-app: the block system (text, headings, lists, databases, embeds, AI), page headers, sidebar tree, template picker.
+- **cards:** Template/use-case preview cards on marketing; in-app uses blocks/rows within pages rather than a card-dense dashboard.
+- **visualHierarchy:** Flat editorial hierarchy: headline, use cases, templates, pricing; one idea per section; CTA repeated at intervals.
+- **motion:** Minimal marketing motion (scroll reveals); in-app subtler slide/spring transitions for block editing (INFERENCE).
+- **interactions:** In-app (highly documented): block-based editing, drag-and-drop blocks between columns/pages, database views (table/board/gallery/list/calendar/timeline), command-palette navigation, slash-command insertion, AI/agent panes in current builds.
+- **onboarding:** Free signup via email/SSO into a template-filled workspace; template galleries, academies, and helper content lower ramp-up (INFERENCE on exact UX).
+- **pricingPresentation:** Monthly/annual toggle, plan cards (Free/Plus/Business/Enterprise) with per-member pricing, AI add-on row, and a feature matrix covering upload, history, guests, and SSO limits.
+- **trustMechanisms:** Trusted-by logo wall, large user-base claims referenced in coverage, security/SSO/enterprise pages, a template community, and a status page.
+- **socialProof:** Logo wall, customer stories, a community template ecosystem, and press coverage noting a large user base and multibillion valuation.
+- **copywriting:** Calm, capable, benefit-led ('Your connected workspace for wiki, docs & projects'); quietly ambitious; avoids hype.
+- **mobile:** Native iOS/Android apps with mobile-optimized editing and expected cross-device sync (INFERENCE; app downloads listed on site, deep mobile behavior UNKNOWN).
+- **accessibility:** UNKNOWN - no dedicated accessibility statement surfaced in fetched content.
+- **performance:** Web-based canvas optimized for speed; concrete benchmarks not surfaced (UNKNOWN).
+- **seo:** Very strong: use-case and template pages target large keyword sets (wikis, docs, task management, AI notes), plus glossary-adjacent content and international pages.
+- **distinctiveDesign:** The 'blank canvas' aesthetic: block-based composability, database-as-page, and template-driven starts make Notion's UI both flexible and instantly recognizable.
+- **nonGeneric:** Yes - the block/page-over-database hybrid and per-page styling differentiate it from linear docs and database-only tools.
+- **unnecessaryComplexity:** Notorious learning curve: blocks, databases, relations, and AI add cognitive load for casual users (widely reported; INFERENCE).
+- **unusualSimplicity:** A new page is just typing; advanced power comes from progressive blocks and databases rather than a fixed feature surface.
+- **productDifferentiation:** One flexible data model (blocks + databases) covering notes, docs, wikis, and projects, now with AI/agents - competitors own slices, Notion owns the compositional whole.
+- **distribution:** Freemium bottom-up plus a template/community flywheel, education seeding, Notion AI monetization, and an enterprise sales motion.
+- **revenueEvidence:** FACT: pricing and free-tier limits verified on notion.com/pricing. FACT (via Wikipedia): reported Series D $275M at $10B valuation (Sept 2021) and large user-base claims in coverage - revenue figures not independently verified. No direct ARR disclosure in fetched sources.
+- **learn:** One flexible data primitive (block + database) can collapse five product categories into one; template galleries turn community creations into onboarding and distribution; let pages outgrow their tool.
+- **notCopy:** Notion brand/logo, block-editor implementation, database view idioms, template artwork, the workspace marketing system, product/domain naming, exact copy and illustrations.
+- **evidenceGrade:** INFERENCE
+- **sources:**
+  - https://www.notion.com/
+  - https://www.notion.com/pricing
+  - https://en.wikipedia.org/wiki/Notion_(productivity_software)
+
+### P03_3. Raycast (https://www.raycast.com/)
+
+- **name:** Raycast
+- **url:** https://www.raycast.com/
+- **category:** Application/Product UI
+- **targetCustomer:** macOS power users, developers, designers, and teams who want a fast, extensible launcher and 'command center', now expanding to iOS with a shared extension store.
+- **primaryProblem:** Native macOS Spotlight is limited and non-extensible; juggling apps, scripts, clipboard, and windows across many keystrokes is slow and friction-heavy.
+- **valueProposition:** An extensible, scriptable Mac launcher ('supercharge your Mac') with a large add-on store, built-in AI (AI Chat, AI Actions, Vision, screenshots), window management, and iOS support - speed as the core product promise.
+- **businessModel:** Freemium subscription: free launcher plus paid Pro/Plus/Max personal tiers and per-seat Team plans; the extension store and developer SDK are the moat.
+- **pricing:** Free core launcher; Pro about $10/mo, Plus about $20/mo, Max about $50/mo (individual, per raycast.com/pricing). Team plans per seat: Free $0, Pro about $15/user/mo, Plus about $25/user/mo, Max about $65/user/mo. Annual vs monthly noted on page.
+- **freeTier:** Yes - launcher, extension store, and core features are free; paid tiers add AI features, higher limits, sync, and team controls (per pricing page).
+- **mainCta:** 'Download' (Mac) and 'Download for iOS' homepage CTAs; 'Start free' on pricing.
+- **heroStructure:** Minimal, product-forward hero: a clean launcher screenshot with a short speed/supercharge statement and a large download button, then sections for AI, extensions, iOS, and teams, plus an extension-store showcase. INFERENCE on order.
+- **demoStrategy:** The product is natively demonstrable - polished UI screenshots and an extension gallery on site; the real demo is the free download itself (INFERENCE).
+- **homepageIa:** Compact top nav (Product, Extensions, Pricing, Store, Changelog, Blog, Developers) with a CTA; in-app IA is command-palette-oriented with store/search at the top level (INFERENCE).
+- **navigation:** Minimal marketing nav; in-product navigation is the command bar itself - extensions, AI prompts, and app actions share one search input.
+- **typography:** Clean system-like sans, tight and mechanical yet friendly; high legibility at small sizes (INFERENCE; exact family UNKNOWN).
+- **colorStrategy:** Light-first with a distinctive vivid accent set; dark mode available; screenshots carry the color.
+- **layoutSystem:** Centered max-width column with feature bands and store grids; pricing uses plan cards with a personal/team toggle.
+- **spacing:** Airy, consistent, generous section padding designed for readability (INFERENCE).
+- **components:** Feature split blocks, extension/store cards, AI prompt showcases, pricing cards, changelog timelines; in-app components (documented): command bar, action rows, AI reply panel, extension configurations.
+- **cards:** Extension cards and plan cards; in-app favors dense list rows in the command bar.
+- **visualHierarchy:** One headline, one CTA (download), then feature narrative, store, pricing; calm but punchy.
+- **motion:** Minimal marketing motion; in-app transitions are instant by design - speed is the identity (INFERENCE).
+- **interactions:** In-app (documented): fuzzy-search command bar, extensions that bring their own commands, AI actions on selected text/files, window management, clipboard history, quicklinks; keyboard-everywhere.
+- **onboarding:** Free install into a command bar; the extension store suggests popular extensions; onboarding is 'just start typing' (INFERENCE).
+- **pricingPresentation:** Personal vs Team toggle with plan cards; per-user prices, feature/limit rows (AI queries, sync, seats), annual savings noted.
+- **trustMechanisms:** Developer-first credibility (public SDK, open store, docs), changelog transparency, customer/community testimonials, and funding coverage (The Verge, Sept 2024: $30M raise).
+- **socialProof:** A large extension ecosystem, named company/team users, strong macOS developer-community mindshare, and press coverage of funding and the iOS launch.
+- **copywriting:** Confident, precise, power-user voice; short technical-benefit-leading copy; no fluff.
+- **mobile:** iOS app launched 2024 with shared extensions and AI (per The Verge coverage); details UNKNOWN beyond coverage.
+- **accessibility:** UNKNOWN - no dedicated statement surfaced in fetched content.
+- **performance:** Instant-command speed is the core promise; no published numeric benchmarks surfaced (UNKNOWN figures).
+- **seo:** Strong brand plus extension-store SEO with pages for popular extensions and integration keywords.
+- **distinctiveDesign:** The command bar as the entire UI: a single fast search surface that swallows apps, scripts, and AI - minimalist design where interaction speed IS the aesthetic.
+- **nonGeneric:** Yes - unlike Spotlight or simple launchers, the extension SDK, AI, and store make Raycast a platform rather than an app.
+- **unnecessaryComplexity:** The subscription ladder (Pro/Plus/Max x personal/team) and AI-credit concepts add decision overhead (INFERENCE).
+- **unusualSimplicity:** One input box exposes everything: type, pick, run - no settings sprawl in the core loop.
+- **productDifferentiation:** Extensible-by-design (public SDK + store), built-in AI, and team sharing; Apple's Spotlight cannot compete on extensibility and simple launchers cannot compete on ecosystem.
+- **distribution:** Developer word-of-mouth, extension-store virality, changelog-driven marketing, top-Mac audience mindshare; monetized through AI and user tiers.
+- **revenueEvidence:** FACT: pricing verified on raycast.com/pricing. FACT (coverage): $30M raise reported Sept 2024 by The Verge. No ARR/revenue disclosures in fetched sources.
+- **learn:** Make one interaction so good it becomes the product (type-to-run command palette), then open it with an SDK so other people build your roadmap; layer AI as an upsell inside the same surface.
+- **notCopy:** Raycast brand/logo and accent palette, command-bar implementation, extension-store structure, AI feature naming, marketing copy and visuals.
+- **evidenceGrade:** INFERENCE
+- **sources:**
+  - https://www.raycast.com/
+  - https://www.raycast.com/pricing
+  - https://www.raycast.com/blog/the-new-raycast
+  - https://manual.raycast.com/
+  - https://www.theverge.com/2024/9/25/24253375/raycast-mac-launcher-ios-windows
+
+### P03_4. Obsidian (https://obsidian.md/)
+
+- **name:** Obsidian
+- **url:** https://obsidian.md/
+- **category:** Application/Product UI
+- **targetCustomer:** Knowledge workers, researchers, note-takers, writers, developers, and PKM enthusiasts who want local-first, private, extensible notes; supports a large plugin/theme community.
+- **primaryProblem:** Cloud note apps trap data in proprietary formats, get slow with large knowledge bases, and limit linking/querying; users want permanent ownership of their notes.
+- **valueProposition:** A local-first markdown knowledge base ('your second brain') where every note is a plain file, with bidirectional links, a graph view, backlinks, and a powerful plugin/theme ecosystem; official Sync and Publish services add encryption and sharing.
+- **businessModel:** Free core app (personal use) monetized by optional paid services (Obsidian Sync, Obsidian Publish), a voluntary Catalyst supporter tier, and commercial licensing. Explicitly no VC funding - '100% user-supported'.
+- **pricing:** Core app free for personal use. Sync about $4/user/mo billed annually ($5 monthly); Publish about $8/site/mo annual ($10 monthly); Catalyst supporter tier $25 (one-time, early-access builds); Commercial licensing $50/user/yr. Verified on obsidian.md/pricing.
+- **freeTier:** Yes - the entire core app (notes, linking, graph, backlinks, most community plugins) is free and works fully offline for personal use; Sync/Publish are paid services.
+- **mainCta:** 'Get Obsidian for free' / 'Download' (Mac, Windows, Linux, iOS, Android per site); pricing CTAs for Sync/Publish.
+- **heroStructure:** Clean, content-forward hero with a short value line about a knowledge base on local markdown, download buttons, feature sections (Linking, Graph view, Extensibility), a plugin/theme showcase, testimonials, and pricing. INFERENCE on order.
+- **demoStrategy:** Product screenshots and embedded graph/UI previews; the real demo is instant free install with your existing .md files - zero migration risk (INFERENCE).
+- **homepageIa:** Simple top nav (Features, Showcase, Pricing, About, Help, Forum, Blog, Changelog) plus Download; in-app IA is folder/note-based with graph and backlinks as navigation aids (documented).
+- **navigation:** Minimal marketing nav; in-app navigation uses a file tree, quick switcher, backlinks panel, and the graph view - documents interlink instead of only living in folders.
+- **typography:** Editorial typography with a strong typeface lead and readable fonts; in-app supports custom fonts and fonts per user. Exact marketing family UNKNOWN.
+- **colorStrategy:** Calm neutrals with a signature purple accent used sparingly; dark mode central to the brand; user themes customize everything.
+- **layoutSystem:** Centered column with feature bands and a showcase grid; pricing uses two service cards (Sync, Publish) plus anchor text sections.
+- **spacing:** Comfortable, restrained; content is the hero (INFERENCE).
+- **components:** Feature split blocks, graph-view demos, plugin/theme showcase cards, service pricing cards, FAQ; in-app (documented): sidebar (files/search/tags/backlinks), tabs, graph view, canvas, plugins ribbon.
+- **cards:** Showcase cards for community plugins/themes; in-app prefers lists/tabs over cards.
+- **visualHierarchy:** Quiet, editorial hierarchy: value statement, features, showcase, pricing; one concept per section.
+- **motion:** Minimal marketing motion; the in-app graph view animates node placement - a signature interaction (documented).
+- **interactions:** In-app (highly documented): bidirectional [[wiki-links]], live graph layout, backlinks, quick switcher, command palette, live-preview markdown editing, canvas spaces.
+- **onboarding:** Zero-sign-up install; opening an existing folder of .md files works instantly; getting-started guide walks linking basics (per help docs; INFERENCE on UX specifics).
+- **pricingPresentation:** Two service cards (Sync, Publish) with monthly/annual toggles and feature lists; core-fee-free messaging throughout; Catalyst and Commercial sections.
+- **trustMechanisms:** 'Your data stays on your device', open file formats, a no-VC/user-supported stance, a transparent changelog/blog, and an active forum plus plugin community.
+- **socialProof:** A large plugin ecosystem (thousands of community plugins), strong presence in the PKM scene, testimonials, and coverage mentions (not independently verified here).
+- **copywriting:** Plain-spoken, principled, user-respecting tone ('your notes should live on your device'); anti-cloud-vendor framing.
+- **mobile:** Native iOS/Android apps with Sync; full feature parity is less than desktop (INFERENCE per docs).
+- **accessibility:** UNKNOWN - no dedicated accessibility statement surfaced in fetched content (community themes address some needs).
+- **performance:** Local-file architecture is inherently fast at opening/searching; no published benchmarks (UNKNOWN numeric figures).
+- **seo:** Strong long-tail SEO for markdown/knowledge-base/graph-notes keywords; extensive docs and help content.
+- **distinctiveDesign:** The graph view as a signature visualization plus a sober, type-driven UI that signals 'tool, not toy' - permanence and control as aesthetics.
+- **nonGeneric:** Yes - local-first rendering (no account, no lock-in), graph visualization, and a wiki-link ecosystem are uncommon in the category.
+- **unnecessaryComplexity:** The plugin ecosystem can fragment the experience; Sync/Publish licensing and Catalyst tiers add conceptual overhead (INFERENCE).
+- **unusualSimplicity:** Install, open a folder, type; linking is typing brackets; the core loop has almost no chrome.
+- **productDifferentiation:** Own-your-data philosophy, bidirectional diagramming, and a massive plugin ecosystem vs cloud-sync notes and single-user apps; Sync/Publish are add-on services, not paywalls.
+- **distribution:** Free core + word-of-mouth + plugin-marketplace flywheel + content/blog + forum community; no ads and no enterprise sales motion observed.
+- **revenueEvidence:** FACT: pricing verified on obsidian.md/pricing; company states it is user-supported with no VC (site claim). No revenue figures published in fetched sources.
+- **learn:** Build on open, portable primitives (plain markdown files) and monetize add-on services instead of hard-paywalling the core; community plugins are your talent pipeline for the roadmap.
+- **notCopy:** Obsidian brand/logo, purple accent system, graph-view implementation, wiki-link/backlink UX, plugin/theme ecosystem mechanics, marketing copy.
+- **evidenceGrade:** INFERENCE
+- **sources:**
+  - https://obsidian.md/
+  - https://obsidian.md/pricing
+  - https://help.obsidian.md/
+
+### P03_5. Arc (https://arc.net/)
+
+- **name:** Arc
+- **url:** https://arc.net/
+- **category:** Application/Product UI
+- **targetCustomer:** Web-forward users - designers, developers, students, and early adopters - who wanted a modernized browser with an organizer-first interface; much of its momentum was among macOS/power users.
+- **primaryProblem:** Browsers stuck in early-2000s interaction models: horizontal tabs, no good tab organization, weak multitasking; users juggle dozens of tabs/spaces with no structure.
+- **valueProposition:** A rebuilt browser ('The modern browser') that replaced the tab bar with a vertical sidebar, browser 'Spaces', split view, a command bar, and AI (Arc Max); later repositioned around 'Dia' (an AI browser) before development was frozen.
+- **businessModel:** Free consumer product; The Browser Company was venture-funded and acquired by Atlassian (Sept 2025, about $610M cash) after freezing Arc to pivot to Dia. No consumer pricing tier observed.
+- **pricing:** Free for consumer use (no paid tiers verified). Commercially, the company was acquired by Atlassian (about $610M cash per coverage, Sept 2025); the Dia pivot announced its own subscription/pricing plans (details per coverage, not verified on fetched pages).
+- **freeTier:** Entire product free; no freemium or trial observed.
+- **mainCta:** Download for Mac and Windows (historically); during the pivot the homepage centers 'Dia' (AI browser) alongside Arc coexistence messaging (per coverage).
+- **heroStructure:** Minimal, dark, cinematic hero around browser optics (side-tab view), with a 'Meet Dia' banner during the pivot era; sparse copy and a big download CTA. Evolving - frozen-development status documented in coverage.
+- **demoStrategy:** Embedded product video/screenshots showing Spaces, split view, and the command bar; word-of-mouth and prominent launch coverage were the real demo channel (INFERENCE).
+- **homepageIa:** Simple nav (Features, FAQ, Changelog/Releases, Support/Downloads); in-app IA is a vertical sidebar with Spaces, pinned/favorites, and download/library areas plus a command bar.
+- **navigation:** The sidebar IS the navigation: Spaces group sets of tabs, the command bar opens anything, and the browser replaces tab clutter with organization.
+- **typography:** Clean contemporary sans with large, confident display in marketing and a crisp interface; exact family UNKNOWN (custom branding).
+- **colorStrategy:** Bold: the browser UI uses near-monochrome chrome that recedes under web content (websites provide color); homepage is dark with vivid accent gradients (INFERENCE).
+- **layoutSystem:** Centered hero with full-bleed product visuals; straightforward single-column marketing sections.
+- **spacing:** Generous, editorial, isolated from competitors by bold whitespace (INFERENCE).
+- **components:** Marketing: trailer video, feature rows, FAQ accordions, download cards; in-app: sidebar with Spaces/pinned tabs, split-view panes, easels/boosts, command bar, AI panel.
+- **cards:** Minimal card use; feature rows and imagery dominate.
+- **visualHierarchy:** Strong single hero message then feature narrative with a repeated CTA; pivot-era hero refocuses on Dia.
+- **motion:** Cinematic hero video is central; in-app interactions feel fluid (dragging Spaces, split view, translucency) (INFERENCE).
+- **interactions:** In-app (documented): Spaces, split view for side-by-side tabs, command palette, Peek previews, Boosts (CSS customization), Arc Max AI features (rewrite, summarize, link previews).
+- **onboarding:** Download + import; a guided 'make it yours' flow (choose Spaces, pin favorites) documented via Arc's own promo/FAQ.
+- **pricingPresentation:** Not applicable for consumer Arc (free); pivot product pricing announced via ecosystem (details UNKNOWN on fetched pages).
+- **trustMechanisms:** Radical transparency - public changelogs, founder memos/letters, and a build-in-public posture; the Atlassian acquisition as ecosystem validation (coverage).
+- **socialProof:** Banner launch coverage (e.g. Verge review), a large early-adopter base, influencer mindshare, and widespread industry attention even amid pivot criticism.
+- **copywriting:** Confident, manifesto-toned, Apple-like minimalism; pivot messaging acknowledges the Arc freeze while pushing Dia.
+- **mobile:** Arc for iOS existed as a companion; desktop behavior well documented but in-app mobile depth UNKNOWN in fetched sources.
+- **accessibility:** UNKNOWN - no dedicated accessibility statement surfaced.
+- **performance:** Chromium-based engine behavior is normal; performance is not a marketing focus; exact numbers UNKNOWN.
+- **seo:** Strong brand presence on 'arc browser' queries; built for viral coverage rather than keyword pages (INFERENCE).
+- **distinctiveDesign:** Arguably the most distinctive browser UI of a decade: vertical Spaces sidebar, tab-less chrome, split view, and full-bleed translucency - design-led disruption of a commodity.
+- **nonGeneric:** Yes - completely rethought browser chrome vs Chrome/Safari/Edge; the UI WAS the product.
+- **unnecessaryComplexity:** Feature sprawl (Spaces, Easels, Boosts, Mini/Arc Max AI) grew complicated, and the pivot strategy risked fragmenting users (widely covered; INFERENCE).
+- **unusualSimplicity:** Arc made tab chaos disappear: close a Space and everything related closes; one command bar searches the whole web.
+- **productDifferentiation:** Design radicalism in a commodity (browser), then an AI-browser reshuffle; the Atlassian acquisition shifted strategic bets from consumers to teams (coverage).
+- **distribution:** Free + hype-launch + influencer seeding + build-in-public changelogs; massive press as growth channel; now a legacy-frozen state post-pivot (coverage).
+- **revenueEvidence:** FACT (coverage): development frozen May 2025 (The Verge); FACT (coverage): acquired by Atlassian for about $610M cash Sept 2025 (The Verge). No product ARR; pivot product opened with announced subscription plans (details UNKNOWN here).
+- **learn:** If you enter a commodity category, the interface redesign itself can be the wedge (browsers reborn with Spaces/sidebar); radical public transparency (changelogs/memos) converts early adopters into evangelists.
+- **notCopy:** Arc brand/logo, sidebar/Spaces UI mechanics, easel/boost concepts, Arc Max naming, marketing copy/illustrations, and Dia branding.
+- **evidenceGrade:** INFERENCE
+- **sources:**
+  - https://arc.net/
+  - https://arc.net/faq
+  - https://www.theverge.com/23462235/arc-web-browser-review
+  - https://www.theverge.com/news/674603/arc-browser-development-stopped-dia-browser-company
+  - https://www.theverge.com/web/770947/browser-company-arc-dia-acquired-atlassian
+
+### P03_6. Superhuman (https://superhuman.com/)
+
+- **name:** Superhuman
+- **url:** https://superhuman.com/
+- **category:** Application/Product UI
+- **targetCustomer:** Executives, founders, and productivity-focused knowledge workers and teams who live in email; positioned as the 'fastest email experience' for power users.
+- **primaryProblem:** Email is slow and overwhelming: composing, triage, and focus require deep discipline; standard clients lack speed, prioritization AI, and polish.
+- **valueProposition:** A fast, polished, keyboard-first email client ('email, done right') with instant search, undo send, and a built-in AI copilot (Ask Superhuman, AI summaries/automations) on top of triage.
+- **businessModel:** Paid-only subscription SaaS (no free Mail tier) for individuals and teams; revenue from subscriptions. Company raised $100M+ and agreed acquisition by Grammarly (announced Jul 2025, coverage).
+- **pricing:** Superhuman Mail: Starter about $30/user/mo monthly or $25/user/mo annual ($300/yr); Business about $40/user/mo monthly or $33/user/mo annual ($396/yr) per superhuman.com/pricing. Superhuman Suite adds apps (Calendar, Notes) with Free/Pro $12/Business $33 pricing (different product - see contradictions). Verified via superhuman.com/pricing.
+- **freeTier:** Mail has no free tier (paid entry). Suite offers a Free tier into the broader app set (per pricing page; see contradictions between Mail vs Suite plans).
+- **mainCta:** 'Get started' entry on homepage focused on speed and premium positioning (INFERENCE on exact CTA text).
+- **heroStructure:** Clean, premium hero with speed/productivity messaging and app screenshots; sections cover speed, triage, AI, and enterprise readiness (INFERENCE on section specifics).
+- **demoStrategy:** Premium waitlist/live-demo culture historically ('request an account' at launch) with concierge onboarding, later moving to direct signup (per coverage); premium screenshots convey the demo.
+- **homepageIa:** Top nav (Product, Pricing, Reviews/Customers, Sign in) plus content on Mail vs Suite; REST of footer/IA INFERENCE.
+- **navigation:** In-app: three-pane layout (sidebar, list, reading pane) that is keyboard-centric with a command menu and AI pane (documented).
+- **typography:** Premium grotesk sans, tight and confident; bold headlines and clean small-caps labels. Exact family UNKNOWN.
+- **colorStrategy:** Navy/dark premium base with a signature accent; contrast-led hero; in-app light/dark themes (INFERENCE).
+- **layoutSystem:** Centered column with full-bleed product shots, a testimonial band, and pricing split across Mail vs Suite product cards.
+- **spacing:** Plush, premium whitespace with an editorial rhythm (INFERENCE).
+- **components:** Feature blocks (speed/AI/triage), testimonial quotes, comparison/'why' sections, pricing cards across Mail and Suite, FAQ.
+- **cards:** Testimonial and pricing cards; in-app minimal chrome (list + reading pane).
+- **visualHierarchy:** Speed headline, features, proof, pricing; CTA repeated; premium minimal.
+- **motion:** Subtle marketing reveals; in-app interactions fast by design (keyboard triage) (INFERENCE).
+- **interactions:** In-app (documented): keyboard-everywhere triage (reply/archive/snooze), instant search, Ask Superhuman AI answers/summaries, AI automations, split/multi-pane views, scheduler.
+- **onboarding:** Concierge/white-glove onboarding historically (real-humans positioning); modern flow connects Gmail/Outlook and offers keyboard training (INFERENCE).
+- **pricingPresentation:** Two product tracks - Mail (Starter/Business) vs Suite (Free/Pro/Business) - presented as separate pricing cards with monthly/annual toggles and an enterprise contact path (see contradictions on tier scope).
+- **trustMechanisms:** Premium brand positioning, named-exec endorsements/customer logos, coverage of $100M+ fundraising and the Grammarly acquisition, privacy/security positioning.
+- **socialProof:** Cult status among founders/VCs, public testimonials, heavy press coverage (launch/raises/relaunch), and 'fastest email' claims referenced across coverage.
+- **copywriting:** Aspirational, speed-first, premium authority; short, punchy benefit lines.
+- **mobile:** A highly regarded native iOS app (documented via coverage); Android support historically present. Depth UNKNOWN in fetched sources.
+- **accessibility:** UNKNOWN - no dedicated accessibility statement surfaced in fetched content.
+- **performance:** Speed IS the pitch (keyboard-first, instant search); no published numeric benchmarks fetched (UNKNOWN).
+- **seo:** Strong brand search plus influencer-led presence; moderate content surface (blog/newsletter).
+- **distinctiveDesign:** A 'superhuman' premium aesthetic applied to a commodity (email): minimal chrome, keyboard speed, instant search - email that feels like a design object.
+- **nonGeneric:** Yes - paid-only premium email aimed at executives with this level of polish; no major competitor occupies the exact segment.
+- **unnecessaryComplexity:** Two overlapping product tracks (Mail vs Suite) with different tier names/prices confuse buyers; AI add-on pricing overlap (see contradictions) (INFERENCE).
+- **unusualSimplicity:** Keyboard triage, undo send, and snooze compress email into a few keystrokes; AI answers make the inbox feel like a chat.
+- **productDifferentiation:** Speed-and-service positioning (premium onboarding, keyboard power), an AI copilot atop triage, and brand cachet vs free Gmail/Outlook/Apple; the Grammarly acquisition points to an AI-driven future (coverage).
+- **distribution:** Paid-only subscriptions + concierge onboarding + founder/investor word-of-mouth + press/influencer coverage; enterprise sales for Business plans.
+- **revenueEvidence:** FACT: pricing verified on superhuman.com/pricing. Coverage (The Verge/Wikipedia): raised $100M+; Grammarly acquisition announced Jul 2025 - figures from coverage, not independently audited. No ARR disclosed in fetched sources.
+- **learn:** Position on speed and make 'fast' tangible (keyboard-first, instant search) - polish as a moat in commodity tools; white-glove onboarding turns early users into advocates for a premium brand.
+- **notCopy:** Superhuman brand/logo, keyboard mapping/triage mechanics, 'superhuman' naming in feature labels, marketing copy, premium visual language, the exact concierge onboarding flow.
+- **evidenceGrade:** INFERENCE
+- **sources:**
+  - https://superhuman.com/
+  - https://superhuman.com/pricing
+  - https://superhuman.com/mail
+  - https://blog.superhuman.com/introducing-superhuman
+  - https://en.wikipedia.org/wiki/Superhuman_(email_client)
+
+### P03_7. Figma (https://www.figma.com/)
+
+- **name:** Figma
+- **url:** https://www.figma.com/
+- **category:** Application/Product UI
+- **targetCustomer:** Product designers, UX/UI designers, design-system leads, developers, and product teams at companies from startups to Fortune 500; Figma states 13M+ users (Wikipedia) and claims 95% of the Fortune 500 use Figma (homepage claim).
+- **primaryProblem:** Design files are scattered, versioned chaotically, stale, and hard to hand off to developers; teams lack a single source of truth for design.
+- **valueProposition:** One collaborative, browser-based canvas where design, prototyping, dev handoff, whiteboarding, slides, and AI live - 'the collaborative canvas for design, code, and AI'. Multiplayer editing, autosave, version history, and a source-of-truth library.
+- **businessModel:** SaaS seat-based freemium: a free Starter tier plus paid per-seat plans (Professional, Organization, Enterprise) with role-based seat types (Full, Dev, Collab) and AI-credit metering; IPO'd July 2025 (NYSE: FIG).
+- **pricing:** Starter free; Professional Full seat $16/mo, Dev seat $12/mo, Collab seat $3/mo (annual reference); Organization Full $55/mo, Dev $25/mo, Collab $5/mo; Enterprise Full $90/mo (annual, contact sales). AI credits bundled per seat (3,000/mo Full Professional) plus paid add-ons. Verified on figma.com/pricing.
+- **freeTier:** Yes - Starter: unlimited drafts, UI kits and templates, 150 AI credits/day up to 500/mo, basic inspection, unlimited viewing/commenting.
+- **mainCta:** 'Get started' / 'Get started for free' (figma.com/signup), plus secondary 'Contact sales'.
+- **heroStructure:** Short headline (intelligent-canvas theme) over a large product visual; sub-blocks split into 'Design and explore' and 'Build and ship products'; below: screenshot gallery, a social-proof stat, client logos, and community/template carousels.
+- **demoStrategy:** The product IS the demo: embedded interface screenshots and a free tier that gives full product access so users experience multiplayer and auto-layout themselves; a demo page and product tours serve enterprise buyers.
+- **homepageIa:** Product-portfolio-led IA: top nav has Products (Design, Make, Dev Mode, Motion, FigJam, Slides, Sites, etc.), Solutions, Community, Resources, then Pricing/Log in/Get started; footer is a full sitemap.
+- **navigation:** Mega-menu top navigation with product cards and a persistent top-right CTA cluster; footer full sitemap. INFERENCE: product-level IA mirrors the flat multi-app canvas of the tool itself.
+- **typography:** Large display sans headline scale with tight tracking; clean grotesk style. Heavy headline + sub-caption hierarchy. Exact marketing family UNKNOWN (system UI sans).
+- **colorStrategy:** Neutral near-monochrome (black/white/grays) with the signature Figma violet used as accent on CTAs and links; product screenshots carry full color. Verified visually.
+- **layoutSystem:** Centered max-width column with generous full-bleed product-visual bands; bento product/community grids; carousels for logos and community content.
+- **spacing:** Large, airy sections separated by generous whitespace with consistent section padding (INFERENCE from page rhythm).
+- **components:** Marketing: product tiles, logo strips, testimonial blocks, template preview cards, a feature-comparison pricing table, FAQ accordions, CTA banners. In-app (documented via tours/screenshots): frames, constraints, auto-layout, components, variables.
+- **cards:** Product/template preview cards with screenshot thumbnails and category labels; pricing uses table rows rather than cards for scalability.
+- **visualHierarchy:** Single dominant hero headline, secondary sub-narrative, tertiary product-explorer grid; CTA repeated at intervals; pricing ranks plans and shows a large feature matrix.
+- **motion:** Homepage uses subtle scroll reveals and autoplay carousels with inline product video; in-app Smart Animate/spring/slide transitions are documented selling features.
+- **interactions:** Multiplayer cursors, hover states, sticky nav, mega-menu hover, pricing FAQ accordions; in-app (documented): conditional logic, variables-driven prototypes, MCP connectors for AI agents.
+- **onboarding:** Free tier requires only email/password or SSO; 'Try Figma Free' lands directly in the product; onboarding uses templates, UI kits, and community starter files (documented).
+- **pricingPresentation:** Plan cards with a seat-type selector (Full/Dev/Collab), monthly/annual toggle, AI credits per plan, an add-on section, and a comprehensive feature-by-feature matrix.
+- **trustMechanisms:** Logo wall (Airbnb, Atlassian, Dropbox, Microsoft, Netflix, Slack, Stripe, NYT, Zoom), '95% of Fortune 500' stat, customer quote, security/compliance links (SSO, SCIM, EU hosting).
+- **socialProof:** Fortune 500 penetration stat, logo wall, customer quotes, 13M+ users (Wikipedia), and a large community template ecosystem.
+- **copywriting:** Short compound-value headlines, 2-3 word benefit labels, calm-expert tone rather than hype.
+- **mobile:** Figma apps on iOS/Android for viewing, commenting, and FigJam; full editor is desktop/browser-centric (INFERENCE).
+- **accessibility:** UNKNOWN from public site beyond typical web standards; no dedicated a11y page surfaced in fetched content.
+- **performance:** Marketing site uses CDN/lazy-loaded images; product is a lightweight browser app; concretely verified performance numbers UNKNOWN.
+- **seo:** Extensive SEO structure: solution/use-case pages for nearly every keyword (ui-design-tool, ux-design-tool, prototyping, wireframe-tool, ai-website-generator), resource library, community galleries, blog.
+- **distinctiveDesign:** Signature violet-on-neutral brand with a clean, mature, editorial marketing presence; the multi-layer canvas screenshots are instantly recognizable; flat, precise, fps-composed language.
+- **nonGeneric:** Yes - differentiated: browser-native multiplayer as core identity, Dev Mode in-canvas handoff, design-system variables, and AI/make/build tooling that broadens the canvas concept.
+- **unnecessaryComplexity:** Pricing grew complex: 3 seat types x 4 plans x AI credits + add-ons + per-product beta entitlements - real cognitive load for buyers; a 10+ sub-product surface adds learning overhead (INFERENCE).
+- **unusualSimplicity:** Core loop is genuinely simple: canvas + frames + auto-layout makes visual layout approachable for non-designers; unlimited free viewer/commenter access removes friction.
+- **productDifferentiation:** The default collaborative design medium (network effects via community files/plugins) plus expansion from design to build (Make, Sites) and an AI-native canvas - competitors must replicate tool and ecosystem.
+- **distribution:** Freemium bottom-up plus community-led growth (Community templates, Friends of Figma, events), education free tier seeding next-gen users, and an enterprise sales motion on top.
+- **revenueEvidence:** FACT: 13M+ users (Wikipedia). FACT: '95% of the Fortune 500 uses Figma' site claim. FACT: IPO on NYSE (FIG) July 2025 (coverage). No independently audited ARR figure in fetched sources.
+- **learn:** Make the product itself the onboarding and the demo: a genuinely useful free tier plus in-product multiplayer means the best marketing is the first click; one shared artifact (the canvas) as source of truth beats file-based versioning.
+- **notCopy:** Figma brand/violet palette, logo, product names (Figma, FigJam, Dev Mode, Make, Buzz, Slides), proprietary illustrations and UI-kit assets, exact headline copy, and Community ecosystem trademarks.
+- **evidenceGrade:** FACT
+- **sources:**
+  - https://www.figma.com/
+  - https://www.figma.com/pricing
+  - https://www.figma.com/ui-design-tool
+  - https://en.wikipedia.org/wiki/Figma
+
+### P03_8. Things 3 (https://things.app/)
+
+- **name:** Things 3
+- **url:** https://things.app/
+- **category:** Application/Product UI
+- **targetCustomer:** Individuals and professionals on Apple platforms who want elegant GTD-style task management - productivity purists, students, creatives, and iOS/macOS users.
+- **primaryProblem:** Task managers are cluttered or complex; iOS/macOS users want a fast, focused, beautifully designed list-based task app that respects GTD flow.
+- **valueProposition:** The best-designed task manager for Apple platforms: Areas/Projects/Headings, Today/Upcoming/Anytime/Someday views, quick entry with natural-language dates, tags, Apple Calendar sync, and polished one-time-purchase apps across Mac/iPad/iPhone/Vision.
+- **businessModel:** One-time purchase per platform (no subscription): upfront payment per device ecosystem with a free trial. Developer: Cultured Code GmbH.
+- **pricing:** Mac $49.99, iPhone + Apple Watch $9.99, iPad $19.99, Apple Vision Pro $29.99 (App Store US prices, one-time each, per culturedcode.com/things/pricing). Regional App Store prices vary by currency (Canada listings differ - see contradictions).
+- **freeTier:** Mac offers a 15-day free trial; iOS/iPadOS offer short trial periods; no permanent free tier offered (per culturedcode).
+- **mainCta:** 'Buy Things for Mac' / 'Download trial' on homepage plus store badges.
+- **heroStructure:** Clean light hero with app screenshot, value line, and platform store buttons; feature sections (Today, Projects, Quick Entry, Tags, Calendar sync), testimonials, awards, and per-platform pricing. INFERENCE on order.
+- **demoStrategy:** App-store screenshots plus a free desktop trial; product quality IS the demo through time-limited downloads (INFERENCE).
+- **homepageIa:** Simple nav (Features, Pricing, Support, Blog) with per-platform pages and a minimal footer.
+- **navigation:** In-app: compact three-column layout (sidebar areas/headers, list, detail/quick entry); keyboard/shortcut-first with quick entry (documented).
+- **typography:** Clean, warm humanist sans, tight and legible; marketing uses a refined grotesk. Exact family UNKNOWN.
+- **colorStrategy:** Light warm whites with a signature Things blue/green accent on dates and checkboxes; dark mode available; restrained, Apple-esque.
+- **layoutSystem:** Centered single-column marketing with alternating feature bands/device art; pricing grid per platform.
+- **spacing:** Airy, premium, consistent Apple-like rhythm (INFERENCE).
+- **components:** Feature blocks, platform price cards, testimonial/quote rows, FAQ; in-app (documented): header bar, Today list with date sections, project trees/headers, quick-entry panel, tag rows.
+- **cards:** Platform pricing cards and minimal testimonial cards; in-app list rows predominate.
+- **visualHierarchy:** One value statement, feature narrative, pricing section, proof; extremely calm and linear.
+- **motion:** Subtle native transitions; none notable on marketing (INFERENCE).
+- **interactions:** In-app (documented): natural-language date parsing in quick entry, drag-and-drop reordering, swipe actions, tags/filtering, Apple Calendar and Focus integration, keyboard-first.
+- **onboarding:** Trial into a structured setup of Areas/Projects; help center offers guided walkthroughs (INFERENCE on exact UX).
+- **pricingPresentation:** Per-platform price cards (one-time purchases) with trial emphasis and FAQ about licensing; no subscription, no plan tiers.
+- **trustMechanisms:** Apple Design Award history, App-of-the-Year lineage, premium polish, a strong productivity-community reputation, and a purchase-not-subscription stance.
+- **socialProof:** Apple Design Award, Apple store attention, thousands of high App Store ratings, and deep productivity-community reverence (coverage).
+- **copywriting:** Warm, Apple-adjacent restraint; benefit-first; confident underplay.
+- **mobile:** iPhone + Apple Watch apps, iPad, Vision Pro, macOS; no Android/Windows (deliberate Apple focus; INFERENCE).
+- **accessibility:** Platform-native accessibility (VoiceOver, Dynamic Type claims); no standalone statement surfaced - depth UNKNOWN.
+- **performance:** Native, fast apps; no published benchmarks (UNKNOWN).
+- **seo:** Moderate; strong brand search ('things 3' keyword dominance); blog/help content.
+- **distinctiveDesign:** The reference design for task managers on Apple: restraint, typographic calm, and pixel-level polish as a selling point.
+- **nonGeneric:** Yes - stands apart from subscription suites (TickTick, Todoist) with one-time pricing and design-first GTD purity.
+- **unnecessaryComplexity:** Deliberately limited feature set vs rivals (no collaboration); per-platform pricing can feel like nickel-and-diming (see contradictions).
+- **unusualSimplicity:** Type a task and a natural date, done; Today/Upcoming auto-organize; zero-config default.
+- **productDifferentiation:** Design purity + one-time purchase + GTD correctness + Apple-exclusive polish; no subscription, no ads, no cloud lock-in.
+- **distribution:** Apple Store featuring/reviews, word-of-mouth in productivity circles, and premium pricing positioning; no ads observed.
+- **revenueEvidence:** FACT: pricing verified on culturedcode.com/things/pricing and App Store listings; Apple Design Award history per App Store/culturedcode. No revenue figures published.
+- **learn:** Sell design itself: charge a premium one-time price with a trial and let fit-and-finish do the marketing; keep the feature set deliberately small to protect the aesthetic.
+- **notCopy:** Things brand/logo, blue check accent, Today/Upcoming view layout, natural-language entry UX, 'Things 3' naming, marketing copy and platform art.
+- **evidenceGrade:** FACT
+- **sources:**
+  - https://things.app/
+  - https://culturedcode.com/things/pricing
+  - https://apps.apple.com/us/app/things-3/id904237743
+
+### P03_9. Maze (https://maze.co/)
+
+- **name:** Maze
+- **url:** https://maze.co/
+- **category:** Application/Product UI
+- **targetCustomer:** Product designers, UX researchers, product managers, and teams who want fast, continuous user testing and usability research, especially Figma-centric design teams.
+- **primaryProblem:** Running user tests is slow and manual (recruiting, scripting, analysis); design-to-research feedback loops take weeks, so teams ship without validation.
+- **valueProposition:** 'Rapid testing for real impact': run usability tests, prototype tests, surveys, card sorts, and tree tests fast, integrated with Figma so designers test prototypes without leaving the design flow; an AI copilot assists analysis.
+- **businessModel:** SaaS freemium with self-serve paid tiers and custom enterprise/organization contracts, plus Maze AI and a participant-panel add-on.
+- **pricing:** Official pricing page shows feature tiers WITHOUT dollar figures (free + paid buckets, contact-later model). Third-party trackers (G2, UXtweak, Vendr) report Free plan, Starter about $49-99/mo, Team about $99-249/mo, Organization pool pricing in the $15k/yr class - values vary; treat as INFERENCE/HYPOTHESIS. Free tier: about 1 study/mo and 5 seats per G2.
+- **freeTier:** Yes - limited free plan (about 1 study per month, 5 seats) per third-party trackers (G2); the official page does not state figures.
+- **mainCta:** 'Get started free' / 'Try for free' with a 'Book a demo' path for enterprise.
+- **heroStructure:** Clean SaaS hero with a value headline and product screenshots of the test/results dashboard; sections cover features (prototype tests, surveys, AI), use cases, enterprise, and Figma integration. INFERENCE on exact order.
+- **demoStrategy:** Product screenshots plus a demo/sample test; the free tier lets users run a real study on their own prototype (INFERENCE).
+- **homepageIa:** Top nav (Product, Features, Pricing, Resources, Enterprise, Login/Get started) with a large integrations section (Figma, FigJam, Adobe XD) and footer sitemap.
+- **navigation:** Standard SaaS top nav; in-app IA is a workspace with projects, a test/task builder, and per-task analytics (INFERENCE).
+- **typography:** Clean modern sans with bold headlines and high legibility; exact family UNKNOWN.
+- **colorStrategy:** Neutral light base with a vivid brand accent; product screenshots carry the color (INFERENCE on minimal accents).
+- **layoutSystem:** Centered column with feature bands, bento test-type cards, integration logo rows, and a pricing table.
+- **spacing:** Standard comfortable SaaS spacing (INFERENCE).
+- **components:** Test-type cards (usability, prototype, survey, card sort, tree test), feature blocks, integration logo lists, testimonials, pricing tables with CTAs, FAQ.
+- **cards:** Test-type cards and testimonials; in-app results dashboards use metrics cards (INFERENCE).
+- **visualHierarchy:** Value headline, what-you-can-test, how-it-works, proof, pricing; CTA repeated.
+- **motion:** Standard web reveals; no dominant animation (INFERENCE).
+- **interactions:** In-app (documented via marketing): Figma plugin embedding, prototype-test flows with missions/questions, AI analysis and summaries, participant panel, heatmaps/funnels.
+- **onboarding:** Sign up (email/SSO), connect Figma, run a first study; template-driven (INFERENCE).
+- **pricingPresentation:** Tiered cards with feature lists but no explicit prices above free (opaque list pricing vs third-party figures - contradiction), with an enterprise 'talk to sales' path.
+- **trustMechanisms:** '6 million+ participants' (homepage) vs '5 million+' (pricing page) - internal inconsistency; customer logos/testimonials; security/enterprise pages (INFERENCE).
+- **socialProof:** Customer logos and testimonials, participant-panel count claims (contradictory 5M vs 6M), and analyst trackers (G2).
+- **copywriting:** Energetic, benefit-rich ('Rapid testing for real impact') with a clear feature taxonomy.
+- **mobile:** Responsive web; a native mobile app is UNKNOWN/limited (UNKNOWN).
+- **accessibility:** UNKNOWN - no dedicated statement surfaced.
+- **performance:** UNKNOWN - no published metrics in fetched content.
+- **seo:** Strong: solution/use-case pages (usability testing, prototype testing, survey tools), integration pages, glossary/blog content.
+- **distinctiveDesign:** Clean research-dashboard UI centered on test analytics; fills the 'testing as a product surface' gap inside design workflows (Figma).
+- **nonGeneric:** Yes - prototype-test-first core with a Figma-native workflow and AI analysis, distinguishing it from broader survey tools and manual labs.
+- **unnecessaryComplexity:** Opaque pricing (no list prices on the official page) plus multiple new feature lines (AI, panel) complicate evaluation (INFERENCE).
+- **unusualSimplicity:** Test a Figma prototype in minutes via plugin; results are auto-analyzed.
+- **productDifferentiation:** Speed plus Figma-native integration plus a menu of test formats (screens, surveys, card sort, tree) plus AI summary; competitors own only slices of research testing.
+- **distribution:** Freemium self-serve + Figma plugin/ecosystem distribution + content/SEO + enterprise sales.
+- **revenueEvidence:** FACT: official pricing page shows tiers with features but no dollar prices. Contradiction with third-party trackers (G2/UXtweak/Vendr citing $49-249/mo plans) - HYPOTHESIS. Company claims millions of participants (5M vs 6M internal inconsistency). No audited revenue in fetched sources.
+- **learn:** Give designers test results with the polish of design tools: meet users where they already work (Figma plugin) instead of forcing a new work context; let AI analysis shrink time-to-insight.
+- **notCopy:** Maze brand/logo, coral palette, test/task builder flows, Figma-app integration mechanics, marketing copy, participant-panel claims.
+- **evidenceGrade:** INFERENCE
+- **sources:**
+  - https://maze.co/
+  - https://maze.co/pricing/
+  - https://www.g2.com/products/maze-maze/pricing
+  - https://blog.uxtweak.com/maze-pricing
+
+### P03_10. Framer (https://www.framer.com/)
+
+- **name:** Framer
+- **url:** https://www.framer.com/
+- **category:** Application/Product UI
+- **targetCustomer:** Designers, indie makers, startups, and agencies building marketing sites and landing pages without code; teams that want design and hosting in one tool.
+- **primaryProblem:** Building beautiful responsive marketing sites requires coders or restrictive builders; designers cannot own the full design-to-launch flow without engineering.
+- **valueProposition:** An AI-powered visual website builder that generates sites from prompts or templates, supports code components, and publishes fast with hosting, CMS, and localization - design-to-lived-site in one tool.
+- **businessModel:** SaaS freemium with flat site plans, pay-as-you-go editor seats, and AI credits; enterprise custom.
+- **pricing:** Free plan $0; Basic about $10/mo; Pro about $30/mo; Enterprise custom (per framer.com/pricing). Extra editors about $20/mo (per plan allowance), AI credits bundled per plan (about 1,000 Basic / 3,000 Pro) with paid top-ups.
+- **freeTier:** Yes - free starter site on a framer.app subdomain (about 4 pages) plus free-tier AI credits (limits via pricing page).
+- **mainCta:** 'Start for free' homepage CTA (historically with a prompt-style input such as 'describe your website'); 'Publish now'.
+- **heroStructure:** Product-first hero combining an AI prompt input with a site-template gallery; headline about building beautiful sites quickly; sections for AI, design, CMS/publishing, and localization; a gallery of made-with-Framer sites.
+- **demoStrategy:** The site gallery IS the proof (thousands of live Framer sites); AI tries to make launching a template one prompt away; the free tier allows publishing to framer.app (INFERENCE).
+- **homepageIa:** Top nav (Product, Templates, Pricing, Customers, Resources, etc.) with a prominent Templates gallery; footer sitemap including integrations and docs.
+- **navigation:** Standard marketing nav; in-app: canvas-centric with left layers and right properties, a code-component workflow, and CMS/content-model side panels (documented in docs).
+- **typography:** Modern grotesk with confident, design-forward headlines and large display sizes; exact family UNKNOWN.
+- **colorStrategy:** Clean light UI with a bold accent (dark ink + saturated accent); the template gallery supplies color.
+- **layoutSystem:** Centered column, full-bleed template/gallery grids, bento-feature bands, and pricing plan cards.
+- **spacing:** Generous, design-tool-like spacing (INFERENCE).
+- **components:** Template cards, AI prompt input, feature blocks, pricing cards, gallery sections; in-app (documented via docs): frame system, components/variants, breakpoints, CMS collections.
+- **cards:** Template cards with live screenshots and category tags; pricing plan cards.
+- **visualHierarchy:** Headline, prompt input, template gallery, features, pricing; CTA at intervals.
+- **motion:** Smooth homepage interactions and animated AI-generation previews; in-app animation (effects, transitions) is a documented design capability.
+- **interactions:** In-app (documented): prompt-to-site generation, drag-and-drop visual editing, code components via Dev Mode, CMS content modeling, localized publishing, one-click publish per site.
+- **onboarding:** Free signup, pick a template or prompt, publish to framer.app; docs and community tutorials lower the curve (INFERENCE).
+- **pricingPresentation:** Plan cards (Free/Basic/Pro/Enterprise) with editor-seat and AI-credit rows, monthly/annual toggle, and a feature matrix.
+- **trustMechanisms:** Customer/gallery logos, design awards/coverage, security/SSO enterprise features (INFERENCE), and a transparent changelog.
+- **socialProof:** A large gallery of live Framer sites, 'made in Framer' badges, community templates, strong designer social presence, and press/review coverage (exact figures INFERENCE).
+- **copywriting:** Builder-brand energy: confident AI-first claims ('create a site in seconds'), benefit-laden, modern startup voice.
+- **mobile:** Responsive creation and viewing; the full editor is desktop-focused (INFERENCE).
+- **accessibility:** UNKNOWN - no dedicated statement surfaced in fetched content.
+- **performance:** CDN hosting and quick publish; exact performance figures UNKNOWN (site claims speed).
+- **seo:** Very strong: template pages, solution/education content, and keyword leadership for website-builder and AI-website keywords.
+- **distinctiveDesign:** The 'no-code design tool that ships' identity: a canvas that outputs a real hosted site plus a signature gallery marketing motion (designer-made templates).
+- **nonGeneric:** Yes - fuses visual canvas, code components, CMS, and hosting, and an AI-generation-first prompt start differentiates it from other builders.
+- **unnecessaryComplexity:** Plan/seat/AI-credit granularity (editor seats, credit top-ups, page limits) adds decision overhead; Dev Mode adds a developer role to a no-code pitch (INFERENCE).
+- **unusualSimplicity:** 'Paste a prompt, pick a template, publish' lowers the barrier versus traditional page builders dramatically.
+- **productDifferentiation:** A design canvas that ships a lived site, with an AI path and a code-capability escape hatch; competitors specialize in one axis (pure no-code vs pure code vs pure hosting).
+- **distribution:** Free tier + template-gallery SEO + ecosystem community + education content + partnerships; AI prompts create distribution loops.
+- **revenueEvidence:** FACT: pricing verified on framer.com/pricing (plan prices, seats, AI credits). No published company revenue figures in fetched sources.
+- **learn:** Lead with output (a live gallery of customer sites) rather than features; offer an AI prompt-start path for low-friction first runs; make hosting part of the product so 'build' includes 'done'.
+- **notCopy:** Framer brand/logo, template-gallery mechanics, prompt-input homepage implementation, CMS/site-plan naming, marketing copy, and designer showcase art.
+- **evidenceGrade:** INFERENCE
+- **sources:**
+  - https://www.framer.com/
+  - https://www.framer.com/pricing/
+  - https://www.framer.com/ai
+  - https://www.framer.com/solutions/website-builder
+  - https://www.framer.com/docs
